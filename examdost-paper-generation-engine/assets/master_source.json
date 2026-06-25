@@ -1,0 +1,15 @@
+{
+  "name": "ExamDost Type List Master Sheet (live Google Sheet)",
+  "google_sheet_id": "1WAt8IqZL10HZrY-NQtyUxJryT9L7_VJ3ECDuDcx5aZY",
+  "view_url": "https://docs.google.com/spreadsheets/d/1WAt8IqZL10HZrY-NQtyUxJryT9L7_VJ3ECDuDcx5aZY/edit",
+  "export_url": "https://docs.google.com/spreadsheets/d/1WAt8IqZL10HZrY-NQtyUxJryT9L7_VJ3ECDuDcx5aZY/export?format=xlsx",
+  "targets": [
+    "~/.claude/skills/examdost-paper-generation-engine/assets/chapter_topic_master.xlsx",
+    "~/.claude/skills/exam-psychometrician/assets/chapter_topic_master.xlsx"
+  ],
+  "min_subjects": 20,
+  "must_have_subjects": ["Verbal Ability", "Numerical Ability", "Reasoning"],
+  "must_not_have_subjects": ["General Aptitude"],
+  "keep_backups": 3,
+  "_note": "Single source of truth for the chapter/topic taxonomy. The sheet must be shared 'Anyone with the link -> Viewer' for the export URL to work. Do NOT rename the sheet tabs: xlsx export truncates tab names to 31 chars, which is where canonical names like 'Utilization of Electrical Energ' come from. Renaming a tab would break every existing tag."
+}

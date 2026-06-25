@@ -1,0 +1,17 @@
+# Examdost Paper Generation Engine — merged dependencies for all three modes.
+# Generate (paper-generator), Tag (question-metadata), Code (latex-question-coder).
+
+# --- core (all modes) ---
+openpyxl>=3.1.0       # master taxonomy read + metadata/coding .xlsx
+python-docx>=1.1.0    # read/write .docx (papers, boxed tables, question sets)
+pandas>=2.0           # coding-sheet filtering (code-update mode)
+
+# --- generate mode ---
+reportlab>=4.0.0      # branded PDF question bank
+python-pptx>=0.6.21   # slide-format question bank (on request)
+matplotlib>=3.7.0
+pypandoc_binary>=1.13 # bundles pandoc; native Word equations (OMML). Optional: falls back to Unicode.
+
+# --- tag (metadata) mode ---
+pdfplumber>=0.10.0    # read .pdf question sets (preferred)
+PyMuPDF>=1.23.0       # .pdf fallback if pdfplumber is unavailable
