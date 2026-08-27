@@ -1,0 +1,192 @@
+[
+  {
+    "q": 518,
+    "field": "Body",
+    "source_line": "The value of the summation  is $\\_\\_\\_\\_$"
+  },
+  {
+    "q": 518,
+    "field": "Explanation",
+    "source_line": "So, , lies out side the limits$]$"
+  },
+  {
+    "q": 523,
+    "field": "Body",
+    "source_line": "The value of the integral  is $\\_\\_\\_\\_$"
+  },
+  {
+    "q": 526,
+    "field": "Body",
+    "source_line": "If ${\\rm{x}}\\left( {\\rm{n}} \\right) = {\\rm{u}}\\left( {\\rm{n}} \\right) - {\\rm{u}}\\left( {{\\rm{n}} - 5} \\right)$, and ${\\rm{h}}\\left( {\\rm{n}} \\right) = {\\rm{\\delta }}\\left( {\\rm{n}} \\right) - {\\rm{\\delta }}\\left( {{\\rm{n}} - 1} \\right)$ and ${\\rm{y}}\\left( {\\rm{n}} \\right) = {\\rm{x}}\\left( {\\rm{n}} \\right){\\rm{*\\;h}}\\left( {\\rm{n}} \\right)$, then the value of  is $\\_\\_\\_\\_$ ."
+  },
+  {
+    "q": 532,
+    "field": "Body",
+    "source_line": "Then ${\\rm{X}}\\left( {\\rm{s}} \\right)$ is"
+  },
+  {
+    "q": 558,
+    "field": "Body",
+    "source_line": "The value of  is"
+  },
+  {
+    "q": 559,
+    "field": "Body",
+    "source_line": "The Laplace transform of  is"
+  },
+  {
+    "q": 560,
+    "field": "Body",
+    "source_line": "The value of  is $\\_\\_\\_\\_$ ."
+  },
+  {
+    "q": 567,
+    "field": "Body",
+    "source_line": "Define the signal $y\\left( n \\right) = x\\left( { - n} \\right)$. The value of  is"
+  },
+  {
+    "q": 568,
+    "field": "Body",
+    "source_line": "The value of integral  is"
+  },
+  {
+    "q": 570,
+    "field": "Explanation",
+    "source_line": "Odd + H.W symmetry ⇒ ${{\\rm{C}}_{\\rm{n}}}$ exists only for odd harmonics"
+  },
+  {
+    "q": 579,
+    "field": "Explanation",
+    "source_line": "It is auto correlation function,"
+  },
+  {
+    "q": 581,
+    "field": "Correct",
+    "source_line": "1.80 (1.75-1.85)"
+  },
+  {
+    "q": 582,
+    "field": "Body",
+    "source_line": "If $x\\left[ n \\right] = \\left\\{ {1,2,3,2,1} \\right\\}$ and . Then the value of  is $\\_\\_\\_\\_$ ."
+  },
+  {
+    "q": 582,
+    "field": "Correct",
+    "source_line": "119.38 (118.00-121.00)"
+  },
+  {
+    "q": 583,
+    "field": "Correct",
+    "source_line": "$0.5\\left( {0.3 - 0.7} \\right)$"
+  },
+  {
+    "q": 586,
+    "field": "Correct",
+    "source_line": "$ - 0.5\\left( { - 0.6 -  - 0.4} \\right)$"
+  },
+  {
+    "q": 587,
+    "field": "Correct",
+    "source_line": "0.046 (0.035-0.055)"
+  },
+  {
+    "q": 588,
+    "field": "Explanation",
+    "source_line": "(i) Given, ${\\rm{\\;}}x\\left( n \\right) = \\left\\{ {1,2,0,3, - 2,4,7,5} \\right\\}$"
+  },
+  {
+    "q": 588,
+    "field": "Explanation",
+    "source_line": "From the definition of DFT,"
+  },
+  {
+    "q": 588,
+    "field": "Explanation",
+    "source_line": "$\\frac{7}{2} \\ldots $"
+  },
+  {
+    "q": 588,
+    "field": "Explanation",
+    "source_line": "$\\;X\\left( 4 \\right) = 1 - 2 + 0 - 3 - 2 - 4 + 7 - 5 =  - 8$"
+  },
+  {
+    "q": 588,
+    "field": "Explanation",
+    "source_line": "We know that inverse DFT is"
+  },
+  {
+    "q": 588,
+    "field": "Explanation",
+    "source_line": "Put $x = 0$,   $\\;N = 8$"
+  },
+  {
+    "q": 588,
+    "field": "Explanation",
+    "source_line": "(iv) From the expression for parreval's theorem is,"
+  },
+  {
+    "q": 588,
+    "field": "Explanation",
+    "source_line": "\\[\\; = 8\\left[ {1 + 4 + 0 + 9 + 4 + 16 + 49 + 25} \\right]\\]"
+  },
+  {
+    "q": 589,
+    "field": "Correct",
+    "source_line": "0.038 (0.030-0.045)"
+  },
+  {
+    "q": 598,
+    "field": "Correct",
+    "source_line": "0.3125 (0.300-0.320)"
+  },
+  {
+    "q": 603,
+    "field": "Correct",
+    "source_line": "$0.66{\\rm{\\;(0}}{\\rm{.65 - 0}}{\\rm{.67)\\;}}$"
+  },
+  {
+    "q": 605,
+    "field": "Correct",
+    "source_line": "$ - 0.50\\left( { - 0.55 -  - 0.45} \\right)$"
+  },
+  {
+    "q": 605,
+    "field": "Explanation",
+    "source_line": "$\\; =  - \\frac{1}{2}$"
+  },
+  {
+    "q": 606,
+    "field": "Body",
+    "source_line": "If $x\\left[ k \\right] = \\left( {4 - k} \\right)$, then the value of  is"
+  },
+  {
+    "q": 606,
+    "field": "Correct",
+    "source_line": "$3{\\rm{\\;(3}}{\\rm{.00 - 3}}{\\rm{.00)\\;}}$"
+  },
+  {
+    "q": 607,
+    "field": "Correct",
+    "source_line": "0.25 (0.24-0.26)"
+  },
+  {
+    "q": 613,
+    "field": "Correct",
+    "source_line": "3.46 (3.40-3.51)"
+  },
+  {
+    "q": 616,
+    "field": "Body",
+    "source_line": "Let $X\\left( {{e^{j\\omega }}} \\right)$ denote the Fourier transform of the signal $x\\left[ n \\right]$ shown in figure below,"
+  },
+  {
+    "q": 616,
+    "field": "Body",
+    "source_line": "Then the value of  is __. (Answer upto two decimal places)"
+  },
+  {
+    "q": 616,
+    "field": "Correct",
+    "source_line": "992.74 (990.00-995.00)"
+  }
+]
