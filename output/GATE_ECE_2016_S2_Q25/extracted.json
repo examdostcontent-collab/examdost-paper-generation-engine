@@ -1,0 +1,19 @@
+[
+ {
+  "table_index": 0,
+  "Question": "1",
+  "Type": "NAT",
+  "Body": "Light from free space is incident at an angle $\\scriptstyle \\theta_i$ to the normal of the facet of a step-index large core optical fibre. The core and cladding refractive indices are $\\scriptstyle n_1=1.5$ and $\\scriptstyle n_2=1.4$, respectively.\n\nThe maximum value of $\\scriptstyle \\theta_i$ (in degrees) for which the incident light will be guided in the core of the fibre is ________",
+  "Options": [],
+  "Correct": "32.5 to 32.7",
+  "Explanation": "Given: free-space index $\\scriptstyle n_0=1$, core index $\\scriptstyle n_1=1.5$, cladding index $\\scriptstyle n_2=1.4$.\nConcept: light stays guided only when it undergoes total internal reflection at the core-cladding boundary. Let $\\scriptstyle \\theta_r$ be the refraction angle inside the core at the fibre facet. The ray then meets the core-cladding boundary at an angle of incidence $\\scriptstyle 90^{\\circ}-\\theta_r$.\nRefraction at the facet (Snell's law): $\\scriptstyle \\sin\\theta_i=n_1\\sin\\theta_r$.\nLimiting case of total internal reflection: $\\scriptstyle \\sin(90^{\\circ}-\\theta_r)=\\cos\\theta_r=\\tfrac{n_2}{n_1}$.\nThen $\\scriptstyle \\sin\\theta_r=\\sqrt{1-\\left(\\tfrac{n_2}{n_1}\\right)^2}=\\tfrac{\\sqrt{n_1^2-n_2^2}}{n_1}$.\nSubstituting in Snell's law: $\\scriptstyle \\sin\\theta_{i,max}=n_1\\sin\\theta_r=\\sqrt{n_1^2-n_2^2}=\\sqrt{1.5^2-1.4^2}=\\sqrt{0.29}=0.5385$.\nSo $\\scriptstyle \\theta_{i,max}=\\sin^{-1}(0.5385)\\approx 32.6^{\\circ}$.\nHence the maximum angle of incidence is about $\\scriptstyle 32.6^{\\circ}$.\n\nTip: For a ray coming from free space, the core index cancels out and only $\\scriptstyle \\sqrt{n_1^2-n_2^2}=\\sqrt{0.29}$ matters (the numerical aperture of this fibre), so any larger angle than this lets the ray hit the cladding below the critical angle and leak out.",
+  "Subject": "EMFT - ECE",
+  "Topic": "Plane Waves (Normal and Oblique incidence of Plane Waves)",
+  "Correct Marks": "1",
+  "Incorrect Marks": "0",
+  "Hint": "",
+  "Video Solution": "",
+  "PYQ": "GATE ECE 2016 - 2",
+  "OTS ID": ""
+ }
+]

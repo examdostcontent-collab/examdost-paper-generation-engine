@@ -1,0 +1,24 @@
+[
+ {
+  "table_index": 0,
+  "Question": "1",
+  "Type": "MCQ",
+  "Body": "The block diagram of a frequency synthesizer consisting of a Phase Locked Loop (PLL) and a divide-by-$\\scriptstyle N$ counter (comprising $\\scriptstyle \\div 2,\\ \\div 4,\\ \\div 8,\\ \\div 16$ outputs) is sketched below. The synthesizer is excited with a $\\scriptstyle 5\\ \\text{kHz}$ signal (Input 1). The free-running frequency of the PLL is set to $\\scriptstyle 20\\ \\text{kHz}$. Assume that the commutator switch makes contacts repeatedly in the order 1-2-3-4.\n\nThe corresponding frequencies synthesized are:",
+  "Options": [
+   "$\\scriptstyle 10\\ \\text{kHz},\\ 20\\ \\text{kHz},\\ 40\\ \\text{kHz},\\ 80\\ \\text{kHz}$",
+   "$\\scriptstyle 20\\ \\text{kHz},\\ 40\\ \\text{kHz},\\ 80\\ \\text{kHz},\\ 160\\ \\text{kHz}$",
+   "$\\scriptstyle 80\\ \\text{kHz},\\ 40\\ \\text{kHz},\\ 20\\ \\text{kHz},\\ 10\\ \\text{kHz}$",
+   "$\\scriptstyle 160\\ \\text{kHz},\\ 80\\ \\text{kHz},\\ 40\\ \\text{kHz},\\ 20\\ \\text{kHz}$"
+  ],
+  "Correct": "1",
+  "Explanation": "Given: reference input $\\scriptstyle f_{in}=5\\ \\text{kHz}$; PLL free-running frequency $\\scriptstyle 20\\ \\text{kHz}$; counter taps $\\scriptstyle \\div 2,\\ \\div 4,\\ \\div 8,\\ \\div 16$ selected in the order 1-2-3-4.\nConcept: in this synthesizer the VCO output drives the divide-by-$\\scriptstyle N$ counter, and the selected counter tap is fed back to the phase detector. The synthesizer output is the VCO output itself. When the loop is locked, the two inputs of the phase detector have the same frequency.\nLocked condition: $\\scriptstyle f_{fb}=\\tfrac{f_{VCO}}{N}=f_{in}$, so $\\scriptstyle f_{VCO}=N\\,f_{in}$.\nTap 1 ($\\scriptstyle N=2$): $\\scriptstyle f_{VCO}=2\\times 5=10\\ \\text{kHz}$.\nTap 2 ($\\scriptstyle N=4$): $\\scriptstyle f_{VCO}=4\\times 5=20\\ \\text{kHz}$.\nTap 3 ($\\scriptstyle N=8$): $\\scriptstyle f_{VCO}=8\\times 5=40\\ \\text{kHz}$.\nTap 4 ($\\scriptstyle N=16$): $\\scriptstyle f_{VCO}=16\\times 5=80\\ \\text{kHz}$.\nSo the synthesized frequencies in the order 1-2-3-4 are $\\scriptstyle 10\\ \\text{kHz},\\ 20\\ \\text{kHz},\\ 40\\ \\text{kHz},\\ 80\\ \\text{kHz}$.\nHence the correct option is (1).\n\nTip: The free-running frequency of $\\scriptstyle 20\\ \\text{kHz}$ only sets where the VCO starts; once the loop locks, the output is fixed by the reference as $\\scriptstyle f_{out}=N\\,f_{ref}$, so moving the switch from tap 1 to tap 4 doubles the output at every step.",
+  "Subject": "Analog Electronics",
+  "Topic": "Signal Conditioning, Noise and Interference (VCO and PLL)",
+  "Correct Marks": "1",
+  "Incorrect Marks": "0.33",
+  "Hint": "-",
+  "Video Solution": "-",
+  "PYQ": "GATE ECE 2016 - 1",
+  "OTS ID": ""
+ }
+]
