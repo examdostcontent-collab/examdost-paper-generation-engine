@@ -25,6 +25,12 @@ Maps to the `solution` object: `concept`, `formula[]`, `where[]`, then
 `calculation[]` (numeric) **or** `option_analysis[]` (conceptual), and `final_answer`
 (+ `check` for NATs). Full field spec: `paper_spec_schema.md`.
 
+**Run the visual-decision pass for every solution.** Add explanatory diagrams whenever
+the reasoning changes a state, topology, direction, region, grouping, or physical model.
+Place each visual beside the step it explains; never collect unrelated figures at the
+end. For the trigger rubric, subject-specific choices, staged prompt format, placement,
+and technical QA, read `solution-writing-with-diagrams.md` before generating.
+
 **Teach, don't just answer.** The Core Concept is the differentiator — explain *why*,
 the way the reference solutions do ("the fault current is limited solely by the
 machine's sub-transient reactance"), not just "use this formula". The glossary and the
@@ -38,6 +44,13 @@ is fine.
 conceptual / recall MCQs get `option_analysis` (every option addressed). A genuinely
 deep numeric MCQ may carry both. Don't give a recall MCQ a bare one-line solution —
 walk the options.
+
+**Route by input format and reasoning archetype before writing.** `MCQ`, `MSQ`, and
+`NAT` describe how the student answers, not how the solution should teach. Classify the
+reasoning separately (conceptual, numerical, diagram-dependent, transient/state,
+geometry/region, equivalent-model, matrix, proof/counterexample, data/table, or linked
+item) and apply the corresponding method in `solution-methods-by-question-type.md`.
+This prevents a generic four-line calculation from being used for every format.
 
 ## Cognitive-load split (the most important fidelity rule)
 
@@ -101,10 +114,19 @@ Matrices / multi-line derivations / anything that won't render inline go in a
 ## Diagram tags
 - Attach to the **question** via `diagram_prompts`, to the **solution** via
   `solution.solution_diagram_prompts`.
+- Question diagrams define the data to be interpreted. Solution diagrams teach the
+  reasoning: equivalent states, intermediate reductions, marked directions, K-map
+  groups, transformed models, phasors, plots, regions, and similar visual steps.
+- For multi-stage reasoning, emit one solution prompt per meaningful transformation in
+  calculation order. Start each prompt with `Stage N — place after calculation step M:`
+  and give an action caption. The downstream insertion pass must replace the placeholder
+  at that step; a student-facing file must not contain raw prompt text.
 - Be precise and self-contained — the image tool sees only the bracket text:
   `[GEMINI_FLASH_PROMPT: Create a clean vector-style circuit diagram: a 10V DC source in series with R1=2Ω, feeding two parallel branches R2=4Ω and R3=4Ω; label nodes A and B across R3; white background, thin black strokes, no shading.]`
 - Never describe a diagram in prose where a tag belongs, and never attempt to draw it.
 - **Write only the diagram content** — a uniform style block (Segoe UI 11 pt, 1 pt line weight, crisp black-and-white high-contrast, legible/no-overlap, JPEG output) is **appended automatically** to every prompt by the builders (`paperlib.gemini_prompt`). Don't restate fonts/line-weight/output format in each prompt; just describe the circuit/graph and its labels.
+- A diagram must earn its place by removing mental reconstruction or exposing a common
+  trap. Do not force one for direct recall or a one-line substitution.
 
 ## Wildcards (GATE, 10% of volume)
 - Blend **two distinct subjects'** core concepts in one item (e.g. a control-systems

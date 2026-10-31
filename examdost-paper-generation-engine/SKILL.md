@@ -1,6 +1,7 @@
 ---
 name: examdost-paper-generation-engine
-description: ExamDost end-to-end question pipeline — one skill with THREE modes the user picks at the start. (1) GENERATE — ingest a Skill-01 Exam Master Blueprint and mass-produce accurate, non-repeating practice questions / full mock tests with answer keys, rich 4-step solutions, self-verification, and branded .docx/.pdf/boxed-docx/metadata outputs ("make a GATE mock", "generate N questions for <topic>", "build a paper/mock from this blueprint"). (2) TAG — turn any existing question set (.docx/.pdf/.xlsx/.csv/.txt/pasted/paper.json) into the "Mock-01 Metadata"-style 7-column classification Excel mapped to the master taxonomy ("tag/classify these questions", "metadata sheet", "per-question difficulty/type/chapter Excel"). (3) CODE — stamp question CODES into the OTS ID cell and RENUMBER questions inside already-built Boxed .docx / .tex papers from a coding/mapping sheet ("put the codes into the OTS ID", "apply the coding sheet", "update the question numbers from the excel"). USE THIS whenever the user wants to generate questions/mocks, build a question-metadata/tagging spreadsheet, or apply a code/number map to existing papers. If the user doesn't say which, ASK them which of the three jobs they want. Do NOT use for: ANALYSING papers for weightage / exam DNA / PYQ trends (that is exam-psychometrician / Skill-01, which produces the blueprint this skill consumes); reviewing/grading a LECTURE .pptx (teaching-assistant); rebuilding last year's lecture deck (content-studio); a mentoring transcript → student plan (student-blueprint); or converting Word equations to LaTeX (word-to-latex).
+description: >-
+  Generate ExamDost questions and mock tests from an Exam Master Blueprint with verified rich solutions and branded Word, PDF, boxed-Word, and metadata outputs; classify existing questions against the master taxonomy and generate metadata/OTS codes; or apply a code-and-number map to existing boxed papers. Use for requests to generate a mock or question bank, tag/classify questions, assign chapter/type, generate OTS codes, stamp codes, or renumber papers. Route to GENERATE, TAG, or CODE and ask only when the job is ambiguous. Do not use for psychometric/PYQ-trend analysis, lecture decks, mentoring plans, or Word-to-LaTeX conversion.
 ---
 
 # Examdost Paper Generation Engine
@@ -88,6 +89,7 @@ Running `python`/`pip` is pre-authorised here, so scripts run without prompts.
   `references/mode_code_update.md` — the three full workflows.
 - `references/` also holds the GENERATE deep-dives (`blueprint_intake.md`,
   `question_architecture.md`, `verification_rubric.md`, `paper_spec_schema.md`,
+  `solution-methods-by-question-type.md`, `solution-writing-with-diagrams.md`,
   `exclusion_log.md`), the TAG rules (`classification_rules.md`,
   `marks_benchmarks/`), and the CODE formats (`latex_formats.md`).
 - `scripts/` — the consolidated engine for all three modes (generation builders &

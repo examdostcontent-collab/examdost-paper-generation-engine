@@ -97,12 +97,18 @@ This is the **preferred** structure — it renders as *Detailed Solution → 1. 
 | `concept` | 2–4 sentence **plain-English** explanation of the principle (teach it). May name a symbol in passing, but the equation lives in `formula`. *(Replaces the old top-level `concept` line.)* |
 | `formula` | list of governing equation(s) in LaTeX-style markup; each renders as a native, display equation. |
 | `where` | the **glossary** — one entry per symbol: `{"sym": "N_s", "def": "synchronous speed", "unit": "rpm"}`. `unit` optional. `sym` is LaTeX-style and renders as an equation. |
-| `calculation` | **numeric path** — ordered lines: identify givens, substitute, simplify. A line may be prose, an equation, or prose+inline-equation (e.g. `"N_s = \\frac{120 \\times 50}{4} = 1500 rpm"`). |
+| `calculation` | **numeric path** — ordered lines: identify givens, substitute, simplify. A line may be prose, an equation, or prose+inline-equation (e.g. `"N_s = \\frac{120 \\times 50}{4} = 1500 rpm"`). Write the lines first; then align any staged solution diagrams to their calculation-step numbers. |
 | `option_analysis` | **conceptual path** — one entry per option: `{"option": "A", "correct": false, "text": "why this is right/wrong + the trap"}`. The `correct: true` option(s) must match the answer key. |
 | `final_answer` | terminal value with units, or the chosen option restated. |
 | `check` | NAT only — arithmetic expression(s) executed by the validator (unchanged). |
 
 Provide **`calculation` for numeric** items and **`option_analysis` for conceptual/recall MCQs** (a deep numeric MCQ may carry both). The validator requires either one plus a `final_answer`.
+
+Choose the fields by both answer format and reasoning archetype. In particular: use
+`option_analysis` for conceptual MCQ/MSQ/Statement/Assertion-Reason items and test every
+option/statement; use `calculation` for numerical MCQ/NAT and solve before matching an
+MCQ option; a multi-stage or diagram-dependent item may use `calculation` plus ordered
+`solution_diagram_prompts`. Follow `solution-methods-by-question-type.md`.
 
 > **Legacy form still supported:** a solution with `given`/`formula`/`calculation`/`final_answer` (no `concept`/`where`/`option_analysis`) renders as the older 4-step block. New papers should use the rich form above.
 
@@ -123,7 +129,13 @@ Provide **`calculation` for numeric** items and **`option_analysis` for conceptu
 - `concept`: a ≤3-line **plain-English** explanation — **no formulas/symbols/subscripts/equations** (those go in `solution.formula`). The validator warns on math markup here.
 - `solution.calculation`: list of strings, one per line — **never skip intermediate steps.**
 - `solution.check`: **(NAT — strongly recommended)** a pure-arithmetic expression (or list of them; the last is the result) that **computes the answer**, e.g. `"(1500-1440)/1500*100"` or `["120*50/4", "(1500-1440)/1500*100"]`. `validate_paper.py` actually **executes** it (safe eval: `+ - * / ** %`, parentheses, and `sqrt sin cos tan log log10 exp abs radians degrees pi e` …) and ERRORS if the result lands outside the keyed `answer` band. This is the only genuinely code-verified arithmetic — include it for every numeric NAT. Use `pi`, `sqrt(3)`, etc.; no variable names.
-- `solution.solution_diagram_prompts`: optional `[GEMINI_FLASH_PROMPT: ...]` for a final phasor/graph aid in the solution.
+- `solution.solution_diagram_prompts`: ordered `[GEMINI_FLASH_PROMPT: ...]` entries for
+  explanatory visuals in the solution. Use one per meaningful visual stage, not only a
+  final figure. Begin the prompt content with `Stage N — place after calculation step M:`
+  and include an action caption so the downstream image/insertion pass can place it at
+  the exact reasoning step. Run the visual-decision and QA rules in
+  `solution-writing-with-diagrams.md`; omit the field only when a diagram would add no
+  genuine explanatory value.
 - `fingerprint`: the exclusion string `Subject_Chapter/Topic_Type_CoreVars/Concept` (see `exclusion_log.md`). Every question must carry one.
 
 ## Math notation (the light markup the builders render to Unicode)

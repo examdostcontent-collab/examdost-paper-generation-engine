@@ -21,7 +21,18 @@ Like an elite mentor and a meticulous paper setter: direct, simple, human, exact
    - **Value signature** (the multiset of numbers): the same numbers as a logged item is an exact-value repeat → ERROR.
    - **Template & diagram signatures** (the number-free *structure*): a text template may recur **at most 2× across the whole series**, and a **diagram/circuit topology at most 1×**. Beyond that → ERROR. This closes the loophole that lets one question be re-skinned across every mock with only fresh numbers — *especially the same diagram drawn with different data*, which is the #1 repetition source. A fresh max-power-transfer question with new numbers AND a genuinely different circuit configuration is good; the same circuit with new numbers, mock after mock, is now a build failure. To vary a recurring concept you must change the **structure** (configuration, given↔unknown, framing, topology), not just the values.
 2. **Structural Blueprint Fidelity.** Apply Part C's structural constraints perfectly and pull each subject's trap logic and number style from Part B's **per-subject micro DNA** (never a paper-wide average). **1-mark questions carry a lower cognitive load** (fewer steps, straightforward concepts); **2-mark questions deploy high-level conceptual intersections, multi-step derivations, or deep psychological traps.**
-3. **Diagram Asset Tagging.** Never render or code visual diagrams. If a question or solution needs a circuit, graph, matrix, waveform, or phasor visual, emit a precise image-generation instruction in brackets: `[GEMINI_FLASH_PROMPT: Create a clean circuit diagram showing ...]` — describe **only the diagram content and labels**. A uniform house style (Segoe UI 11 pt · 1 pt line weight · crisp black-and-white high-contrast · legible, non-overlapping · JPEG output) is **auto-appended to every prompt** by the builders (`paperlib.gemini_prompt`), so all diagrams come out consistent. The builders render the full prompt as a labelled placeholder for the downstream image tool.
+3. **Diagram Asset Tagging + Visual Reasoning.** Never improvise unverified artwork inside
+   the paper builders. For every solution, run the visual-decision pass in
+   `references/solution-writing-with-diagrams.md`. If a state, topology, direction,
+   region, grouping, transformed model, or physical relationship is easier to understand
+   visually, emit precise `[GEMINI_FLASH_PROMPT: ...]` entries in
+   `solution.solution_diagram_prompts`—one per meaningful stage, ordered with the
+   calculation. Start each prompt with `Stage N — place after calculation step M:` and
+   include an action caption. Question-side visuals remain in `diagram_prompts`. Describe
+   **only the diagram content and labels**; the builders append the house style. The
+   downstream diagram creation/insertion pass replaces each placeholder at its stated
+   step, and the final Word/PDF must be visually audited. Do not add a diagram when it
+   merely repeats a direct formula or recall fact.
 4. **Coverage & Variation — never two near-identical mocks.** The exam has fixed *weightage* (so subject counts SHOULD match the blueprint), but within that weightage a real exam asks **different sub-topics, angles and difficulties** each time. A mock series adds value only if each paper covers fresh ground. So: (a) **rotate across the FULL syllabus** — fill each subject's quota first from in-syllabus types NOT used in prior mocks (use `scripts/coverage_report.py`), not just the handful of high-yield archetypes; (b) when an archetype must reappear, **vary the structure** — flip given↔unknown, change the sub-case/configuration, change the framing (direct / reverse / match / assertion-reason / statement), and shift the difficulty; (c) hit a **difficulty distribution** with a small deliberate **curveball/stretch quota**, not the same easy band every time. Value-signature dedup (principle 1) stops *number* repeats; the **template/diagram caps** (principle 1) now make *structure* repeats a hard ERROR — this principle is how you stay clear of those caps. **`coverage_report.py` prints a "STRUCTURES AT THE SERIES CAP" block** listing the templates/diagrams the validator will reject another of — treat that list as off-limits and pick fresh structures. **Figure questions are the priority:** a circuit topology may appear only ONCE in the whole series, so each figure mock must introduce genuinely new diagrams (different topology — series↔parallel, add/move a source, bridge/ladder/Y-Δ — not the same picture with new numbers).
 
 ## The deliverables (what "done" looks like)
@@ -176,13 +187,31 @@ Detailed Solution
 
 This is the **ExamDost solution standard** — richer and more pedagogical than a bare worked answer. Numeric items use *Calculation Steps*; conceptual/recall MCQs use *Evaluating the Options*; a deep numeric MCQ may use both. Full guidance — the JSON shape, cognitive-load split, NAT conventions, diagram-tag style — is in `references/question_architecture.md` and `references/paper_spec_schema.md`. Read them before generating.
 
+**Use a type-specific method, not one generic solution template.** Route each item first
+by input format (MCQ/MSQ/NAT/Statement/Assertion-Reason/Match/linked) and again by its
+reasoning archetype (conceptual, numerical, diagram-dependent, transient/state,
+geometry/region, equivalent model, matrix, proof/counterexample, or data/table). Apply
+`references/solution-methods-by-question-type.md`. Key invariants: numerical MCQs are
+solved before consulting options; every MSQ option is tested independently; NAT answers
+carry precision/tolerance and independent checks; Statement/Assertion-Reason items are
+truth-tested before mapping to an option; diagram/state questions expose each model
+change visually.
+
+**Diagram-supported solving is part of this standard.** Before finalising each item,
+decide whether a learner would otherwise have to reconstruct a state/topology/grouping
+mentally. When yes, add the smallest useful visual sequence and place every diagram at
+the step that uses it. Typical patterns are original circuit → successive equivalents;
+time-domain model → Laplace-domain model; Boolean expression → K-map groups → logic
+realisation; or physical system → phasor/characteristic/compensation view. Read
+`references/solution-writing-with-diagrams.md` in full and apply its QA checklist.
+
 **Every question also carries, in `paper.json`:** a `difficulty` of **1 (Easy) / 2 (Moderate) / 3 (Difficult)** that you assign from its cognitive load (match the blueprint's difficulty profile), and a `type` (MCQ / NAT / MSQ / Statement / Assertion-Reason). For MCQs, set `type_detail` to `"theory"` or `"numerical"` (or let it be inferred: a calculation-based MCQ → Numerical MCQ, a conceptual one → TheoryMCQ). These drive the metadata Excel's *difficulty index* and type columns.
 
 ### Verification (three layers, mandatory before any file is built)
 
 Generation is not done until it is **verified**. Three layers, all must pass — full detail in `references/verification_rubric.md`:
 
-**Layer 1 — model self-review.** For **every** question, independently re-solve it and confirm: the keyed answer matches the worked Step 4; for MCQ/MSQ **each distractor is genuinely wrong** (no two defensible answers); for NAT the value/range and units are right; cognitive load fits the mark value; the stem is unambiguous. Give every numeric NAT a `solution.check` arithmetic expression.
+**Layer 1 — model self-review.** For **every** question, independently re-solve it and confirm: the keyed answer matches the worked Step 4; for MCQ/MSQ **each distractor is genuinely wrong** (no two defensible answers); for NAT the value/range and units are right; cognitive load fits the mark value; the stem is unambiguous; and the visual-decision pass was performed. When solution diagrams are present, verify topology, labels, directions, polarity, states, axes/grouping, calculation-step placement, and agreement with the equations. Give every numeric NAT a `solution.check` arithmetic expression.
 
 **Layer 2 — independent blind re-solve audit (answer-accuracy guarantee — every question, every type).** This is the layer that makes *all* keys trustworthy, not just the numeric ones. **Re-solve every question from the stem alone, WITHOUT looking at the keyed answer or the written solution** — ideally as a separate pass / fresh subagent so there's no anchoring — then compare the independently-derived answer to the key. They must agree. This is the **only** check that catches a wrong key on a **conceptual / theory MCQ, Statement-type, or Assertion-Reason** item, which the deterministic gate (Layer 3) cannot evaluate arithmetically. Rules:
 - **100% coverage, zero exceptions** — audit every question, not a sample. Batch it (~10–15 at a time) alongside generation.
@@ -241,6 +270,12 @@ Then present all file paths, the verification summary, and a one-line distributi
 - `scripts/requirements.txt` — dependencies (python-docx, reportlab, python-pptx, openpyxl).
 - `references/blueprint_intake.md` — how to ingest the 4-part blueprint (.xlsx or pasted) and what each part feeds.
 - `references/question_architecture.md` — the mandatory per-question structure, cognitive-load split, diagram-tag and NAT conventions.
+- `references/solution-methods-by-question-type.md` — solution routing and audit rules
+  for MCQ, MSQ, NAT, Statement, Assertion-Reason, match/table, diagram, transient,
+  equivalent-model, geometry, matrix, proof and linked-data questions.
+- `references/solution-writing-with-diagrams.md` — the approved PYQ-book method for
+  stage-by-stage explanatory visuals, placement, prompts, subject-specific choices, and
+  technical/rendered QA.
 - `references/verification_rubric.md` — the mandatory self-verification pass.
 - `references/paper_spec_schema.md` — the `paper.json` schema every builder reads.
 - `references/exclusion_log.md` — the fingerprint string format and the append procedure.
@@ -254,7 +289,10 @@ Then present all file paths, the verification summary, and a one-line distributi
 - **Don't average the DNA.** Pull traps and number style from Part B *micro* (per subject), not a paper-wide blend. Generic questions read as fake.
 - **Don't manufacture difficulty with ugly arithmetic.** Use visual misdirection, non-standard variables, and conceptual edge-cases.
 - **Don't mismatch cognitive load.** 1-mark = low load; 2-mark = multi-step / conceptual-intersection / deep trap.
-- **Don't render diagrams.** Emit `[GEMINI_FLASH_PROMPT: ...]` tags; never draw or code visuals.
+- **Don't leave diagram prompts as the final student experience.** Emit precise staged
+  `[GEMINI_FLASH_PROMPT: ...]` tags during generation, then use the downstream
+  creation/insertion pass and verify the rendered figures. Never ship an unverified
+  diagram or raw prompt placeholder in a student-facing final file.
 - **Don't build files inline.** Always go through the scripts so every paper stays branded and consistent.
 - **Don't dump output in the project dir.** Write to `~/Desktop/Generated Papers/<Exam>/`.
 - **Don't skip the wildcard 10% or the metadata/format choices** the user locked in Phase 2.
