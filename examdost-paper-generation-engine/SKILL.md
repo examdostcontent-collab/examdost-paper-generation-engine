@@ -96,3 +96,11 @@ Running `python`/`pip` is pre-authorised here, so scripts run without prompts.
   validator, taxonomy + metadata tooling, the code-injection engines).
 - `assets/chapter_topic_master.xlsx` + `master_source.json` — the shared taxonomy
   and its live-sheet sync config.
+
+**Standing rule: doubtful keys get a ChatGPT-Max second opinion (user, 2026-11-06, every mode and every
+paper).** Wherever an answer key is not confidently settled (UNSURE, blind/proofreader disagreement,
+difference from a printed key, two defensible options, current-affairs facts keyed from memory), ask
+ChatGPT's strongest model (the Max/Pro-tier model the user calls "Astra max plan") blind with
+`scripts/chatgpt_key_check.py`, compare, re-derive any disagreement, update the key and the solution,
+and record `confirmed/changed by ChatGPT-max` in the notes workbook. Full process:
+`references/Doubtful_Keys_ChatGPT_Process.md`.
