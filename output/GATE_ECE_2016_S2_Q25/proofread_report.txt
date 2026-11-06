@@ -1,0 +1,76 @@
+##############################################################################
+# FULL PROOF READING PASS: C:/Users/rahul/.claude/Skills/examdost-paper-generation-engine/output/GATE_ECE_2016_S2_Q25/GATE_ECE_2016_S2_Q25_box.docx
+# Active domain tags: (none -- generic/non-technical subject)
+##############################################################################
+
+Total questions: 1  |  Embedded images: 1
+
+[OTS/Question numbering] OK: False
+  {"ok": false, "start": 1, "end": 1, "gaps": [], "mismatches": [{"index": 0, "Question": "1", "OTS ID": "", "expected_suffix": 1}], "ots_id_lengths": [0], "fixed_width_ots": true}
+
+======================================================================
+STRUCTURAL / ANSWER-KEY / DUPLICATE CHECKS
+======================================================================
+Marks/answer-format findings: 0
+
+Exact full duplicates (Body+Explanation+Correct): 0
+(Reference only) Body-only exact matches: 0 -- expect this to be inflated on image-heavy question banks; not itself a finding
+
+Subject-mismatch keyword hits: 0
+
+[Item 25] Closing $ swallowing the next numbered-list marker: 0
+
+[Item 103] Crammed-onto-one-line Body (Assertion/Reason, numbered statements/pairs/events lists): 0
+
+Near-duplicate question pairs (reworded, same fact): 0
+
+======================================================================
+LATEX QUALITY CHECKLIST (text_checks.py)
+======================================================================
+
+Domain-gated items skipped as N/A for this subject: ['hex', 'boolean', 'matrix', 'radix', 'transfer_function']
+
+Items in the checklist not automated here (see text_checks.NOT_AUTOMATED_ITEMS for why):
+  [3]
+  [4_5_8]
+  [9_run_split]
+  [12_14_15_16_17_18_19_20_21_22_23_24]
+  [28]
+  [30b]
+  [31]
+  [32_34]
+  [33]
+  [35_36]
+  [42_to_51]
+  [53_54]
+  [56]
+  [57_59_63_to_71_73_75_77_89_90_91_92_94_97_to_112_114]
+  [117]
+  [118]
+  [section_11_fidelity_audit]
+  [131]
+
+======================================================================
+DOCX-STRUCTURAL CHECKS (docx_checks.py)
+======================================================================
+[Item 9] Multi-run \$ paragraphs: 0; genuinely straddling: 0
+[Item 56] Gemini-prompt placeholder mentions: 0
+[Item 117] Native superscript/subscript formatting on plain text: 0
+[Item 114] Diagrams: 1 total; 0 exceed 12% margin; distinct display widths (in): [4.8]
+[Item 128] Diagrams with a solid-black background (flattened-transparency bug): 0
+
+======================================================================
+KATEX RENDER CHECK (katex_check.js)
+======================================================================
+Total LaTeX segments checked: 16
+Errors: 0
+
+
+======================================================================
+SECTION 11 -- FIDELITY AUDIT AGAINST TRUE ORIGINAL
+======================================================================
+No --true-original path given. Per SKILL.md: state explicitly that no earlier pre-conversion version was checked, rather than silently omitting this section.
+
+##############################################################################
+# END OF REPORT
+##############################################################################

@@ -9,7 +9,7 @@
 
 You take **a set of exam questions the user already has** — in any format — and
 produce one downloadable Excel: the **"Mock-01 Metadata"-style sheet**, one row
-per question, seven fixed columns. That sheet is how every ExamDost question gets
+per question, eight fixed columns. That sheet is how every ExamDost question gets
 filed against the canonical taxonomy so it lines up with the paper analyses
 (Skill-01) and the generated papers (Skill-02).
 
@@ -18,7 +18,7 @@ You read questions that exist and you classify them. That's the whole job, and
 the bar is simple: **right question, right row, right values, names snapped to
 the master** so the numbers come out clean.
 
-## The output — exactly these 7 columns, in this order
+## The output — exactly these 8 columns, in this order
 
 | # | Header | What goes in it |
 |---|--------|-----------------|
@@ -29,10 +29,15 @@ the master** so the numbers come out clean.
 | 5 | `difficulty index` | `1` Easy / `2` Moderate / `3` Difficult |
 | 6 | `Marks` | marks for the question (e.g. 1 or 2) |
 | 7 | `TheoryMCQ/Numerical MCQ/NAT/MSQ/StatementType/Assertion-Reason` | the question type |
+| 8 | `Code` | auto-derived OTS ID: `GAT+EE+SubjectCode(3)+Chapter(2)+Type(2)+Difficulty(1)+QuestionNo(4)` — blank if the subject has no known code or chapter/type didn't map |
 
 These headers and the 1/2/3 difficulty scale are fixed — they must match the
 existing template, so do not rename, reorder, or recolour them. The builder
-script owns the exact headers; you just feed it clean data.
+script owns the exact headers; you just feed it clean data. `Code` is computed
+automatically by the builder from columns 2–6 and the question number — never
+type it by hand, and if this docx/paper will also get its OTS ID field filled
+(CODE mode or a boxed-docx pass), these are the same codes — reuse them, don't
+regenerate differently.
 
 **Where the chapter & type numbers come from:** you never type them by hand. You
 write the canonical **chapter name** and **topic name** for each question; the
@@ -52,18 +57,17 @@ or `General Science` — never a generic "GK"/"General Knowledge" subject.
 
 ## Where to write the output
 
-This is a global skill that runs in any chat. **Always write the finished sheet
-to its own dedicated folder, `~/Desktop/Question Metadata/`** — never into the
-current working/project directory, never into this skill's own folder, and
-**never alongside the upload.** That last point matters: the input is often a
-`paper.json` (or a paper) that lives inside `~/Desktop/Generated Papers/...`, and
-the user does not want metadata sheets landing in there — keep them cleanly
-separate in `Question Metadata/`. Only use a different location if the user names
-one explicitly.
+**Write the finished sheet into the same folder as the source question file**
+(the docx/pdf/xlsx the user gave you) — not this skill's own folder, and not a
+separate `Question Metadata/` staging area. If the source is a `paper.json` with
+no obvious sibling folder (e.g. it lives inside `~/Desktop/Generated Papers/...`
+with no natural "question set" home), fall back to
+`~/Desktop/Question Metadata/`. Only override either default if the user names a
+location explicitly.
 
 Name the file after the set, e.g. `Mock-01 Metadata.xlsx` or
 `<Set name> Metadata.xlsx`. Keep the intermediate `questions.json` in a
-`~/Desktop/Question Metadata/_workspace/` scratch subfolder.
+`_workspace/` scratch subfolder next to wherever the sheet is going.
 
 ---
 

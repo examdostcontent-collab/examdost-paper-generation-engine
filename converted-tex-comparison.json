@@ -1,0 +1,198 @@
+[
+  {
+    "question": 518,
+    "field": "Explanation",
+    "source_formula_count": 2,
+    "final_formula_count": 6,
+    "unmatched_source": [
+      "]"
+    ]
+  },
+  {
+    "question": 519,
+    "field": "Explanation",
+    "source_formula_count": 4,
+    "final_formula_count": 9,
+    "unmatched_source": [
+      "u\\left({2-t}\\right)=\\left\\{{\\begin{array}{*{20}{l}}1&{-\\infty<t<2}\\\\0&{\\;elsewhere\\;}\\end{array}}\\right."
+    ]
+  },
+  {
+    "question": 527,
+    "field": "Body",
+    "source_formula_count": 4,
+    "final_formula_count": 5,
+    "unmatched_source": [
+      "{\\rm{X}}\\left({\\rm{f}}\\right)=\\left\\{{\\begin{array}{*{20}{c}}{1-\\frac{{\\left|f\\right|}}{{200}},}&{\\left|f\\right|\\le200{\\rm{\\;Hz}}}\\\\{0,}&{\\left|f\\right|>200{\\rm{\\;Hz}}}\\end{array}}\\right."
+    ]
+  },
+  {
+    "question": 528,
+    "field": "Explanation",
+    "source_formula_count": 3,
+    "final_formula_count": 7,
+    "unmatched_source": [
+      "\\begin{array}{*{20}{c}}{u\\left[{1-\\midt}\\right]=1\\;;1-\\left|t\\right|>0}\\\\{1>\\left|t\\right|}\\\\{\\Rightarrow\\left|t\\right|<1}\\end{array}"
+    ]
+  },
+  {
+    "question": 532,
+    "field": "Body",
+    "source_formula_count": 7,
+    "final_formula_count": 8,
+    "unmatched_source": [
+      "{\\rm{X}}\\left({\\rm{s}}\\right)"
+    ]
+  },
+  {
+    "question": 535,
+    "field": "Explanation",
+    "source_formula_count": 12,
+    "final_formula_count": 17,
+    "unmatched_source": [
+      "\\begin{array}{*{20}{c}}{X\\left(z\\right)={{(\\alpha)}^N}\\left[{\\frac{{{{\\left({\\frac{1}{\\alpha}}\\right)}^N}-{z^{-N}}}}{{1-\\alpha{z^{-1}}}}}\\right]\\left|z\\right|>0\\_\\_\\_\\_\\_\\left(1\\right)}\\end{array}"
+    ]
+  },
+  {
+    "question": 549,
+    "field": "Body",
+    "source_formula_count": 4,
+    "final_formula_count": 4,
+    "unmatched_source": [
+      "i/px\\left[n\\right]=\\left[{\\begin{array}{*{20}{c}}{1;}&{0\\len\\le2}\\\\{0;}&{\\;elsewhere\\;}\\end{array}}\\right."
+    ]
+  },
+  {
+    "question": 564,
+    "field": "Explanation",
+    "source_formula_count": 2,
+    "final_formula_count": 3,
+    "unmatched_source": [
+      "\\begin{array}{*{20}{r}}{u\\left[{x\\left(t\\right)}\\right]}&{\\;=1}&{\\;\\;\\;\\;\\;\\;\\;\\;}&{}&{x\\left(t\\right)>0}\\\\{}&{\\;=0}&{\\;\\;\\;\\;\\;\\;\\;\\;}&{}&{x\\left(t\\right)<0}\\end{array}"
+    ]
+  },
+  {
+    "question": 565,
+    "field": "Explanation",
+    "source_formula_count": 3,
+    "final_formula_count": 2,
+    "unmatched_source": [
+      "{\\rm{cos}}(",
+      ")"
+    ]
+  },
+  {
+    "question": 570,
+    "field": "Explanation",
+    "source_formula_count": 1,
+    "final_formula_count": 15,
+    "unmatched_source": [
+      "{{\\rm{C}}_{\\rm{n}}}"
+    ]
+  },
+  {
+    "question": 580,
+    "field": "Explanation",
+    "source_formula_count": 6,
+    "final_formula_count": 9,
+    "unmatched_source": [
+      "\\therefore\\;g\\left(t\\right)="
+    ]
+  },
+  {
+    "question": 581,
+    "field": "Body",
+    "source_formula_count": 7,
+    "final_formula_count": 7,
+    "unmatched_source": [
+      "{x_2}\\left[n\\right]=\\left\\{{\\begin{array}{*{20}{c}}{\\sqrt{1.2\\alpha},}&{\\;for\\;n=0,1}\\\\0&{\\;otherwise\\;}\\end{array}}\\right."
+    ]
+  },
+  {
+    "question": 581,
+    "field": "Explanation",
+    "source_formula_count": 5,
+    "final_formula_count": 6,
+    "unmatched_source": [
+      "{x_2}\\left[n\\right]=\\left\\{{\\begin{array}{*{20}{c}}{\\sqrt{1.2\\alpha},}&{\\;for\\;n=0,1}\\\\0&{\\;otherwise\\;}\\end{array}}\\right."
+    ]
+  },
+  {
+    "question": 587,
+    "field": "Explanation",
+    "source_formula_count": 4,
+    "final_formula_count": 6,
+    "unmatched_source": [
+      "\\begin{array}{*{20}{l}}\\therefore&{{\\rm{\\;Area\\;}}=\\frac{{s+2}}{{{{(s+2)}^2}+{{(4\\pi)}^2}}}{|_{s=0}}=\\frac{2}{{4+4{\\pi^2}}}}\\\\\\therefore&{{\\rm{\\;Area\\;}}=0.046}\\end{array}"
+    ]
+  },
+  {
+    "question": 588,
+    "field": "Explanation",
+    "source_formula_count": 7,
+    "final_formula_count": 6,
+    "unmatched_source": [
+      "{\\rm{\\;}}x\\left(n\\right)=\\left\\{{1,2,0,3,-2,4,7,5}\\right\\}",
+      "N=8",
+      "\\frac{7}{2}\\ldots",
+      "\\;X\\left(4\\right)=1-2+0-3-2-4+7-5=-8",
+      "x=0",
+      "\\;N=8"
+    ]
+  },
+  {
+    "question": 589,
+    "field": "Body",
+    "source_formula_count": 7,
+    "final_formula_count": 7,
+    "unmatched_source": [
+      "{x_p}\\left(n\\right)=\\left\\{{\\begin{array}{*{20}{c}}{x\\left[n\\right]}&{\\;for\\;n=0,1,2}\\\\0&{\\;for\\;n=3,4}\\end{array}}\\right."
+    ]
+  },
+  {
+    "question": 600,
+    "field": "Explanation",
+    "source_formula_count": 14,
+    "final_formula_count": 16,
+    "unmatched_source": [
+      "{X_{1a}}\\left({j\\omega}\\right)=\\left\\{{\\begin{array}{*{20}{l}}{1;}&{\\left|\\omega\\right|<3\\pi}\\\\{0;}&{\\;otherwise\\;}\\end{array}}\\right.",
+      "\\therefore\\;\\;\\;\\;\\;\\;{X_1}\\left({j\\omega}\\right)=\\left\\{{\\begin{array}{*{20}{l}}{3j\\omega;\\left|\\omega\\right|<3\\pi}\\\\{0;\\;otherwise\\;}\\end{array}}\\right."
+    ]
+  },
+  {
+    "question": 605,
+    "field": "Explanation",
+    "source_formula_count": 1,
+    "final_formula_count": 12,
+    "unmatched_source": [
+      "\\;=-\\frac{1}{2}"
+    ]
+  },
+  {
+    "question": 607,
+    "field": "Explanation",
+    "source_formula_count": 4,
+    "final_formula_count": 7,
+    "unmatched_source": [
+      "\\;h\\left[n\\right]=\\left\\{{\\begin{array}{*{20}{l}}{{\\alpha^n};}&{0\\len\\le3}\\\\{0;}&{\\;otherwise\\;}\\end{array}}\\right."
+    ]
+  },
+  {
+    "question": 624,
+    "field": "Explanation",
+    "source_formula_count": 6,
+    "final_formula_count": 6,
+    "unmatched_source": [
+      "\\begin{array}{*{20}{l}}{x\\left[n\\right]}&{={{\\left({\\frac{1}{2}}\\right)}^n}u\\left[n\\right]-4\\left({{2^n}}\\right)u\\left[{-n-1}\\right]}\\\\\\therefore&{x\\left(1\\right)=\\frac{1}{2}=0.5}\\end{array}"
+    ]
+  },
+  {
+    "question": 625,
+    "field": "Explanation",
+    "source_formula_count": 9,
+    "final_formula_count": 13,
+    "unmatched_source": [
+      "\\begin{array}{*{20}{r}}{\\Rightarrow\\;\\;\\;L{t_{s\\to\\infty}}s\\cdot\\frac{{b\\left({s+a}\\right)}}{{s\\left({s+b}\\right)}}}&{\\;=2}\\\\b&{\\;=2}\\end{array}"
+    ]
+  }
+]

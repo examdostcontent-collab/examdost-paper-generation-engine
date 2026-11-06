@@ -1,0 +1,24 @@
+[
+ {
+  "table_index": 0,
+  "Question": "1",
+  "Type": "MCQ",
+  "Body": "Operators $\\scriptstyle \\square$, $\\scriptstyle \\lozenge$ and $\\scriptstyle \\rightarrow$ are defined by: $\\scriptstyle a\\ \\square\\ b=\\tfrac{a-b}{a+b}$; $\\scriptstyle a\\ \\lozenge\\ b=\\tfrac{a+b}{a-b}$; $\\scriptstyle a\\rightarrow b=ab$.\nFind the value of $\\scriptstyle (66\\ \\square\\ 6)\\rightarrow(66\\ \\lozenge\\ 6)$.",
+  "Options": [
+   "$\\scriptstyle -2$",
+   "$\\scriptstyle -1$",
+   "$\\scriptstyle 1$",
+   "$\\scriptstyle 2$"
+  ],
+  "Correct": "3",
+  "Explanation": "Given: $\\scriptstyle a\\ \\square\\ b=\\tfrac{a-b}{a+b}$, $\\scriptstyle a\\ \\lozenge\\ b=\\tfrac{a+b}{a-b}$ and $\\scriptstyle a\\rightarrow b=ab$, to be evaluated for $\\scriptstyle a=66,\\ b=6$.\nStep 1: $\\scriptstyle 66\\ \\square\\ 6=\\tfrac{66-6}{66+6}=\\tfrac{60}{72}=\\tfrac{5}{6}$.\nStep 2: $\\scriptstyle 66\\ \\lozenge\\ 6=\\tfrac{66+6}{66-6}=\\tfrac{72}{60}=\\tfrac{6}{5}$.\nStep 3: apply $\\scriptstyle \\rightarrow$, which multiplies its two operands: $\\scriptstyle \\tfrac{5}{6}\\rightarrow\\tfrac{6}{5}=\\tfrac{5}{6}\\times\\tfrac{6}{5}=1$.\nHence the correct option is (3).\n\nTip: Evaluate each bracket separately first. Here $\\scriptstyle 66\\ \\square\\ 6$ and $\\scriptstyle 66\\ \\lozenge\\ 6$ are reciprocals of each other, because swapping the numerator and denominator of $\\scriptstyle \\tfrac{a-b}{a+b}$ gives $\\scriptstyle \\tfrac{a+b}{a-b}$, so their product under $\\scriptstyle \\rightarrow$ is $\\scriptstyle 1$ for any $\\scriptstyle a\\neq b$.",
+  "Subject": "Numerical Ability",
+  "Topic": "Algebra (Algebraic Identities)",
+  "Correct Marks": "1",
+  "Incorrect Marks": "0.33",
+  "Hint": "-",
+  "Video Solution": "-",
+  "PYQ": "GATE ECE 2015 - 1",
+  "OTS ID": ""
+ }
+]

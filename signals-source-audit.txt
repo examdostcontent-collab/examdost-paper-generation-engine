@@ -1,0 +1,5835 @@
+`
+
+
+
+    Question      517
+    Type          MSQ
+    Body          The input-output relationship between the system is
+                  y ( t ) = x ( cos ( 3t ) ) . Then the system is
+
+    Option        Linear
+    Option        TIV
+    Option        Causal
+    Option        Dynamic
+    Correct       1,4
+    Explanation   y ( t ) = x ( cos ( 3t ) )
+                  y1 ( t ) = x1 cos ( 3t ) 
+                  y 2 ( t ) = x 2 cos ( 3t ) 
+                  y3 ( t ) = x1 ( cos ( 3t ) ) + x 2 ( cos ( 3t ) )
+                  y3 ( t ) = y1 ( t ) + y 2 ( t )
+                  So, linear system
+                  TIV/TV; y ( t ) = x ( cos ( 3t ) )
+                  y1 ( t ) = x cos ( 3t ) − t 0 
+                  y ( t − t 0 ) = x cos ( 3 ( t − t 0 ) )
+                  y1 ( t )  y ( t − t 0 )
+                  TV
+                   y ( t ) = x cos ( 3t ) 
+                  y ( 0 ) = x (1)
+                  Present output depends on future input. so, non-causal and
+                  dynamic system.
+
+    Subject       Signals and Systems
+`
+
+
+
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         518
+    Type             NAT
+    Body             The value of the summation n =0 (4) n  ( n + 1) is ____
+
+    Correct          0
+    Explanation      From SIFTING property:
+                      nN=2N1 x ( n )  ( n − n 0 ) = x ( n 0 ) N1  n  N 2
+                     = 0 otherwise
+                     So, n =0 (4)n  ( n + 1) = 0[n 0 = −1 , lies out side the limits ]
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+`
+
+
+
+    PYQ
+    OTS ID
+
+
+
+    Question   519
+    Type       MCQ
+    Body       Which of the following graph corresponds to
+                               t −2
+               x ( t ) = 4tri       u (2 − t ).
+                                 2 
+    Option
+
+
+
+
+    Option
+
+
+
+
+    Option
+`
+
+
+
+    Option
+
+
+
+
+    Correct       1
+    Explanation       t −
+                  Tr       is a triangular pulse of width 2 centered at
+                       
+                  t =
+
+
+
+
+                              1 −  t  2
+                  u (2 − t) = 
+                              0 elsewhere
+
+
+
+
+    Subject       Signals and Systems
+    Topic
+`
+
+
+
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         520
+    Type             MCQ
+    Body             x ( t ) is a real continuous time signal whose magnitude
+                     frequency response     ( X ( j) ) is shown below. After
+                     sampling x ( t ) at 100rad.s−1 , the spectral point P is down-
+                     converted to ____ rad.s−1 in the spectrum of the sampled
+                     signal.
+
+
+
+
+    Option           12.5
+`
+
+
+
+    Option           25
+    Option           6.25
+    Option           37.5
+    Correct          4
+    Explanation      X (  ) is given for   0 . We know X (  ) is even
+
+
+
+
+                     s = 100rad / sec
+                     The F.T of sampled signal is
+                     XS ( ) = s n =− X (  − ns )
+                     When the impulse at  = −162.5 is shifted right side by
+                     2s = 200 , we can see an impulse at 200 − 162.5 = 37.5 .
+                     ∴ The spectral point P is down converted to 37.5rad / sec .
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+
+    Question         521
+    Type             MCQ
+    Body             Let x ( n ) = 16,8, 4, 2,1 . Then the signal x ( −n + 4 ) is
+                     ____
+    Option           0,1, 2, 4,8,16
+    Option           1, 2, 4,8,16, 0
+    Option           1, 2, 0, 4,8,16
+    Option           16,8, 0, 4, 2,1
+    Correct          1
+    Explanation      (1) x ( n ) → x ( −n ) ⎯⎯⎯→
+                                               nigh
+                                             shiftby 4
+                                                       x (4 − n) x
+                     (2) x ( n ) ⎯⎯ by 4
+                                        ⎯→ x  n + 4 ⎯⎯⎯
+                                  leftshift            Fold
+                                                            → x  −n + 4
+
+                                 
+                     x ( n + 4 ) = 16,8, 4, 2,1, 0
+                                                
+                                                    
+                                     
+                     x ( −n + 4 ) = 0,1, 2, 4,8,16
+                                         
+                                                        
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0.33
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+
+    Question      522
+    Type          NAT
+    Body          The trigonometric Fourier series expansion of the periodic
+                  function in the figure has coefficients ( a n ) and ( b n ) for
+                  cosine and sine terms, respectively. The value of a1 / a 3 is
+                  ____ .
+
+
+
+
+    Correct       -3
+    Explanation           2
+                            T
+                  a n =  −2T x ( t ) cosn0 tdt
+                          T 2
+                  x ( t ) is even
+                          4 T2
+                  a n =  x ( t ) cos n0 tdt
+                          T 0
+                   T=4
+                         4 2
+                  a n =  x ( t ) cos n0 tdt
+                         4 0
+                       1               2
+                  =  cos n0 tdt +  − cos n0 tdt
+                        0              1
+                                 1                 2
+                    sin n0 t   sin n0 t 
+                  =            −          
+                      n 0    0  n0 0
+`
+
+
+
+                        1
+                     =     sin n0 − sin 0 − sin 2n0 + sin n0 
+                       n0
+                        1
+                     =      2 sin n0 − sin 2n0 
+                       n0
+                           2 2 
+                     0 =      =      =
+                           T       4 2
+                            1                     
+                     a1 =          2sin   − sin 2  
+                                     2          2 
+                          (1)
+                              2
+                          4
+                     a1 =
+                          
+                           1         3           
+                     a3 =      2sin      − sin 3 
+                                      2
+                          3                       
+                            2
+                       −4
+                     =
+                       3
+                     a1
+                        = −3
+                     a3
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+    Question      523
+    Type          MCQ
+
+                                              − Sinc ( f ) df is ____
+                  The value of the integral  +
+    Body                                             3
+
+
+
+    Option        1
+    Option        3/ 4
+    Option        2/3
+    Option        1/ 2
+    Correct       2
+                                                  
+    Explanation    Sin c ( f ) Sin c ( f ) df =  Tri ( t ) rect ( t ) dt = 
+                               2
+                                                                                 1/2
+                                                                                        Tri ( t ) dt = 3 / 4 = 0.75
+                      −                           −                            −1/2
+
+                                                             OR
+                  Use Plancheral's theorem
+                                                   
+                          X ( f ) Y* ( f ) df =  x ( t ) y ( t ) dt
+                      −                            −
+
+                  =  Tr ( t ) rect ( t ) dt
+
+                                     (1) +   (1)
+                                   1      1 1
+                   Area =
+                                   2      22
+                           3
+                  =
+                           4
+`
+
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         524
+    Type             MCQ
+    Body                                      − 1  
+                     Let X ( ) = rect               then Fourier transform of
+                                              2    
+                     tx ( t ) e − j2t
+                                      is ____
+`
+
+
+
+    Option        j  (  + 2 ) −  (  − 2 ) 
+
+    Option        j  (  + 2 ) −  ( ) 
+
+    Option        j  ( ) −  (  − 2 ) 
+
+    Option              
+                  rect    e j2
+                       2
+    Correct       2
+    Explanation
+
+
+
+
+                  tx ( t ) e− j2t
+                  Apply F.T
+                                            d
+                  [U sin g − jtx ( t )       X ( )
+                                           d
+                  and x ( t ) e j0t  X (  − 0 )]
+                     d
+                  j     X (  + 2 ) 
+                    d 
+
+
+
+
+                  = j  (  + 2 ) −  ( ) 
+`
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         525
+    Type             MCQ
+    Body             Which of the following are odd functions?
+                     P: sin ( t )
+                     Q : cos ( t )
+                     R: sin ( t ) + cos ( t )
+                     S: sin ( t ) cos ( t )
+
+    Option           Q and S
+    Option           P and Q
+    Option           P and S
+    Option           R and Q
+    Correct          3
+    Explanation      Let f ( t ) = sint
+                     f ( −t ) = sin ( − t ) = −sint = −f ( t )
+`
+
+
+
+                     ⇒ sint is odd
+                     Let g ( t ) = cost
+                     g ( −t ) = cos ( −t ) = cost = g ( t )
+                     cost is even
+                     Let h ( t ) = sint + cost
+                     h ( −t ) = sin ( −t ) + cos ( −t ) = −sint + cost
+                     sint + cost is neither even nor odd
+                     Let X ( t ) = sin Cost
+                     x ( −t ) = sin ( − t ) cos ( − t ) = −sintcost = − x ( t )
+                     ⇒ sint cost is odd
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0.33
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         526
+    Type             NAT
+    Body             If x ( n ) = u ( n ) − u ( n − 5) , and h ( n ) = δ ( n ) − δ ( n − 1)
+                                                                                   
+                     and y ( n ) = x ( n ) * h ( n ) , then the value of           y ( n ) is
+                                                                                  n =−
+                     ____ .
+`
+
+
+
+                     (round off to the nearest integer)
+    Correct          0
+    Explanation      From the properties of convolution, we have
+                       
+                                                        
+                      
+                     n =−
+                           y (n) =   x (n)    h (n)
+                                    n =−         n =−   
+                     x ( n ) = 1,1,1,1,1 h ( n ) = 1, −1
+                                       
+
+                          x ( n ) = 5,  h ( n ) = 0
+                     n =−             n =−
+                          
+                       y (n) = 5  0 = 0
+                          n =−
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         527
+    Type             NAT
+    Body             A continuous time, band limited signal x ( t ) has its Fourier
+                     transform described by
+`
+
+
+
+                                f
+                            1 −   ,   f  200 Hz
+                  X ( f ) =  200
+                             0,       f  200 Hz
+                            
+                  The signal is uniformly sampled at a sampling rate of 600
+                  Hz. The Fourier transform of the sampled signal is XS ( f )
+                                           X s ( 600 )
+                  . What is the value of               ?
+                                           X s ( 500 )
+
+    Correct       2
+    Explanation
+
+
+
+
+                                                               
+                  The F .T of sampled signal is XS ( f ) = fs  X ( f − nfs )
+                                                             n =−
+
+
+
+
+                  XS ( 600 ) = 600
+                                                     −100 
+                  XS ( 500 ) = XS ( −100 ) = 600 1 −       = 300
+                                                      200 
+                  XS ( 600 ) 600
+                             =       =2
+                  XS ( 500 ) 300
+
+    Subject       Signals and Systems
+`
+
+
+
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         528
+    Type             MCQ
+    Body             The Fourier transform of u 1−∣ t  is ____
+
+    Option               Sinc ( f )
+
+    Option           jd  1              
+                              +  (  )
+                     d  j            
+                                         
+    Option           2Sinc ( 2f )
+
+    Option           none of these
+    Correct          3
+    Explanation      u 1−∣ t  = 1 ;1 − t  0
+                               1 t
+                              t 1
+`
+
+
+
+
+                     u 1−∣ t  = rect ( f / 2 )
+                          t
+                     rect   → 2Sin c ( 2f )
+                          2
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0.33
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         529
+    Type             MCQ
+    Body             The time delay between the peaks of the voltage signals
+                                     (             )
+                     v1 ( t ) = 2cos 6t + 60 and v 2 ( t ) = 3sin ( 6t ) is ____ s.
+
+    Option           300 / 360
+
+    Option           100 / 360
+`
+
+
+
+    Option           50 / 360
+    Option           200 / 360
+    Correct          3
+    Explanation      V1 ( t ) = 2cos ( 6t + 60 )
+                                    
+                     = 2cos  6t + 
+                                    3
+                                                               
+                     = 2sin  6t + +             cos  = sin   + 
+                                    3 2                          2
+                                    5 
+                     = 2sin  6t + 
+                                     6 
+                                       5  
+                     V1 ( t ) = 2sin  6  t +   ________(1)
+                                       36  
+                     V2 ( t ) = 3sin ( 6t ) ________(2)
+                     Comparing (1) and (2)
+                                     5 50
+                     Time delay =         =
+                                     36 360
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+    Question      530
+    Type          MCQ
+    Body          Consider an LTI system with input and output related
+                  through the equation
+                              t
+                  y(t) =  e (                  x (  − 4 ) d
+                                     − t − )
+                              −
+                  Let the impulse response of above system is cascaded with
+                  another system having impulse response  ( t − 4 ) . The
+                  overall impulse response system is
+
+                  h (t) = e (            u ( t − 4)
+    Option                    − t −4)
+
+
+
+
+                  h (t) = e (            u ( t − 4)
+    Option                    − t −7 )
+
+
+
+
+                  h (t) = e (            u ( t − 8)
+    Option                    − t −8 )
+
+
+
+
+                  h ( t ) = −e (             u ( t − 3)
+    Option                        − t −3 )
+
+
+
+    Correct       3
+    Explanation   y(t) =  e (
+                              t      − t − )
+                                                x (  − 4 ) d
+                              −
+
+                  If x ( t ) =  ( t ) , then y ( t ) = h ( t )
+                              t
+                  h (t) =  e (                  (  − 4 ) d
+                                     − t −t )
+                              −
+
+                   h (t) = e (                    u ( t − 4)
+                                         − t −4)
+
+
+                  When this system is cascaded with another system h 2 ( t )
+
+
+                  h ( t ) = h1 ( t ) * h 2 ( t )
+                  h (t) = e (               u ( t − 4) *  ( t − 4)
+                                   − t −4)
+
+
+                  We know that x(t + )*  ( t +  )
+                  = x ( t +  + )
+`
+
+
+
+                     h (t) = e (             u ( t − 4 − 4)
+                              − t − 4− 4 )
+
+
+                     h (t) = e (         u ( t − 8)
+                              − t −8 )
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         531
+    Type             MCQ
+    Body             The number of samples required to yield enough
+                     information to describe the signal
+                     x ( t ) = 8 + 3cos (8t ) + 9sin ( 4t ) is ____
+
+    Option           3
+    Option           2
+    Option           5
+    Option           1
+    Correct          3
+`
+
+
+
+    Explanation                      1
+                     0 = 4  T =     sec s
+                                     2
+                     At the Nyquist rate we would have 4 samples. We must
+                     have an integer number of samples in one period, sampled
+                     above the Nyquist rate.
+                     ∴ We need 5 samples.
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0.33
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         532
+    Type             MCQ
+    Body             The following facts are given about the signal x ( t ) with
+                     Laplace transform X ( s ) .
+                         1. x ( t ) is real and even
+                         2. X ( s ) has four poles and no zeros in the finite s-plane
+                                                        j
+                                                     1
+                         3. X ( t ) has a pole at s = e 4
+                                                     2
+                         4.  − x ( t ) dt = 4
+                              
+
+
+                     Then X ( s ) is
+`
+
+
+
+    Option                   1
+                   2   s  1       s  1
+                   s −   +   s2 +   + 
+                        2 4        2 4
+
+    Option               1
+                         4
+                   2 1  2 1 
+                   s + s − 
+                      4   4
+
+    Option                   4
+                  ( s − s + 1)( s + s + 1)
+                      2          2
+
+
+
+    Option                  1
+                            4
+                   2  s  1       s  1
+                  s −   +   s2 +   + 
+                       2 4        2 4
+    Correct       4
+    Explanation   Since x ( t ) is real and even, the poles of X ( s ) must occur
+                  in conjugate reciprocal pair, and symmetrical about jω
+                  axis.
+                                                       A
+                  X (s) =
+                                1 4 
+                                      j
+                                                1 − 4 
+                                                    j
+                                                             1 − 4 
+                                                                 j
+                                                                       1 4
+                                                                          j
+
+                          s − e s − e s + e s + e 
+                                2            2          2       2 
+                                             A
+                  X (s) =
+                           2       s      1  2      s    1
+                           s   −        +    s +       +  
+                                    2 4              2 4
+                                 
+                  Also given  x ( t ) dt = 4
+                                 −
+
+                  So, X ( 0 ) = 4
+                  From equation (1)
+`
+
+
+
+                                 A
+                     X ( 0) =  =4
+                           1 1
+                             
+                           4 4
+                            1 1
+                     A = 4 =
+                           16 4
+                                             1
+                     So, X ( s ) =           4
+                                    2  s  1       s  1
+                                   s −   +   s2 +   + 
+                                        2 4        2 4
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         533
+    Type             MCQ
+    Body             Find the ROC of
+                     x ( t ) = e t sin ( 2t ) t  0
+                              =0             t 0
+    Option             −1
+    Option             −1
+`
+
+
+
+    Option            1
+    Option            1
+    Correct          3
+    Explanation      x ( t ) = e t sin ( 2t ) u ( −t )
+                                                      2
+                     e − t sin ( 2t ) u ( t )                ,   −1
+                                                (s + 1) 2 + 4
+                                                      −2
+                     e t sin ( 2t ) u ( − t )                   , 1
+                                                 (−s + 1) 2 + 4
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0.33
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         534
+    Type             MCQ
+    Body             The unilateral Laplace transform of
+                     x ( t ) = 2 ( t + 5 ) + 5 ( t ) + 3e ( ) u ( t + 4 ) is
+                                                           −2 t + 5
+
+
+
+    Option                         3e ( )
+                                       −5 s + 2
+                     2e   5s
+                               +5+
+                                    s+2
+`
+
+
+
+    Option                         3e−10
+                     2e   5s
+                               +5+
+                                   s+2
+    Option              3e −10
+                     5+
+                        s+2
+    Option              3e ( )
+                               −5 u + 2
+                     5+
+                         s+2
+    Correct          3
+
+                     x ( t ) = 2 ( t + 5 ) + 5 ( t ) + 3e (          u (t + 4)
+    Explanation                                           −2 t + 5 )
+
+
+                     Unilateral L.T of x ( t ) is
+                                                   
+                     X ( s ) =  x ( t ) e−st dt =  5 ( t ) + 3e (
+                                                                          −2 t +5)
+                                                                                      e −st dt
+                                0                   0                               
+                                           3 −10
+                     So, X ( s ) = 5 +          e
+                                         s+2
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         535
+    Type             NAT
+`
+
+
+
+    Body          The Inverse z -transform of
+                                             
+                            1 1024 − z  −10
+                  X (z) =                     , z  0 is x ( n ) .
+                          1024  1 − 1 z −4 
+                                     2       
+                  The value of x ( 3) is ____
+                  (round off to three decimal places)
+    Correct       0.125
+    Explanation   The z -transform of x ( n ) is
+                             
+                  X ( z ) =  x ( n ) z−n
+                            n =−
+
+                  If x ( n ) = ()n 0  n  N − 1
+                  = 0 otherwise
+                                    N−1          N−1
+                  Then X ( z ) = ()n z − n =  z −1  (   )
+                                                                n
+
+                                    n =0         n =0
+
+                            1 − ( z   −1 N
+                                           )
+                  X (z) =
+                              1 − z −1
+                            1 −  N z− N
+                  X (z) =
+                             1 − z −1
+                                     1 N     −N
+                                                   
+                                         − z    
+                                 N              z  0 _____ (1)
+                  X ( z ) = ( )
+                                    1 − z   −1
+                                                   
+                                                  
+                                                  
+                                        1 1024 − z −10 
+                  Given, X ( z ) =                         , z  0 ______(2)
+                                      1024  1 − z −1 
+`
+
+
+
+                     Compare (1) and (2)
+                               1
+                     So,  = , N = 10
+                               2
+                                       n
+                                   1
+                     So, x ( n ) =   0  n  9
+                                   2
+                     = 0 otherwise
+                                1
+                     x ( 3) =     = 0.125
+                                8
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         536
+    Type             MCQ
+    Body             Let    x (n)     be    a   signal   whose   z -transform   is
+                                                                          n
+                              z                                    1
+                     x (z) =     , z  2 and given that x1 ( n ) =   x ( n ) .
+                             z−2                                   4
+                     The ROC of x1 ( n ) is
+
+    Option           z 2
+`
+
+
+
+    Option           z 8
+
+    Option                 1
+                     z
+                           2
+    Option           z 4
+
+    Correct          3
+    Explanation                         z
+                     Given X ( z ) =       ,z 2
+                                       z−2
+                                   n
+                                1
+                     x1 ( n ) =   x ( n )
+                                4
+                     Apply Z.T
+                                   
+                                  z
+                     X1 ( z ) = X   = X ( 4z )
+                                    1
+                                   
+                                  4
+                                      4z
+                     So, X1 ( z ) =         , 4z  2
+                                    4z − 2
+                                  z           1
+                     X1 ( z ) =       ,z 
+                                    1         2
+                                 z−
+                                    2
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0.33
+    Hint             -
+    Video Solution   -
+    PYQ
+`
+
+
+
+    OTS ID
+
+
+
+    Question      537
+    Type          MCQ
+    Body          A feedback discrete system has a transfer function
+                                  k
+                  H (z) =                   . The range of "k" for system
+                                 z 
+                           1+ k          
+                                 z − 0.9 
+                  stability is
+    Option        k  −0.1
+    Option        k  0.9
+    Option        k  −0.1& k  −1.9
+    Option        For any positive value of k
+    Correct       3
+    Explanation              k ( z − 0.9 )   k ( z − 0.9 )
+                  H (z) =                  =
+                            z − 0.9 + kz (1 + k ) z − 0.9
+                                    
+                      k     z − 0.9 
+                  =                 
+                    1 + k  z − 0.9 
+                               1+ k 
+                                               0.9
+                  For causality & stability        1
+                                              1+ k
+                  (or) 0.9  1 + k
+                  k  −0.1& k  −1.9
+
+    Subject       Signals and Systems
+`
+
+
+
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         538
+    Type             MCQ
+    Body             A finite impulse response (FIR) filter has only two non-
+                     zero samples in its impulse response h ( n ) , namely
+                     h ( 0 ) = h (1) = 1. The Discrete Time Fourier Transform
+                                                 ( )
+                     (DTFT) of h ( n ) equals H e j , as a function of the
+                     normalized angular frequency  .
+                                           ( )
+                     For the range   , H e j is equal to ____ 。
+
+    Option           2 cos ( )
+
+    Option           2 sin ( )
+
+    Option           2 cos (  / 2 )
+
+    Option           2 sin (  / 2 )
+
+    Correct          3
+`
+
+
+
+    Explanation      h ( 0 ) = 1, h (1) = 1
+                                         
+                     H (e     j
+                                   ) =  h (n) e            − jn
+
+                                       n =−
+                                         − j
+                     = 1 e + 1e
+                               0
+
+                     = 1 + e− j
+                         −
+                           j
+                                j
+                                    −
+                                      j
+                                         
+                     = e 2 e 2 + e 2 
+                                        
+                                                 j
+                                               
+                     H (e          ) = 2e
+                                             −
+                              j                  2
+                                                      cos
+                                                2
+                                            j
+                                                        
+                         H ( e j )
+                                          −
+                                      = 2e 2 cos = 2 cos
+                                                 2       2
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         539
+    Type             MCQ
+`
+
+
+
+    Body             Consider the 5 point averaging filter with impulse response
+                              1
+                     h ( n ) = 1, 2, 3, 2,1 . The response of the filter to the input
+                              9
+                     (−1) is
+                          n
+
+
+
+    Option           (−1)n
+
+    Option           0
+    Option           1
+                       (−1) n
+                     9
+    Option           None
+    Correct          3
+    Explanation                 1
+                     h (n) =      1, 2, 2,3, 2,1
+                                9
+                                      4
+                                                 1
+                     T.F.H ( z ) =  h ( n ) z − n =
+                                                   1 + 2z −1 + 3z −2 + 2z −3 + z −4 
+                                   n =0          9
+                     Input x ( n ) = z n  output y ( n ) = z n H ( z )
+                     = (−1) n  y ( n ) = (−1) n H ( z ) |z=−1
+                       1
+                     = 1 − 2 + 3 − 2 + 1 (−1) n
+                       9
+                       1
+                     = (−1) n
+                       9
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+`
+
+
+
+    PYQ
+    OTS ID
+
+
+
+    Question        540
+    Type            MCQ
+    Body            A        linear       system             has    Impulse     response
+                    h ( t ) =  + e− t − et  u ( t ) , where  and  are real values.
+                    The system is stable if and only if
+    Option            0,   0
+    Option           = 0 &  0
+    Option           = 1/ 2,   0
+    Option           = 0 & = 2
+    Correct         2
+    Explanation                   1     1
+                    H (s) =   +       −    , if Re s  Re    0
+                            s s +1 s − 
+                    if Re s  0,   0
+                    For  = 0 and   0  j -axis be in the ROC of H ( s ) for
+                    stability.
+
+    Subject         Signals and Systems
+    Topic
+    Correct Marks   1
+    Incorrect Marks 0.33
+    Hint            -
+`
+
+
+
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         541
+    Type             MCQ
+    Body             The Z -transform of a signal x ( n ) is
+                              1 + z −1      1
+                     X (z) =           ; z  . Then the value of x ( n ) at n = 1
+                                 1          3
+                             1 − z −1
+                                 3
+                     is ____
+
+    Option           4
+                     3
+    Option           1
+    Option               4
+                     −
+                         3
+    Option           4
+                     9
+    Correct          1
+`
+
+
+
+    Explanation
+
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         542
+    Type             MCQ
+    Body             Consider the causal system
+                     y ( n ) + y ( n − 1) + 0.25y ( n − 2 ) = x ( n ) − 2x ( n − 1) .
+`
+
+
+
+                     This system is ____ .
+
+    Option           Minimum phase & stable
+    Option           Mixed phase & stable
+    Option           Minimum phase & unstable
+    Option           Mixed phase & unstable
+    Correct          2
+    Explanation                                                                   ˆ
+
+                                  z − 2z
+                                      2
+                                            → Mixed phase (one zero at z = 2, z = 0)
+                     H (z) =
+                               z + z + 0.25 → Stable (2 poles at z =−0.5)
+                                2
+                                          
+                                    ( z + 0.5)2
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0.33
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         543
+    Type             NAT
+`
+
+
+
+    Body             Let the DTFT of a signal x ( n ) is X e j          ( ) where
+                     X ( e j ) = 5 + 6e− j2 . If another signal y ( n ) = 5x ( n + 3) ,
+                                                ( )
+                     then the value of Y e j at  =  is
+
+    Correct          –55
+    Explanation      y ( n ) = 5x ( n + 3)
+                     Y ( e j ) = 5e3 jX ( e j )
+                     Y ( e j ) = 5e j 5 + 6e−2 j 
+                     Y ( e j ) = 5 5e3 j + 6e j 
+                     Y ( e j ) = 5 5e3j + 6e j 
+                     = 5 −5 − 6 = −55
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         544
+    Type             MCQ
+`
+
+
+
+    Body                                 3 s 2 + 12 s + 48
+                     Consider H ( s ) = 3                    ; −3  Re s  0 .
+                                        s + 3 s 2 + 4 s + 12
+                     Then impulse response is ____
+
+    Option               − 3e−3t u ( t ) + 6sin2tu ( − t )
+
+    Option           3e−3t u ( t ) − 6sin2tu ( −t )
+
+    Option           6e−3t u ( t ) − 3sin2tu ( − t )
+
+    Option           3e−3t u ( t ) + 6sin2tu ( t )
+
+    Correct          2
+    Explanation                     3   12
+                     H (s ) =         + 2   ; −3    0
+                                   s+3 s +4
+                     I.L.T
+                     h ( t ) = 3e−3t u ( t ) − 6sin2tu ( − t )
+                                              
+                     Sin0 tu ( t )  2 0 2 ;   0
+                                            s + 0
+                     Applying L.T.
+                     x ( − t )  x ( −s )
+                                                    
+                     Sin ( −0 t ) u ( −t )  2 0 2 ;   0
+                                                  s + 0
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+`
+
+
+
+    PYQ
+    OTS ID
+
+
+
+    Question      545
+    Type          MCQ
+    Body          A casual & stable LTI system has the property that input
+                                n                                n
+                            2                              2
+                  x ( n ) =   u ( n ) , output y ( n ) = n   u ( n ) .
+                            3                              3
+                  Determine the difference equation related to Input &
+                  Output.
+    Option        y ( n ) − y ( n − 1) = x ( n )
+
+    Option                 2
+                  y ( n ) − y ( n − 1) = x ( n )
+                           3
+    Option                 2            2
+                  y ( n ) − y ( n − 1) = x ( n − 1)
+                           3            3
+    Option                 2            2
+                  y ( n ) − y ( n − 1) = x ( n )
+                           3            3
+    Correct       3
+    Explanation                                    2 − j
+                                                     e
+                             1
+                  X (e ) =
+                      j
+                                    , Y (e ) =
+                                          j       3
+                             2 − j                2        
+                                                               2
+                           1− e                        −   
+                                               1 − e 
+                                                         j
+                             3                  3           
+                               Y ( e j )
+                                     2 / 3e − j
+                  H (e ) =
+                        j
+                                   =
+                           X ( e ) 1 − 2 e − j
+                                j
+
+                                         3
+`
+
+
+
+                                  2                2
+                     Y ( e j ) − e− jY ( e j ) = e− jX ( e j )
+                                  3                3
+                     Apply IDTFT
+                                2            2
+                     y ( n ) − y ( n − 1) = x ( n − 1)
+                                3            3
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         546
+    Type             NAT
+    Body                                                       n      n 
+                     The DFS coefficient of x ( n ) = 5 + sin   + cos   is
+                                                               2       4 
+                     CK . Then find the value of C2 + C1 in radians
+    Correct          –1.57
+    Explanation           n 
+                     sin   Period is N1 = 4
+                          2 
+                          n 
+                     cos   period is N2 = 8
+                          4 
+                     The overall period is N = 8
+`
+
+
+
+                                        n      n 
+                     x ( n ) = 5 + sin   + cos  
+                                        2       4 
+                                        jn           jn          jn               jn
+                                                  −                              −
+                                   −e
+                                    e    2
+                                            e +e       2            4                 4
+                     x (n) = 5 +          +                − − − − − (1)
+                                    2j           2
+                     The Generalized expansion of x ( n ) is
+                             N−1              2             7               2
+                                          j      nK                      j      nK
+                     x ( n ) = CK e          N
+                                                      = CK e                 8
+                                                                                     − − − − − − − ( 2)
+                             k =0                           k =0
+                     Compare (1) & (2)
+                                   1       −1        1    1
+                     C0 = 5, C2 = , C−2 = , C1 = , C −1 =
+                                   2j       2j       2    2
+                             −
+                     C2 =      , C1 = 0
+                              2
+                                    −
+                     C1 + C2 =       = −1.57 radians
+                                     2
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         547
+    Type             MCQ
+`
+
+
+
+    Body            The phase delay of                    the     filter   with   I.R.
+                    h ( n ) =  ( n ) −  ( n − 1) is
+
+    Option          1
+                    2
+    Option               
+                    −
+                        2
+    Option                1
+                    −     +
+                        2 2
+    Option                1
+                    −     −
+                        2 2
+    Correct         3
+    Explanation     h ( n ) =  ( n ) −  ( n − 1)
+                    Applying F.T
+                                                     j2  − 
+                                                            j
+
+                                                 j 
+                                                      e − e 2  ( 2 j)
+                    H ( e j ) = 1 − e − j = e 2             
+                                               −
+
+                                                          2j
+                              j
+                            −    sin 
+                    = 2 je 2
+                                   2
+                                                       
+                    Phase response  ( ) = − +
+                                                       2 2
+                                    ( ) 1 
+                    t p ( ) = −           = −
+                                            2 2
+    Subject         Signals and Systems
+    Topic
+    Correct Marks   1
+    Incorrect Marks 0.33
+`
+
+
+
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         548
+    Type             MCQ
+    Body             Let the input x ( n ) = 2, 5, 0, 4 produces the output as
+                     y ( n ) = 8, 22,11, 31, 4,12 . Then Impulse Response is
+                     h ( n ) is
+
+    Option           1, 3, 4
+    Option           4,1, 3
+    Option           1, 3
+    Option           3, 4,1
+    Correct          2
+    Explanation      x ( n ) → m samples = 4
+                     h ( n ) → N samples
+                     y (n) → m + N −1 = 6  N = 3        2a = 8
+                     Assume h ( n ) = a, b, c         a =4
+                     5a + 2b = 22
+                     x (n) → 2 5 0 4                   2b = 2
+                     h (n) → a b c                      b =1
+                                 2a 5a 0 4a             4c = 12
+`
+
+
+
+                     2b 5b 0 4b                             c=3
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0.33
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         549
+    Type             MCQ
+    Body             A system is described by Difference equation
+                     y  n  = −0.5y ( n − 1) + x  n  . Then, the output y  n  value
+                                                     1;   0n2
+                     at n = 0 for the i / px  n  =                is
+                                                     0;   elsewhere
+
+    Option           1
+    Option           0
+    Option           3
+    Option           0.5
+    Correct          1
+`
+
+
+
+    Explanation      x  n  =   n  + [n − 1] +   n − 2
+                     X ( z ) = 1 + z −1 + z −2
+                     Y (z) = X (z) H (z)
+                        1 + z −1 + z −2
+                     =
+                          1 + 0.5z −1
+                         z2 + z + 1
+                     = 2
+                         z + 0.5z
+                     y  n  = −0.5y  n − 1 + x  n 
+                     By applying Z-transform
+                     Y ( z ) = −0.5z −1Y ( z ) + X ( z )
+                               Y (z)        1
+                     H (z) =          =
+                               X ( z ) 1 + 0.5z −1
+                     1 + 0.5z−1 )1 + z−1 + z−2 (1 + 0.5z −1
+                      1  0.5z −1
+                     0.5z −1 + z −2
+                     0.5z −1  0.25z −2
+                     –
+
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+
+    Question        550
+    Type            MCQ
+    Body            A system represented by difference equation
+                    y  n  = 0.25y  n − 2 + x  n  . Suppose the input is
+                    x  n  = u  n  , steady state output is ____
+
+    Option          3
+                    4
+    Option          4
+                    3
+    Option          0
+    Option          1
+    Correct         2
+    Explanation               Y (z)          1
+                    H (z) =          =
+                              X ( z ) 1 − 0.25z −2
+                                                   1
+                    x n  = u n  → X ( z ) =
+                                                1 − z −1
+                                                             (1 − z )
+                                                                 −1
+
+                    y (  ) = Lt z→1   (1 − z ) Y ( z ) = Lt 1 − z 1 − 0.25z
+                                            −1                             1    
+                                                ( ) ( )
+                                                 X z H z     (
+                                                           z→1   −1
+                                                                    )         −2
+                            1     4
+                    =           =
+                        1 − 0.25 3
+    Subject         Signals and Systems
+    Topic
+    Correct Marks   2
+`
+
+
+
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         551
+    Type             MCQ
+    Body             The spectrum of modulated signal y ( t ) = x ( t ) m ( t ) if
+                     X ( f ) = Tr ( f ) , where Tr ( f ) = 1; f  1 and
+                     m ( t ) = cos (10t ) is
+
+    Option
+
+
+
+
+    Option
+`
+
+
+
+    Option
+
+
+
+
+    Option
+
+
+
+
+    Correct       2
+    Explanation                                            e j10 t + e− j10 t 
+                  y ( t ) = x ( t ) cos (10t ) = x ( t )                       
+                                                                    2           
+                  x (t)e   j2 f c t
+                                      x ( f − fc )
+
+
+
+
+                  Apply Fourier transform
+                           X ( f − 5) + X ( f + 5)
+                  Y (f ) =
+                                      2
+
+
+
+
+    Subject       Signals and Systems
+    Topic
+`
+
+
+
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         552
+    Type             MCQ
+    Body                                                                 f 
+                     The frequency response of a filter is H ( f ) = Tri   e− jf .
+                                                                         6
+                     When we apply input as cos ( t ) , then output is
+
+    Option           0.9167cos ( t )
+
+    Option           0.9167sin ( t )
+
+    Option               cos ( t )
+
+    Option           −cos ( t )
+
+    Correct          2
+    Explanation                    f 
+                     H ( f ) = Tri   e− jxf
+                                   6
+`
+
+
+
+
+                     x ( t ) = cos ( t )
+                                       1
+                     0 =   f 0 =      Hz
+                                       2
+                                                 1
+                                    0.5  − j 2               
+                      H ( f 0 ) = 1 −       e       = 0.9167  −
+                                        6                         2
+                                                
+                     y ( t ) = 0.9167 cos  t −  = 0.9167 sin ( t )
+                                                2
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         553
+    Type             NAT
+`
+
+
+
+    Body             The input - output of D.T L.T.I system are input
+                     x  n  = u  n  − u[n -3], output y  n  = u  n − 1 −u n − 4  .
+                     Then the Impulse response h  n  at n = 1 is ____ .
+
+    Correct          1
+    Explanation      x  n  = u  n  − u  n − 3     y  n  = u  n − 1 −u n − 4 
+
+
+
+
+                     y  n  = x  n − 1
+                     H ( z ) = z −1
+                     By Inverse z -transform
+                     h  n  =   n − 1
+                      h  n  at n = 1is1
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         554
+    Type             NAT
+`
+
+
+
+    Body                                                                           1
+                     Given right sided signal x ( n ) has Z.T X ( z ) =                  .
+                                                                                z − 0.25
+                                                                                 2
+
+                     The value of x ( n ) at n = 1 is ____ .
+
+    Correct          0
+    Explanation                    1               z −2
+                     X (z) = 2               =
+                              z − 0.25 1 − 0.25z −2
+                     1 − 0.25z −2 )z −2 (z −2 + 0.25z −4 + − − ( n − n 0 ) ⎯⎯
+                                                                             Z.T
+                                                                                 → z − n0
+                     z −2 − 0.25z −4
+                                     0.25z −4
+                            +
+                            −4
+                     0.25z − 0.0625z−6
+
+
+                     Quotient doesn't have −1 term
+                      x ( n ) at n = 1  0
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         555
+    Type             MCQ
+`
+
+
+
+    Body             Inverse Fourier transform of Y ( ) = sin 2 ( 3) is ____
+
+    Option           1
+                        − ( t + 6 ) + 2 ( t ) −  ( t − 6 ) 
+                     4
+    Option               1
+                            ( t + 6 ) +  ( t ) +  ( t − 6 )
+                         4
+    Option            ( t ) sin3t
+
+    Option           1
+                        ( t + 3) +  ( t ) −  ( t − 3)
+                     4
+    Correct          1
+    Explanation                           1 − cos 6 1 1  e j6 + e − j6 
+                     Y ( ) = sin ( 3) =
+                                        2
+                                                    = −                   
+                                               2     2 2        2         
+                      1 1       1                           ( t ) ⎯→
+                                                                    FT
+                                                                       1
+                     = − e j6 − e− j6
+                      2 4       4                           ( t − t 0 )  e − j t 0
+                     Applying I.F.T
+                              1         1            1
+                     y ( t ) =  ( t ) −  ( t + 6) −  ( t − 6)
+                              2         4            4
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+
+    Question      556
+    Type          MCQ
+    Body          A system S is described by the following differential
+                             dy ( t )              dx ( t )
+                  equation            + 2y ( t ) =          + x ( t ) , x (0) = y (0) = 0
+                               dt                   dt
+                  Where x ( t ) and y ( t ) are the input and output variables
+                  respectively. Let SINv denotes inverse of S. If step signal is
+                  applied to the inverse system SINV then the final value of
+                  the output is
+    Option        2
+    Option        4
+    Option        1
+    Option        0
+    Correct       1
+    Explanation   dy ( t )              dx ( t )
+                           + 2y ( t ) =          + x (t)
+                   dt                    dt
+                  SY ( s ) + 2Y ( s ) = SX ( s ) + X ( s )
+                  Y ( s) s + 1
+                         =        = H ( s)
+                  X ( s) s + 2
+                  Transfer function of the inverse system Sinv is
+                                1      s+2
+                  HINV ( s ) =       =
+                               H (s ) s + 1
+                        1            1 s+2
+                  YINV = HINV ( s ) =        
+                        s            s  s +1 
+`
+
+
+
+                                        1 s + 2 
+                     Final value = lims          =2
+                                   s→0   s
+                                           s + 1 
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         557
+    Type             MCQ
+    Body             The Laplace transform and ROC of the following signal
+                     x ( t ) = e5t u ( − t + 3) is
+
+    Option             e( )
+                            3 s +5
+                     −      ,   −5
+                       s+5
+    Option             e ( )
+                            −3 s −5
+                     −       ,  5
+                        s−5
+    Option           e ( )
+                         −3 s − 5
+                           ,  5
+                      s−5
+    Option           e( )
+                         3 s +5
+                          ,   −5
+                     s+5
+`
+
+
+
+    Correct          2
+    Explanation                                   1
+                     e−st u ( t ) ⎯⎯→
+                                   L.T
+                                                        ,   −5
+                                                s+5
+                                                     e3s
+                                    u ( t + 3) →
+                       − s( t + 3 )
+                     e                                     ,   −5
+                                                  s+5
+                                               e( )
+                                                3 s +5
+                     e u ( t + 3) →
+                       − st
+
+                                               s+5
+                                                e( )
+                                                 3 − s +5
+                     e u ( − t + 3) →
+                       5t
+                                                           5
+                                                −s + 5
+                         e ( )
+                            −3 s − s
+                     −                  ,  5
+                           s−5
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         558
+    Type             MCQ
+    Body             The value of  ( t 3 + 6t 2 + 2t + cost ) b ( t − 2 ) dt is
+                                           5
+
+                                           −5
+
+
+    Option           0
+`
+
+
+
+    Option           24 − 2
+    Option           24
+    Option           12 − 2
+    Correct          2
+                         
+    Explanation
+                      x ( t )  ( t − t ) dt = (−1) x ( t )
+                                                       2
+                         −                 0                0
+
+                     Let x ( t ) = t 3 + 6t 2 + 2t + cost
+                     x ( t ) = 3t 2 + 12t + 2 −  sin t
+                     x ( t ) = 6t + 12 − 2 cos t
+                     x  ( 2 ) = 24 − 2
+
+                      ( t + 6t + 2t + cos t )  ( t − 2 ) dt = 24 − 
+                         5
+                              3   2                                         2
+                         −5
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         559
+    Type             MCQ
+    Body             The Laplace transform of x ( t ) =  0t e−3τ cos2τ dτ is
+`
+
+
+
+    Option               s−3
+                     (s − 3) 2 + 4
+
+    Option                  s−3
+                     s ( (s − 3) 2 + 4 )
+
+    Option               s+3
+                     (s + 3) 2 + 4
+
+    Option                  s+3
+                     s ( (s + 3) 2 + 4 )
+
+    Correct          4
+    Explanation                           s
+                     cos 2tu ( t ) →
+                                       s2 + 4
+                                          s+3
+                     e −3t cos 2tu ( t ) →
+                                     ( s + 3) 2 + 4
+                       t                     s+3
+                      0e cos 2 d → s ( (s + 3)2 + 4 )
+                         −3 
+
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0.33
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+    Question         560
+    Type             NAT
+    Body             Consider the signal which is shown below.
+
+
+
+
+                                      
+                     The value of  x ( t ) dt is ____ .
+                                      −
+
+
+    Correct          5
+    Explanation      The given signal consists of two impulses and a rectangular
+                     pulse
+                         
+                      x ( t ) dt = 1 + 2 (1) + 2 = 5
+                         −
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         561
+`
+
+
+
+    Type            MSQ
+    Body            Which of the following is/are even conjugate signals?
+    Option          e jt
+    Option          je jt
+    Option            1
+                    a + jt
+    Option          te jt
+    Correct         1,3
+    Explanation     Condition for even conjugate signal is
+                    x* ( −t ) = x ( t )
+                    (a) x ( t ) = e jt , x ( −t ) = e− jt , x * ( −t ) = e jt
+                     e jt is even conjugate
+                    (b) x ( t ) = je jt , x ( − t ) = je− jt , x* ( − t ) = − je jt
+                     je jt is not even conjugate
+                                    1                   1                     1
+                    (c) x ( t ) =        , x ( −t ) =         x* ( − t ) =
+                                  a + jt              a − jt                a + jt
+                       1
+                            is even conjugate
+                     a + jt
+                    (d) x ( t ) = te jt , x ( − t ) = − te − jt , x * ( − t ) = − te jt
+                    te jt is not even conjugate
+
+    Subject         Signals and Systems
+    Topic
+    Correct Marks   2
+    Incorrect Marks 0
+`
+
+
+
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         562
+    Type             MCQ
+    Body             The      LTI          system     with   impulse   response
+                                             t
+                     h ( t ) = sgn ( −t ) Tr   is
+                                              3
+    Option           causal and stable
+    Option           causal and unstable
+    Option           non causal and stable
+    Option           non causal and unstable
+    Correct          3
+`
+
+
+
+    Explanation
+
+
+
+
+                     h ( t )  0 for t  0 , non-causal system.
+                                          0              3
+                             h ( t ) dt =  h ( t ) dt +  h ( t ) dt  
+                         −                −3             0
+
+                     So, stable system.
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+
+    Question        563
+    Type            NAT
+    Body            Let    x ( n ) = 1, −2, 0,5   and    h ( n ) = 1, 0, −2, 4   and
+                    y ( n ) = x ( n − 1) *h ( n + 2 ) . The value of y ( n ) at n = −3 is
+                    ____ .
+    Correct         –2
+    Explanation     Assume y1 ( n ) = x ( n ) * h ( n )
+
+
+
+
+                    y1 ( n ) = 1, −2, −2,13, −8, −10, 20
+                    Given y ( n ) = x ( n − 1) * h ( n + 2 )
+                    From shifting property of convolution
+                    y ( n ) = y1 ( n − 1 + 2 ) = y1 ( n + 1)
+                    So, y ( n ) = 1, −2, −2,13, −8, −10, 20
+
+    Subject         Signals and Systems
+    Topic
+    Correct Marks   2
+    Incorrect Marks 0
+    Hint            -
+`
+
+
+
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         564
+    Type             NAT
+    Body             Consider a system whose input and output related as
+                     y ( t ) = u  x ( t )  .
+                     Where x ( t ) = 2sin (10t ) . The power of the output signal
+                     is ____ .
+
+    Correct          0.5
+    Explanation      u  x ( t )   =1              x (t)  0
+                                      =0               x (t)  0
+
+
+
+
+                                                                       1
+                     Output is a periodic signal with T0 = sec
+                                                                       5
+                                                          1
+                                1 T0                   1 5
+                     py ( t ) =          (   )                (   )
+                                T0  0                 5 0
+                                       y   t   |2
+                                                  dt =      y   t   | 2
+                                                                        dt
+`
+
+
+                                      1
+                                               1      1
+                     p y ( t ) = 5 1dt =
+                                     10
+                                                  5 = = 0.5
+                                     0        10      2
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         565
+    Type             MSQ
+    Body             Consider the following input x ( t ) and output y ( t ) pairs
+                     for four different systems. Which of the following is/are
+                     LTI ?
+    Option           x ( t ) = cos ( t ) , y ( t ) = cos ( t − 1)
+
+    Option                                                          
+                         x ( t ) = sin ( 2t ) , y ( t ) = 5sin  2t − 
+                                                                    4
+    Option                                                       
+                     x ( t ) = 2cos ( 4t ) , y ( t ) = 4sin  4t − 
+                                                                 −
+    Option                                                      
+                     x ( t ) = 5sin ( t ) , y ( t ) = 5cos  2t − 
+                                                                3
+`
+
+
+
+    Correct          1,2,3
+    Explanation      If input to the LTI system is either cos( or ) sine, then the
+                     output is either cos (or) sine with may be change in
+                     amplitude and phase, but the frequency is same
+
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         566
+    Type             NAT
+    Body             The fundamental time period of x ( t ) is 2sec .        The
+                     fundamental time period of y ( t ) = x ( −2t + 4 ) is ____
+                     sec.
+    Correct          1
+    Explanation      x ( t ) → T0 = 2sec
+`
+
+
+
+                     x ( t + 4 ) → T0 = 2sec
+                     x ( 2t + 4 ) → T0 = 1sec
+                     x ( −2t + 4 ) → T0 = 1sec
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         567
+    Type             MCQ
+    Body                                                       n
+
+                     Consider the D.T signal x ( n ) =   u ( n ) .
+                                                            1
+                                                         4
+                     Define the signal y ( n ) = x ( −n ) . The value of n =− y ( n )
+                     is
+    Option           3
+                     4
+    Option           4
+                     3
+    Option           1
+                     3
+`
+
+
+
+    Option           2
+                     3
+    Correct          2
+    Explanation      1
+                           n
+                                               1
+                           u ( n ) 
+                                               1
+                     4                  1 − e − j
+                                               4
+                          −n
+                     1                         1
+                            u  ( − n ) 
+                                                 1
+                     4                      1 − e j
+                                                 4
+                                            −n
+
+                     So, y ( n ) =   u ( −n )
+                                        1
+                                     4
+                                         1
+                     Y ( e j ) =
+                                         1
+                                   1 − e j
+                                         4
+                                       
+                     Y (e   j
+                                   ) =  y (n) e   − jn
+
+                                      n =−
+                                        
+                     Y ( e j0 ) =  y ( n )
+                                      n =−
+                               
+                     So,  y ( n ) = Y e      ( ) = 1 1 = 43
+                                               j0
+
+                          n =−
+                                                           1−
+                                                                4
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+`
+
+
+
+    OTS ID
+
+
+
+    Question      568
+    Type          MCQ
+    Body                                                               n
+                                                                     1
+                  Consider       two         signals       x ( n ) =   u ( −n + 3)   and
+                                                                     2
+                                  − n +2
+                          1
+                  y (n) =                u ( n − 1) .
+                          2
+                  The value of integral  X ( e j ) Y ( e − j ) d is
+                                                    2
+
+                                                    0
+
+
+    Option        
+                  2
+    Option        
+                  4
+    Option        3
+                   2
+    Option        2
+                   4
+    Correct       3
+    Explanation   From plan Cherel’s relation
+                     
+                                             1 2
+                       x ( n ) y* ( n ) =
+                                           2 0          ( ) ( )
+                                                      x e j Y* e j d
+                  n =−
+                                            − n +2
+
+                  Given y ( n ) =     1
+                                                   u ( n − 1) is a real signal
+                                         3
+                                        
+                  So, Y* ( e j ) = Y e− j ( )  
+`
+
+
+
+                          1 2                                 1 2
+                     So,    
+                         2 0
+                                X ( e j
+                                         ) Y*  ( e j
+                                                      ) d =
+                                                             2 0   X ( e j ) Y ( e − j ) d
+                                                                
+                          1 2
+                     So,    
+                         2 0
+                                      j
+                                X e Y e     ( ) (− j
+                                                                   )
+                                                        d =  x ( n ) y* ( n )
+                                                             n =−
+
+                          1 2
+                     So,     0 X ( e j ) Y ( e− j ) d = n =− x ( n ) y* ( n )
+                         2
+                                                                1 n                  1
+                                                                                               − n +2
+                                                                                                          
+                      X (e
+                         2
+                         0
+                              j
+                                   ) Y (e   − j
+                                                   ) d = 2 n=−  2  u ( −n + 3)  2  u ( n − 1)
+                                                                                                        
+                                              n           − n +2                  2
+                              1 1                  1
+                     = 2      
+                               3
+                               n =1         = 2 3n =1 
+                              2 2                  2
+                       2              2     3
+                     =    3 − 1 + 1 =  3 =
+                        4               4      2
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         569
+    Type             MCQ
+`
+
+
+
+    Body            Consider the periodic signal
+                                m=− 4  n − 4m  + 8  n − 1 − 4m  having DFS
+                    x  n  =  +
+                    coefficient Ck . Value of Ck is
+                                  k
+    Option                   −j
+                    1 + 2e         2
+
+
+    Option                   −j
+                                  kz
+                    1 − 2e        2
+
+
+    Option          1 + e− jk
+    Option          1 − 2e− jkk
+    Correct         1
+    Explanation                    +
+                    x  n  =  4 n − 4 m +8 n − 1 − 4 m 
+                                  m=−
+                    = + 4  n + 4 + 8  n + 3 + 4  n  + 8  n − 1 + 4  n − 4 + 8 n − 5 + ..
+
+
+
+
+                    One period of x  n  = 4,8, 0, 0
+                                             1        −j k 
+                                        2               2               k
+                         1 N−1       − j kn                            −j
+                    C k = x  n  e    N
+                                            =  4 + 8e    4
+                                                             = 1 + 2e
+                                                                           2
+                         N n =0              4             
+    Subject         Signals and Systems
+    Topic
+    Correct Marks   2
+    Incorrect Marks 0.66
+    Hint            -
+`
+
+
+
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         570
+    Type             MCQ
+    Body             A periodic signal x ( t ) has fundamental frequency 0 = 1
+                     and one period of it is x1 ( t ) = u ( t ) − 2u ( t −  ) + u ( t − 2 )
+                     with E.F.S coefficient Cn we can conclude that ____ .
+
+    Option           C0  0, Cn = 0 for even " n "
+    Option           C0 = 0, Cn = 0 for even " n "
+    Option           C0  0, Cn = 0 for odd " n "
+    Option           C0 = 0, Cn = 0 for odd " n "
+    Correct          2
+    Explanation
+
+
+
+
+                     Odd + H.W symmetry ⇒ Cn exists only for odd harmonics
+
+    Subject          Signals and Systems
+    Topic
+`
+
+
+
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         571
+    Type             MCQ
+    Body             A real signal x ( t ) whose EFS coefficient value at n = 2
+                        1
+                     is    . Then the value of polar form of TFS coefficient dn
+                        j
+                     value at n = 2 is
+    Option           2
+                     j
+
+    Option           2
+                     
+    Option           1
+                     
+    Option           1
+                     j
+
+    Correct          1
+    Explanation      The relation between dn and cn is
+                     dn = 2cn n  0
+`
+
+
+
+                     d2 = 2c2
+                           2
+                     d2 =
+                          j
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0.33
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         572
+    Type             MCQ
+    Body                                               ( )
+                     DTFT of a real signal x  n  is X e j . DTFT of
+                     en x  n − 1 is
+
+    Option           e− jX ( e j )
+
+    Option           e (
+                         − j −1)
+                                     (
+                                    X e(
+                                         j −1)
+                                                  )
+    Option           −X e ( )  e− j
+                          j −z
+                               
+    Option           X e( (   j − )
+                                        )e   j
+`
+
+
+
+    Correct          3
+    Explanation      x  n − n 0  ⎯
+                                    FT
+                                       → e− jn0 X ( e j )
+                     x  n  e jcn  X e ( c ) 
+                                             j −
+                                                  
+                     x  n − 1 ⎯  FT
+                                       → e− jX e j( ) e = –1     j
+
+
+
+                     e jn x  n − 1  e (
+                                            − j − )
+                                                        X e (
+                                                             j − )
+                                                                       
+                                                                      
+                         = −e− jX e (
+                                      j − )
+                                                
+                                               
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    1
+    Incorrect Marks 0.33
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         573
+    Type             MCQ
+    Body             The Z.transform of nu(-n) is
+    Option              z
+                               ; z 1
+                     (z + 1) 2
+
+    Option              −z
+                               ; z 1
+                     (z − 1) 2
+`
+
+
+
+    Option              1
+                               ; z 1
+                     (z − 1) 2
+
+    Option              z
+                               ; z 1
+                     (z + 1) 2
+
+    Correct          2
+    Explanation                      z −1
+                     nu ( n )                 ; z 1
+                                  (1 − z )
+                                        −1 2
+
+
+                                                                    1
+                                                        ( )
+                     apply T.R property x ( −n )  X z −1 , ROC =
+                                                                    R
+                     Apply T.R property
+
+                     −nu ( −n ) 
+                                  (z )  −1 −1
+
+
+                                   (1 − z)2
+                                    −z           z
+                     nu ( −n )            =−           ; z 1
+                                 (1 − z) 2
+                                              (z − 1) 2
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         574
+`
+
+
+
+    Type            NAT
+    Body            The input-output relationship of an LTI system is given
+                    below.
+
+
+
+
+                    For an input x  n  shown below
+
+
+
+
+                    The peak value of the output when x  n  passes through h
+                    is ____ .
+
+    Correct         7
+    Explanation      ( n ) → h ( n ) =  ( n ) + 2 ( n − 1) +  ( n − 2 )
+                    x ( n ) =  ( n ) + 3 ( n − 1) → y ( n ) = h ( n ) + 3h ( n − 1)
+                    y ( n ) =  ( n ) + 2 ( n − 1) +  ( n − 2 ) + 3 (  ( n − 1) + 2 ( n − 2 ) +  ( n − 3 ) )
+                    =  ( n ) + 5 ( n − 1) + 7 ( n − 2 ) + 3 ( n − 3)
+                    Peak value of output is 7
+    Subject         Signals and Systems
+    Topic
+    Correct Marks   2
+    Incorrect Marks 0
+`
+
+
+
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         575
+    Type             MCQ
+    Body             The response of an initially relaxed linear network to a unit
+                     step function applied at t = 0 is s ( t ) = 2 1 − e−2t  u ( t ) .
+                     The response of this network to a unit impulse function will
+                     be
+    Option           e −2t u ( t )
+
+    Option           2e −2t u ( t )
+
+    Option           3e −2t u ( t )
+
+    Option           4e −2t u ( t )
+
+    Correct          4
+    Explanation      Impulse response can be obtained by differentiating the
+                     step response.
+                               d
+                               dt
+                                          (
+                     h ( t ) = 2 1 − e−2t u ( t ))
+                         (            )         (          )
+                     2 1 − e  ( t ) + 2 0 − e−2t ( −2) u ( t )
+                              −2t
+
+
+
+                         (                )
+                     2 1 − e ( )  ( t ) + 4e−2t u ( t )
+                                −2 0
+
+
+                     h ( t ) = 4e −2u u ( t )
+`
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         576
+    Type             MCQ
+                                                                               − x( t )
+    Body             A continuous-time system is described by y ( t ) = e                 ,
+                     where y ( t ) is the output and x ( t ) is the input. The system
+                     is
+    Option           linear and time invariant
+    Option           linear and time variant
+    Option           non-linear and time invariant
+    Option           non-linear and time variant
+    Correct          3
+    Explanation      We know that ea+b = ea  eb  ea + eb the above system
+                     does not obey additivity principle hence non-linear
+                     Output due to delayed input ( x ( t − t 0 ) ) is
+                         − x( t − t 0 )
+                     e                    ______ (1)
+`
+
+
+                                                         − x( t − t )
+                     Delayed output response is e   0
+                                                       ____ (2)
+                     From (1) and (2) we can conclude that the system is time
+                     invariant system.
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         577
+    Type             MCQ
+    Body             A linear time-invariant system has a frequency response,
+                                         1
+                         ( )
+                     H e j = e j 
+                                     1 + cos
+                     then the casual LCCDE that connects the input to the
+                     output is
+
+    Option           2y ( n − 1) + y ( n ) + 2y ( n + 2 ) = x ( n )
+
+    Option           2y ( n ) + y ( n + 1) + y ( n − 1) = 2x ( n + 1)
+
+    Option           2y ( n − 1) + y ( n ) + y ( n − 2 ) = 2x ( n )
+
+    Option           2y ( n + 1) + y ( n ) + 2y ( n − 2 ) = x ( n − 1)
+`
+
+
+
+    Correct          3
+    Explanation                                       e j
+                     Given, H e       ( )=
+                                       j
+                                                1      1
+                                             1 + e j + e − j
+                                                2      2
+                     Y ( e j )              e j
+                                  =
+                     X ( e j )      1         1
+                                 1 + e j  + e − j
+                                     2         2
+                                    1                   1
+                            ( )                     ( ) 2
+                                                                 ( )
+                      Y e j + e jY e j + e− yY e j = e jX e j
+                                     2
+                                                                       ( )
+                     Taking inverse DTFT,
+                              1               1
+                     y ( n ) + y ( n + 1) + y ( n − 1) = x ( n + 1) ....(i)
+                              2               2
+                     Put n = n − 1 in equation (i),
+                     2y ( n − 1) + y ( n ) + y ( n − 2 ) = 2x ( n )
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         578
+    Type             MCQ
+`
+
+
+
+    Body                                                 s+2
+                    If Laplace transform F ( s ) =                , then the inverse
+                                                      s + 8s + 25
+                                                       2
+
+                    Laplace transform f ( t ) is
+
+    Option                      2
+                    e−4t cos3t − e−4t sin3t
+                                3
+    Option                      2
+                    e−4t cos3t + e−4t sin3t
+                                3
+    Option                      2
+                    e−4t sin3t − e−4t cos3t
+                                3
+    Option                     2
+                    e4t cos3t − e−4t sint
+                               3
+    Correct         1
+    Explanation                             s+2           s+2
+                    Given, F ( s ) =                =
+                                       s 2 + 8s + 25 (s + 4) 2 + (3) 2
+                            s+4−2
+                    =
+                       (s + 4) 2 + (3) 2
+                              s+4                 2
+                    =                    −
+                        (s + 4) 2 + (3) 2 (s + 4) 2 + (3) 2
+                    By using inverse Laplace transform,
+                                           2
+                    f ( t ) = e−4t cos3t − e−4t sin3t
+                                           3
+    Subject         Signals and Systems
+    Topic
+    Correct Marks   2
+    Incorrect Marks 0.66
+    Hint            -
+`
+
+
+
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         579
+    Type             MCQ
+    Body             If x ( n ) is real-valued periodic sequence with a period
+                     N.x ( n ) and X ( k ) form N -point Discrete Fourier
+                     Transform (DFT) pairs. Then the DFT of y ( k ) of the
+                                       1 N−1
+                     sequence y ( n ) = x ( r ) x ( n + r ) is
+                                       N r =0
+
+    Option           0
+    Option           1 N−1
+                       X ( r ) X ( k + r )
+                     N r =0
+    Option           1 N−1
+                       X ( k ) X ( k + r )
+                     N r =0
+    Option           | X ( k ) |2
+
+    Correct          4
+    Explanation                           1 N−1
+                     Given, y ( n ) = x ( r ) x ( n + r )
+                                          N r =0
+                     It is auto correlation function,
+                     Hence,       y ( n ) = rXX ( n ) ⎯⎯
+                                                       DFT
+                                                           → | X ( k ) |2
+
+    Subject          Signals and Systems
+`
+
+
+
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         580
+    Type             MCQ
+    Body                                                            sin5 − j3
+                     The inverse Fourier transform of G ( ) = 20        e      is
+                                                                      5
+    Option
+
+
+
+
+    Option
+`
+
+
+
+    Option
+
+
+
+
+    Option
+
+
+
+
+    Correct       4
+    Explanation                               sin5 − j3
+                  Given,        G ( ) = 20        e
+                                                5
+                                sina 
+                  Let, F−1 2a             = f (t)
+                                    a 
+                  Put a = 5 ,
+                         sin5 
+                  F−1 10           = f (t)
+                             5 
+                  From linearity property,
+                                       sin 5 
+                  f ( t ) = F−1 2  10         = 2f ( t )
+                                         5   
+                              sin 5  FT
+                   F−1 20               ⎯→
+                                   5 
+`
+
+
+
+
+                                      sin 5 − j3  FT
+                      g ( t ) = F−1 20      e  ⎯→ 2f ( t − 3)
+                                        5         
+                     g (t) =
+
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         581
+    Type             NAT
+`
+
+
+
+    Body             Two sequences x1  n  and x 2  n  have the same energy.
+                     Suppose x1  n  = 0.5n u  n  , where a is a positive real
+                     number and u  n  is the unit step sequence.
+                                          1.2 , for n = 0,1
+                     Assume, x 2  n  = 
+                                           0     otherwise
+                     Then the value of a is ____ .
+                     (Answer upto two decimal places)
+    Correct          1.80 (1.75-1.85)
+    Explanation      Given, x1  n  = 0.5n u  n 
+                               1.2 ,    for n = 0,1
+                     x2 n = 
+                                0        otherwise
+                                             
+                     Energy of x1  n  =  x1  n 
+                                                       2
+
+                                           n =−
+                                   n
+                               1             1          4
+                     =  2   = 2              = 2 
+                               4               1        3
+                       n =−
+                                             1−
+                                                 4
+                     Energy of x 2  n  = 1.2 + 1.2 = 2.4
+                             4
+                     ⇒  2  = 2.4
+                             3
+                           3
+                      =  2.4 = 1.8
+                           4
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+`
+
+
+
+    PYQ
+    OTS ID
+
+
+
+    Question         582
+    Type             NAT
+    Body             If x  n  = 1, 2,3, 2,1 and x  n  ⎯⎯→X e          DTFT
+                                                                                    ( ) . Then the
+                                                                                      j
+
+
+
+                                            (             ) d is ____ .
+                                                          2
+                     value of  X e (
+                                                j − )
+                                   −
+
+
+    Correct          119.38 (118.00-121.00)
+    Explanation       1                    
+                             X ( e ) d =  | X  n  |2
+                                     2
+
+                        
+                                  j
+
+                     2   −
+                                          n =−
+                                                              
+                                        | d = 2  | x ( n ) |2
+                               j( − ) 2
+                      ∣ X(e
+                         −
+                                                           n =−
+
+                      x (n) e   jn
+                                       ⎯⎯→ X e (
+                                        DTFT
+                                                          (    j − )
+                                                                         )
+                     = 2 1 + 4 + 9 + 4 + 1
+                     = 38
+                     = 119.38
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+`
+
+
+
+    OTS ID
+
+
+
+    Question      583
+    Type          NAT
+    Body          A first-order discrete time system is described by the
+                  difference equation,
+                           1
+                  y  n  =  x ( n ) + x ( n − 1) + y ( n − 1) 
+                           2
+                  The impulse response at n = 0 is ____ . (Answer upto one
+                  decimal place)
+    Correct       0.5 ( 0.3 − 0.7 )
+
+    Explanation   Given,
+                            1
+                  y n =      x ( n ) + x ( n − 1) + y ( n − 1) 
+                            2
+                  taking z -transform,
+                             1
+                   Y ( z ) =  X ( z ) + z −1X ( z ) + z −1Y ( z ) 
+                             2
+
+                   H (z) =
+                                            (
+                             Y ( z ) 0.5 1 + z
+                                      =
+                                                     )
+                                                    −1
+
+                                                        =
+                                                           ( z + 1) 0.5
+                             X (z)        1 − 0.5z −1         z − 0.5
+                  H ( z ) ( z + 1) 0.5 A           B
+                         =                   = +     .
+                    z        z ( z − 0.5 ) z z − 0.5
+                       0.5 ( z + 1)
+                  A=                 |z=0 = −1
+                         z − 0.5
+                       0.5 ( z + 1)
+                  B=                 |z=0.5 = −1.5
+                            z
+                                          1.5z
+                       H ( z ) = −1 +
+                                        z − 0.5
+                       h ( n ) = −  n  + 1.5(0.5) n u  n 
+`
+
+
+
+                     at n = 0,
+                     h ( 0 ) = −1 + 1.5 = 0.5
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         584
+    Type             MSQ
+    Body             A discrete time signal x ( n ) =  ( n − 1) + 2 ( n − 2 ) has z -
+                                                         z
+                     transform X ( z ) . If Y ( z ) = X  −  is the z -transform of
+                                                         2
+                     another signal y  n  , then
+
+    Option           y (1) = 2
+
+    Option           y ( −1) = 0
+
+    Option           y ( 2) = 8
+
+    Option           y ( −2 ) = 8
+
+    Correct          2,3
+`
+
+
+
+    Explanation      Given,        x ( n ) =  ( n − 1) + 2 ( n − 2 )
+                     by taking z -transform,
+                     X ( z ) = z −1 + 2z −2
+                                                 z
+                     also given,      Y (z) = X  − 
+                                                 2
+                                              −1             −2
+                          z  z        −z 
+                      X −  =  −  + 2 
+                          2  2        2 
+                     = −2z−1 + 8z−2
+                      Y ( z ) = −2 ( z−1 − 4z−2 )
+                     y ( n ) = −2 ( n − 1) + 8 ( n − 2 )
+                     y ( −1) = −2 ( −2 ) + 8 ( −3) = 0
+                     y ( 2 ) = −2 (1) + 8 ( 0 ) = 8
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         585
+    Type             MCQ
+    Body             Consider the discrete-time system shown in the figure.
+`
+
+
+
+
+             The pole-zero plot of the above system is
+    Option
+
+
+
+
+    Option
+`
+
+
+
+    Option
+
+
+
+
+    Option
+
+
+
+
+    Correct       2
+    Explanation   The difference equation of the system
+                           1               4
+                  x ( n ) − y ( n − 2 ) + y ( n − 1) = y ( n )
+                           3               3
+                  by taking z -transform
+                           1               4
+                  X ( z ) − z −2 Y ( z ) + z −1Y ( z ) = Y ( z )
+                           3               3
+                            Y (z)            1                    1
+                  H (z) =          =                    =
+                            X ( z ) 1 + 1 z −2 − 4 z −1 1 + 1  1 − 4 1
+                                          3      3              3 z2 3 z
+`
+
+
+
+                           z2
+                     =
+                           4    1
+                       z2 − z +
+                           3    3
+                                         1
+                     Poles are at, z1,
+                                         3
+
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         586
+    Type             NAT
+`
+
+
+
+    Body          The Fourier transform of a signal h ( t ) is
+
+                  H ( ) = 2sin ( 2) 
+                                          ( sin)
+                                                    , then the value of h ( 2 ) is
+                                            
+                  ____ .
+    Correct       −0.5 ( −0.6 − −0.4 )
+
+    Explanation                                     ( sin)
+                  Given, H ( ) = 2sin ( 2) 
+                                                       
+                  Let, H1 ( ) = 2sin (2)
+                             sin 
+                  H 2 ( ) =
+                               
+                  From the property of Fourier transform,
+                          t  FT                T 
+                  Arect   ⎯       → AT sin c     
+                         T                     2 
+                            T 
+                       sin      
+                             2 
+                  AT
+                          T 
+                              
+                          2 
+                                      T
+                  on comparing,         =1  T = 2
+                                      2
+                                     1 1
+                  AT = 1  A = =
+                                     T 2
+                                   sin  F.T.
+                   H 2 ( ) =          ⎯⎯   →
+                                     
+`
+
+
+
+                                             e+ j2 − e− j2
+                     h1 ( t ) = 2sin ( 2) =
+                                                    j
+
+                      H ( ) = 2 sin ( 2) H ( ) =
+                                                     (e                  j2 
+                                                                                − e− j2  )
+                                                                                              H 2 ( )
+                                                        2
+                                                                                 j
+                     H ( ) = e j2H2 ( ) − e− j2H2 ( ) / j
+                                                                     1
+                     h ( t ) =  h 2 ( t + 2 ) − h 2 ( t − 2 ) 
+                                                                     j
+
+
+
+
+                          | h ( 2 ) |= 0.5
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         587
+`
+
+
+
+    Type             NAT
+    Body             Consider the function g ( t ) = e −2t cos ( 2t ) u ( t ) where
+                     u ( t ) is the unit step function. Then the area under g ( t ) is
+                     ____ (Answer upto three decimal places)
+    Correct          0.046 (0.035-0.055)
+    Explanation      Given, g ( t ) = e−2t cos ( 2t )
+                                                  
+                         Area =  g ( t ) dt =  cos ( 2t ) u ( t )  e −2t dt
+                                   −              −
+
+                     = G ( s ) |s=0
+
+                      G (s ) =
+                                            (s + 2)
+                                        (s + 2)2 + (2) 2
+                                          s+2                     2
+                            Area =                    |s =0 =
+                                    (s + 2) 2 + (4) 2         4 + 42
+                            Area = 0.046
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         588
+`
+
+
+
+    Type          MSQ
+    Body          Consider the discrete time sequence given below:
+                  x ( n ) = 1, 2, 0,3, −2, 4, 7,5
+                  Then which of the following facts are correct regarding its
+                  DFT?
+
+    Option        X ( 0 ) = 20
+
+    Option         7
+
+                  X ( k ) = 8
+                  K =0
+
+
+    Option        X ( 4) = 8
+
+    Option         7
+
+                  | X ( k ) | = 764
+                  K =0
+                                   2
+
+
+
+
+    Correct       1,2
+    Explanation   (i) Given, x ( n ) = 1, 2, 0,3, −2, 4, 7,5
+                  From the definition of DFT,
+                              N −1                  2 Kn
+                                               −j
+                  X ( k ) = x ( n ) e                N
+
+                              n =0
+
+                  Given, N = 8
+                  7
+                    
+                  2
+                               7
+                  X ( 0 ) =  x ( n ) = 1 + 2 + 0 + 3 − 2 + 4 + 7 + 5 = 20
+                              n =0
+                                        7
+                  (ii) X ( 4 ) = x ( n )  e− j2  4n/8
+                                       n =0
+                         7                          7
+                  = x ( n )  e       − jn
+                                               = x ( n ) (−1)n
+                       n =0                      n =0
+
+                  X ( 4 ) = 1 − 2 + 0 − 3 − 2 − 4 + 7 − 5 = −8
+`
+
+
+                              7
+                     (iii) X ( k )
+                             k =0
+                     We know that inverse DFT is
+                              1 N−1
+                     x ( n ) = X ( k ) e j2 kn/N
+                              N n =0
+                     Put x = 0 , N = 8
+                              1 7
+                     x ( 0 ) = X ( k )
+                              N n =0
+                         7
+
+                     X ( k ) = Nx ( 0) = 8 1 = 8
+                     n =0
+                     (iv) From the expression for parreval's theorem is,
+                      N−1
+                                          1 N−1
+                     n =0
+                           | x ( n ) | = (X ( k ))2
+                                      2
+
+                                          N K=0
+                     Put N = 8 ,
+                        7
+                                         1 7
+                     n =0
+                            x ( )
+                               n    |2
+                                       =   
+                                         8 k =0
+                                                X ( k ) |2
+                         7               7
+
+                     | X ( k ) | = 8| X ( n ) |
+                     k =0
+                                    2
+
+                                        n =0
+                                                    2
+
+
+
+                     = 8 1 + 4 + 0 + 9 + 4 + 16 + 49 + 25
+                     = 864
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+
+    Question      589
+    Type          NAT
+    Body          The discrete time Fourier transform of a signal x ( n ) is
+                  X ( e j ) = (1 + cos) e− j . Consider that x p ( n ) is a periodic
+                  signal of period N = 5 such that
+                             x  n  for n = 0,1, 2
+                  xp (n ) =                         . Then the magnitude of the
+                               0      for n = 3, 4
+                  Fourier series coefficient a 3 is ____ .
+                  Answer upto 3 decimal places)
+                                          N −1             2
+                                                       j      Kn
+                  (Note that x p ( n ) = a k e            N       )
+                                          k =0
+
+
+    Correct       0.038 (0.030-0.045)
+                                                     2
+    Explanation                        N −1      j      Kn
+                  Given, x p ( n ) = a k e          N
+
+                                       k =0
+                  We know that,
+                                    j2 
+                       1 N−1      −      Kn
+                  a k = x ( n ) e N
+                       N n =0
+                       1                    1
+                             ( )
+                  a k = X e j | 2k = (1 + cos ) e− j | 2 k
+                       N         =         N             =
+                                     N                       N
+                                              j2 3
+                      1      2  3  5
+                  = 1 + cos         e
+                     N          N 
+                                         6
+                       1        6  − j 5
+                  a 3 = 1 + cos    e
+                       5         5 
+                         1       6 
+                  a 3 = 1 + cos  = 0.038
+                         5        5 
+    Subject       Signals and Systems
+`
+
+
+
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         590
+    Type             MCQ
+    Body             The z -transform of e− t u ( t ) which is sampled at 10 Hz
+                     will be
+    Option             z
+                     z −1
+    Option              z
+                     z − 0.1
+    Option             z
+                     z − 10
+    Option              z
+                     z − 0.9
+    Correct          4
+    Explanation      Given, x ( t ) = e – t u ( t )
+                                                  1
+                     Putting, t = nT = n  = 0.1n
+                                                 10
+`
+
+
+
+                                 e −0.1n for n  0
+                      x (n) = 
+                                  0          for n  0
+                      x ( n ) = e −0.1n u ( n )
+                                       z            z
+                      X (z) =                =
+                                 z − e −0.1 z − 0.9
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         591
+    Type             NAT
+    Body             The     z -transform      of    a    signal   is   given   by
+                             1 z (1 − z )
+                                −1       −4
+
+                     X (z) =                . , its final value is ____ .
+                             2 (1 − z −1 )2
+
+    Correct          2
+    Explanation                       1 z (1 − z )
+                                         −1       −4
+
+                     Given, X ( z ) =
+                                      2 (1 − z −1 )2
+                     Final value theorem,
+`
+
+
+
+                     x (  ) = lim(1 − z−1 ) X ( z )
+                               z→1
+
+                                                      1 z (1 − z )
+                                                         −1       −4
+
+                             x (  ) = lim(1 − z )   −1
+                                         z →1         2 (1 − z −1 )2
+
+                              1 z (1 − z )
+                                 −1      −4
+
+                     = limz→1
+                              2 (1 − z −1 )
+                      1
+                     =  limz→1
+                                ( z − 1)( z + 1)
+                                       2           2
+
+
+                      2             z 4 ( z − 1)
+                      1          ( z + 1) ( z + 1)
+                                               2
+
+                     =  lim z→1
+                      2                 z4
+                      1
+                     =  2 2 = 2
+                      2
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         592
+    Type             MSQ
+`
+
+
+
+    Body          Consider the linear discrete time system,
+
+                  H (z) =
+                                    ( z + 1)
+                                       2
+
+                                                          .
+                            ( z + 0.5 )( z − 0.5 ) 
+                  Which of the following facts are correct?
+    Option        The system is stable
+    Option        h ( 0) = 4
+
+    Option        h () = 0
+
+    Option        h ( 0 ) = −4
+
+    Correct       1,3
+    Explanation
+                  Given, H ( z ) =
+                                               ( z + 1)
+                                                  2
+
+
+                                      ( z + 0.5 )( z − 0.5 ) 
+                  Poles, z = 0.5 and -0.5
+                  Zeros, z =  j1
+                  Pole-zero plot,
+
+
+
+
+                  Since all poles are lying inside the unit circle ( z = 1) .
+                  Therefore, the system is stable For the initial value
+                  theorem,
+`
+
+
+
+                                                       z2 + 1
+                     h ( 0 ) = limH ( z ) = lim                        =1
+                               z→          z→ ( z + 0.5 )( z − 0.5 )
+
+                     From the final value theorem,
+                     h (  ) = lim( z − 1) H ( z )
+                               z →
+
+                                          z2 + 1
+                     = lim( z − 1)                      =0
+                       z→         ( z + 0.5)( z − 0.5)
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         593
+    Type             MCQ
+    Body             A continuous-time periodic signal is shown below in
+                     figure.
+`
+
+
+
+
+                  The signal can be described by the function
+    Option                t 
+                  sgn  sin 
+                          T
+    Option        sin sgn ( t ) 
+
+    Option            t  
+                  u sin   
+                      T 
+    Option        sin ( u ( t ) )
+
+    Correct       3
+    Explanation           1; t  0
+                  u (t) = 
+                          0; t  0
+                                                  t 
+                                          1; sin  0
+                              t             T
+                         u sin    = 
+                              T   0; sin  t   0
+                                                 
+                                                  T
+`
+
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         594
+    Type             MCQ
+`
+
+
+
+    Body                                                                           
+                     The z -transform of signal x  n  = e                            u  n  is
+                                                                              jn
+                                                                                   2
+
+
+
+    Option            z
+                          ; ROC : z  1
+                     z− j
+    Option            z
+                          ; ROC : z  1
+                     z+ j
+    Option             z
+                          ; ROC : z  1
+                     z +1
+    Option             z
+                          ; ROC : z  1
+                     z −1
+    Correct          1
+    Explanation                        jn
+                                             
+                                                                   j 2 −1 
+                                                                      
+                                                                                       n
+
+                     X (z) =  e             2
+                                                 z u ( n ) =  e z 
+                                                  −n
+
+                                n =−                        n =0          
+                                                           
+                            1                          j            z
+                     =          
+                                       ;z  e              2
+                                                               =        ; ROC : z  1
+                            j
+                                2 −1
+                                                                   z− j
+                         1− e z
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+
+    Question         595
+    Type             MCQ
+    Body             The trigonometric Fourier series coefficient a n in terms of
+                     exponential Fourier series coefficient Cn is
+
+    Option           a n = Cn + C−n
+
+    Option           a n = Cn − C−n
+
+    Option           a n = Cn + jC−n
+
+    Option           a n = Cn − jC− n
+
+    Correct          1
+    Explanation            1 T
+                     Cn =       x ( t ) e− jn0t dt
+                           T   0
+
+                             1 T
+                     C− n =  x ( t ) e jn0t dt = C*n
+                             T 0
+                           a − jb n
+                     Cn = n
+                                2
+                                    a + jb n
+                     C− n = C*n = n
+                                          2
+                     a n = Cn + C− n
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+`
+
+
+
+    OTS ID
+
+
+
+    Question        596
+    Type            MCQ
+    Body            The time domain signal with time period, T = 2 whose
+                    Fourier series coefficient is given by
+                    Cn = j ( n − 1) − j ( n + 1) +  ( n − 3) +  ( n + 3) will be
+
+    Option          2sin2t − sin3t
+    Option          −2sint + 2cos3t
+    Option          sin2t + 2sin3t
+    Option          cost − 2sin3t
+    Correct         2
+    Explanation                
+                    x ( t ) =  Cn e jn0t
+                             n =−
+                               
+                                                 2    
+                    x ( t ) =  Cn e jnt  0 =    = 
+                              n =−              T     
+                               
+                    x ( t ) =   j ( n − 1) − j ( n + 1) +  ( n − 3) +  ( n + 3) e jnt
+                             n =−
+
+                    x ( t ) = je − je−t + e j3t + e− j3t
+                                 t
+
+
+                    x ( t ) = −2sin t + 2cos 3t
+
+    Subject         Signals and Systems
+    Topic
+    Correct Marks   2
+    Incorrect Marks 0.66
+`
+
+
+
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         597
+    Type             MCQ
+    Body             A discrete-time signal x  n  is shown below :
+
+
+
+
+                     Which of the following signals represent
+                     x  n  ( u  n + 2 − u  n ) ?
+
+    Option
+`
+
+
+
+    Option
+
+
+
+
+    Option
+
+
+
+
+    Option
+
+
+
+
+    Correct   3
+`
+
+
+
+    Explanation
+
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         598
+    Type             NAT
+    Body             The impulse response of a discrete-time LTI system is
+                                             n
+                                         1
+                     given by h  n  =   u  n  . If y  n  is the output of the
+                                        2
+                     system with the input x  n  = 2  n  +   n − 3 then y[5]
+                     will be ____ (upto three decimal places)
+`
+
+
+
+    Correct          0.3125 (0.300-0.320)
+    Explanation      y n  = x n  * h n 
+                                                   n
+                                                  1
+                     = 2  n  +   n − 3 *   u ( n )
+                                                  2
+                                       n               n
+                                  1             1
+                     = 2  n  *   u  n  +   u ( n ) *   n − 3
+                                  2              2
+                               n               n −3
+                         1              1
+                     = 2   u ( n ) +   u ( n − 3)
+                         2               2
+                                     5               2
+                                 1            1           1 1 5
+                     y 5 = 2   u ( 5 ) +   u ( 2 ) =       + =
+                                 2            2          16 4 16
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         599
+    Type             MCQ
+    Body             Let x  n  be a sequence with z-transform X ( z ) . Then
+                     expression the x1 ( n ) = x ( 2n ) in terms of X ( z ) is
+`
+
+
+
+    Option        1                −1  
+                  2 
+                       X   ( )z + X    
+                                    z 
+    Option        1
+                  2 
+                       X   ( z ) + X  1z 
+    Option        1
+                  2
+                     X     ( z ) − X ( − z )
+    Option        1
+                  2
+                     X     ( z ) + X ( − z )
+    Correct       4
+    Explanation   Given, x1 ( n ) = x ( 2n )
+                  From the definition of z -transform,
+                                
+                  X ( z ) =  x ( n ) z−n
+                              n =−
+                                       
+                   X1 ( z ) =  x ( 2n ) z − n
+                                      n =−
+                               K
+                  K = 2n  n =
+                                2
+                  at n = −  K = −
+                  n = +  K = +
+                                     K
+                  =  x (K) z         2
+
+                      K =−
+                          x ( K ) + ( −1) K x ( K )  K2
+                  =                                  z ; K even
+                    K =−              2             
+                                                              1 −K
+                    1 
+                                     K
+                                           1   
+                                                               
+                  =  x ( K ) z 2 +  x ( K )  −z 2 
+                    2 K=−                 2 K=−              
+                  From the definition of z -transform
+                             1
+                                       ( )
+                  X1 ( z ) =  X z + X − z 
+                             2
+                                                     (   )
+                                                         
+`
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         600
+    Type             MCQ
+    Body             A signal x1 ( t ) whose fourier transform is X1 ( j) has the
+                     following magnitude and phase response as shown below:
+
+
+
+
+                     Then the signal x ( t ) is
+
+    Option           3
+                        ( cos3t − sin3t )
+                     t
+    Option           3
+                        ( tcos3t − sin3t )
+                     t
+`
+
+
+
+    Option         3
+                       ( 3tcos3t − sin3t )
+                  t 2
+    Option         3
+                         ( 3tcos3t − sin3t )
+                  2 t 2
+    Correct       3
+    Explanation   The fourier transform of x ( t ) can be written
+                  X1 ( j) = X1 ( j) e
+                                          jX1( j)
+
+
+                                   1;   3
+                  Let, X1a ( j) = 
+                                   0; otherwise
+                  Note that, given X1 ( j) is " 3j " times X1a ( j)
+                                   3j;   3
+                       X1 ( j) = 
+                                   0; otherwise
+                                                                    
+                  Since, at  = 3, X1 ( j) = 9 and X1 ( j) =
+                                                                    2
+                                                                
+                   = −3, X1 ( j) = 9 and X1 ( j) = −
+                                                                2
+                  By taking inverse fourier transform,
+                                      d
+                  Thus, x1 ( t ) = 3 x1a ( t )
+                                      dt
+                   [By using differential property]
+                                                    sin3t
+                  also we can express x1a ( t ) =
+                                                      t
+                                      d  sin 3t 
+                  Thus, x1 ( t ) = 3 
+                                     dt  t 
+                     3 1
+                  =  2 3t cos 3t − sin 3t 
+                      t
+                                    3
+                       x1 ( t ) = 2 3t cos 3t − sin 3t 
+                                   t
+    Subject       Signals and Systems
+`
+
+
+
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         601
+    Type             MCQ
+    Body             The response of an LTI system for input
+                     x1 ( t ) = u ( t + 1) − u ( t − 1) is given as g ( t ) . If the input to
+                     the same system is x 2 ( t ) as shown below, and response
+                     being y ( t ) , then y ( 0 ) = ____ .
+
+
+
+
+    Option           6.5
+    Option           2
+    Option           3
+    Option           4
+`
+
+
+
+    Correct          1
+    Explanation
+
+
+
+
+                                     1          1
+                     x 2 ( t ) = x1  t −  + x1  t + 
+                                     2          2
+                     Since the system is LTI
+
+
+
+
+                                  1      1
+                     y ( 0 ) = g  −  + g   = 3.25 + 3.25 = 6.50
+                                  2       2
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+`
+
+
+
+    PYQ
+    OTS ID
+
+
+
+    Question   602
+    Type       MCQ
+    Body       The following diagrams represent systems with poles
+               (indicated by X s) and zero's (indicated by • 's). The scale
+               for each diagram is indicated by the circle, which has unit
+               radius as shown below
+
+
+
+
+               which of the above pole-zero diagram represents the
+               system with the following unit-sample response
+
+
+
+
+    Option     X1 ( z )
+
+    Option     X2 ( z )
+
+    Option     X3 ( z )
+
+    Option     None of the given
+    Correct    4
+`
+
+
+
+    Explanation     We can rewrite the given x ( n ) signal
+                    x (n) = a , 0  a  1
+                              n
+
+
+                    The z -transform of the x ( n ) is X ( z )
+                                             −1
+                    X ( z ) = a z  n −n
+                                           +  a −n z−n
+                             n =0           n =−
+
+                    (or) x  n  = a u ( n ) + a − n u  −n − 1
+                                     n
+
+
+                                  1              1                  1
+                     X (z) =         −1
+                                         −       −1 −1
+                                                         ;a  z 
+                             1 − az        1− a z                   a
+                    (or)
+                     −n                              −1             1
+                     a u  −n − 1 ⎯       →                ;z  
+                                            Z
+                                                       −1 −1
+                                                1− a z              a
+                                                                 z
+                                                          z 2 − − z 2 + az
+                         z         z                1            a
+                     =       −         ;a  z  =
+                       z−a z− 1                     a                  1
+                                     a
+                                                           ( z − a)z − 
+                                                                       a
+                                   1
+                                  a − a  z                  1
+                     X (z) =                       ;a  z 
+                             ( z − a )  z − 
+                                               1                a
+                                              a
+                                                                        1
+                    This z -transform has poles at z = a, z = , and a zero at
+                                                                        a
+                    z = 0.
+                    ∴ None of the given pole-zero diagram represents x ( n ) .
+                    Hence option (d) is correct.
+    Subject         Signals and Systems
+    Topic
+    Correct Marks   2
+    Incorrect Marks 0.66
+    Hint            -
+`
+
+
+
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         603
+    Type             NAT
+    Body             Let the following periodic signal
+                               
+                     x ( t ) =   ( t − 3m ) +  ( t − 1 − 3m ) −  ( t − 2 − 3m )
+                             m=−
+                     be the input to an LTI system with system function
+                     H ( s ) = es/4 − e−s/4
+                     Let bk represents the fourier series coefficient of the
+                     resulting output signal y ( t ) . Then b 3 will be ____ .
+                     Answer upto three decimal places)
+    Correct          0.66 (0.65-0.67)
+
+    Explanation      Given, periodic signal
+                               
+                     x ( t ) =   ( t − 3m ) +  ( t − 1 − 3m ) −  ( t − 2 − 3m )
+                             m=−
+                     redrawing the periodic signal
+`
+
+
+
+                    Clearly the period of x ( t ) is T = 3
+                     y ( t ) is also periodic with period T = 3 .
+                    The fundamental frequency of x ( t ) is,
+                           2 2
+                    0 =       =
+                           T       3
+                    Let a k represents the fourier series coefficient of x ( t ) .
+                    Then
+                          1 T
+                    a k =  x ( t ) e − j0kt dt
+                          T 0
+                                                                2
+                       1 3                                   − j kt
+                    =  ( ( t ) +  ( t − 1) −  ( t − 2 ) e T dt
+                       3 0
+                          1                  − j k2 
+                                     2          2
+                                   −j k
+                    a k = 1 + e      3
+                                         −e 3 
+                          3                          
+                                        1
+                    at k = 3 ; a 3 = (1 + e− j2  − e− j4  )
+                                        3
+                          1
+                    a3 =
+                          3
+                    The frequency response of the system is given,
+                    H ( j) = e j/4 − e− j/4
+                            
+                    = 2jsin
+                             4
+                                  2                     2 
+                     bk = H  j k  a k =  j2sin               k  ak
+                                    3                    12     
+                                               1      2
+                    at k = 3 b3 =  j2sin  = j
+                                                23     3
+                     b3 = 0.66
+
+    Subject         Signals and Systems
+    Topic
+    Correct Marks   2
+`
+
+
+
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         604
+    Type             NAT
+    Body             Let the signal x  n  be a discrete time signal represented as
+                              sin (  / 4 ) n 
+                                                2
+
+                     x n =                  
+                                    n        
+                     This signal is passed through a system whose impulse
+                                                          sinc n
+                     response is represented as h  n  =         .
+                                                            n
+                                                        
+                     The minimum value of f c  f c = c  so that y  n  = x  n 
+                                                       2 
+                     is ____ Hz.
+
+    Correct          0.25
+    Explanation      y n  = x n  * h n 
+                                   2
+                              
+                         sin   n
+                              4      sin c n 
+                      =          *          
+                         n   n 
+                                
+                     Convolution in time domain specifies multiplication in
+                     frequency domain thus, x  n  has a Fourier transform equal
+`
+
+
+
+                                                         
+                     to a triangular pulse with width       and the width of the filter
+                                                         2
+                     H ( e j )                               
+                                  should also have a limit of to have x  n  = y  n 
+                                                              2
+                     .
+
+
+
+
+                              
+                      c =
+                              2
+                             
+                     2f c =
+                             2
+                          1
+                     f c = = 0.25 Hz
+                          4
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+    Question         605
+    Type             NAT
+    Body             A periodic sequence with period N = 4 is defined as
+                     x  n  = 0,1, 2,3 for one period. It has discrete time
+                     Fourier series coefficient Ck . The value of C2 is ____
+                     (Answer upto two decimal places)
+    Correct          −0.50 ( −0.55 − −0.45)
+
+    Explanation             1 N−1
+                     Ck = x  n  e− jk0n
+                            N n =0
+                                           2
+                            1 3       − j2 n
+                     C2 =  x  n  e       4
+                            4 n =0
+                       1 3                 1
+                     = x  n  (−1)n = 0 + ( −1) + 2 − 3
+                       4 n =0              4
+                        1
+                     =−
+                         2
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+    Question         606
+    Type             NAT
+    Body                                                         3
+                     If x  k  = ( 4 − k ) , then the value of x  k   1 − k  is
+                                                                k =1
+
+
+    Correct          3 (3.00-3.00)
+
+    Explanation                  3
+                     Let, y = x  k   1 − k 
+                                k =1
+                          3
+                     = ( 4 − k )  1 − k 
+                         k =1
+                          3
+                     = 3   1 − k  ...from multiplication property of impulse
+                         k =1
+                     = 3 1 = 3
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         607
+    Type             NAT
+    Body             The direct form of an FIR filter is shown below:
+`
+
+
+
+
+                     The input given is x  n  =   n  and the output is y  n  .
+                     Then the value of y  2 will be ____ .
+                     (Answer upto two decimal places)
+    Correct          0.25 (0.24-0.26)
+    Explanation      If x  n  =   n  , then y  n  = h  n 
+                     So,
+                      y  n  = h  n  =   n  +   n − 1 +  2  n − 2 + 3  n − 3
+                              n ; 0  n  3
+                     h n = 
+                             0;    otherwise
+                                     1                       1
+                      y  2 = 2 = = 0.25  Given that,  = 
+                                     4                       2
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+
+    Question      608
+    Type          MCQ
+    Body          Consider the system defined by the difference equation
+                  y  n  = ay n − 1  +bx  n  + x  n − 1 , where a and b are
+                  real and a  1.
+                  Then the relation between a and b that must exist if the
+                  frequency response is to have a constant magnitude for all
+                                ( )
+                  '  ' i.e, H e j = 1 is
+
+    Option        b = −a
+    Option        b=a
+    Option              −a
+                  b=
+                        2
+    Option              a
+                  b=
+                        2
+    Correct       1
+    Explanation   Given difference equation,
+                  y  n  = ay n − 1  +bx  n  + x  n − 1
+                  By taking DTFT,
+                  Y ( e j ) = ae− jY ( e j ) + bX ( e j ) + e− jX ( e j )
+                  Y ( e j ) − ae− jY ( e j ) = bX ( e j ) + e− jX ( e j )
+                  Y ( e j ) 1 − ae− j  = ( b + e− j ) X ( e j )
+                               Y ( e j )
+                                       b + e− j      b + cos  − jsin 
+                  H (e ) =
+                        j
+                                     =            =
+                           X ( e j ) 1 − ae        1 − a ( cos  − jsin )
+                                             − j
+`
+
+
+
+                                               1 + b 2 + 2b cos 
+                         H (e        )
+                                         2
+                                j
+                                             =
+                                               1 + a 2 − 2a cos 
+                                               H ( e j ) = 1 only when b = −a
+                                                       2
+                     To satisfy
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         609
+    Type             MSQ
+    Body             Consider the system shown in figure below :
+
+
+
+
+                     The system is
+    Option           Memoryless
+`
+
+
+
+    Option           Causal
+    Option           Linear
+    Option           Time-invariant
+    Correct          1,2,3
+    Explanation      y ( t ) = T  x ( t )  = x ( t ) cosc t
+                     • Since the output y ( t ) depends only on the present
+                         values of input x ( t ) , the system is memoryless.
+                     • Since y ( t ) does not depend on the future values of input
+                         x ( t ) , the system is causal.
+                     • Let x ( t ) = ax1 ( t ) + bx 2 ( t ) , then
+                         y ( t ) = T x ( t ) = ax1 ( t ) + bx 2 ( t ) cos c t
+                         = ax1 ( t ) cos c t + bx 2 ( t ) cos c t
+                        = ay1 ( t ) + by2 ( t )
+                     ∴ The system is linear.
+                     • Let y1 ( t ) be the output produced by shifted input
+                         x1 ( t ) = x ( t − t o ) , then,
+                         y1 ( t ) = T  x ( t − t o )  = x ( t − t o ) cos c t
+                        But y ( t − t o ) = x ( t − t o ) cos c ( t − t o )  y1 ( t )
+                     ∴ The system is not time-invariant.
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+`
+
+
+
+    PYQ
+    OTS ID
+
+
+
+    Question      610
+    Type          MCQ
+    Body          The inverse Fourier transform of the signal X ( ) = e−2  is
+
+    Option            2
+                   (4 + t2 )
+
+    Option              2
+                  2 ( 4 + t 2 )
+
+    Option            2
+                   (4 + t2 )
+
+    Option           1
+                  (4 + t2 )
+    Correct       3
+    Explanation   Given, X ( ) = e−2 
+                  We know that,
+                   −a t           2a
+                  e ⎯⎯  F.T.
+                              → 2
+                                a + 2
+                  Put a = 2 ,
+                   −2 t            4
+                  e ⎯⎯  F.T.
+                              →
+                                4 + 2
+                  By using duality property,
+`
+
+
+
+                      4               −2 −
+                           ⎯
+                            IFT
+                               ⎯→ 2e
+                     4+t 2
+
+                           4                 −2 
+                                    ⎯
+                                     IFT
+                                        ⎯→ e
+                     2 ( 4 + t 2 )
+                                   2                −2 
+                                          ⎯
+                                            IFT
+                                               ⎯→ e
+                                (4 + t2 )
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         611
+    Type             MCQ
+    Body             Let x ( t ) = e − t u ( t ) . The inverse Laplace transform of
+                     e −3s X ( 2 s ) is equal to
+
+    Option           1 −( t −3)/2
+                       e          u ( t + 3)
+                     2
+
+                     e(               u ( t − 3)
+                         − t −3) /2
+    Option
+`
+
+
+
+    Option           1 −( t +3)/2
+                       e          u ( t + 3)
+                     2
+    Option           1 −( t −3)/2
+                       e          u ( t − 3)
+                     2
+    Correct          4
+    Explanation      Given, x ( t ) = e − t u ( t )
+                     We know that,
+                                   1 s
+                     x ( at )  X  
+                                   a a
+                                 1      t
+                     Put a = ; x    2X ( 2s )
+                                 2      2
+                                         1 t 1
+                      X ( 2s )  x   = e− t/2 u ( t )
+                                          2 2 2
+                     From time shifting property,
+                     x ( t − t 0 )  e−st 0 X ( s )
+                     Put t 0 = 3 .
+                     x ( t − 3)  e−3s X ( s )
+                                                      1 − t −3 /2
+                             L−1 e−3s X ( 2s )  = e ( ) u ( t − 3)
+                                                      2
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+`
+
+
+
+    OTS ID
+
+
+
+    Question        612
+    Type            MCQ
+    Body            If the region of z -transform of signal x1  n  + x 2  n  is
+                     1        3
+                        z  , then the region of convergence of z -transform
+                     4        4
+                    of signal x1  n  − x 2  n  includes
+
+    Option          1       3
+                       z 
+                    4       4
+    Option          3
+                       z 4
+                    4
+    Option          3 z  4
+
+    Option          1
+                       z 4
+                    4
+    Correct         1
+    Explanation     ROC remains unaffected for addition and subtraction
+                    operation in z -transform,
+                    i.e., → If ROC of x1  n  + x 2  n  is R then ROC of
+                    x1  n  − x 2  n  is also R .
+
+    Subject         Signals and Systems
+    Topic
+    Correct Marks   2
+    Incorrect Marks 0.66
+`
+
+
+
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         613
+    Type             NAT
+    Body             A signal x ( t ) has the Fourier transform X ( j) having the
+                     following facts :
+                     F−1 (1 + j) X ( j) = Ae −2t u ( t ) (where A is a real and
+                     positive constant)
+                      − | X ( j) |2 d = 2
+                     Then the value of A is ____ .
+
+    Correct          3.46 (3.40-3.51)
+    Explanation      Given, F−1 (1 + j) X ( j) = Ae −2t u ( t )
+                     (1 + j) X ( j) = FT Ae−2t u ( t )
+                                          A
+                     (1 + j) X ( j) =
+                                       2 + j
+                                      A
+                     X ( j) =
+                               (1 + j)( 2 + j)
+                                    A                A       B1 
+                     X ( j ) =                  = A 1 +          
+                            (1 + j)( 2 + j)       1 + j 2 + j 
+                               1               1
+                      A1 =        | j=−1 =      =1
+                            2 + j           2 −1
+`
+
+
+
+                               1                    1
+                     B1 =            | j=−2 =           = −1
+                            1 + j               1− 2
+                                       1                 1 
+                      X ( j) = A                 −           
+                                       1 + j  2 + j 
+                     By taking inverse Fourier transform,
+                     x ( t ) = Ae − t u ( t ) − Ae −2t u ( t )
+                     From the fact-2,
+                              1                                    
+                     (or)            |  X  ( j  ) |2
+                                                       d  = 1  =    | X ( t ) |2 dt
+                             2 −                                  −
+                                             2
+                       Ae − Ae dt = 1
+                              −t         −2t
+                         0
+
+                      ( A2e−2t − 2A2e−3t + A2e−4t ) dt = 1
+                         
+                         0
+
+                       A 2 −2t   2A 2  −3t   A 2  −4t 
+                     
+                       −2
+                          ( e )0 −  −3  ( e )0 +  −4  ( e )0 = 1
+                                                     
+                            A 2 2A 2 A 2
+                               −       +   =1
+                             2      3     4
+                     6A 2 − 8A 2 + 3A 2
+                                        =1
+                             12
+                           A2
+                               =1
+                           12
+                            A = 12 = 3.46
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+`
+
+
+
+    OTS ID
+
+
+
+    Question      614
+    Type          NAT
+    Body          Let   X (z)    is   the     z -transformer   of   x n   and
+                          4z 2 + 2z
+                  X (z) = 2          . Then the value of x  n  at n = 0 is
+                         2z − 3z + 1
+                  ____ .
+
+    Correct       2(1 - 3)
+    Explanation                       4z 2 + 2z  2z ( 2z + 1)
+                  Given, X ( z ) = 2            = 2
+                                    2z − 3z + 1 2z − 3z + 1
+                  X (z)      2 ( 2z + 1)
+                        =
+                    z     ( 2z − 1)( z − 1)
+                  X (z)      2 ( 2z + 1)
+                        =
+                    z     ( 2z − 1)( z − 1)
+                     2 ( 2z + 1)      A     B
+                                   =      +
+                  ( 2z − 1)( z − 1) 2z − 1 z − 1
+                                                 1 
+                                          2  2  + 1
+                                                  2 
+                  A = 2 ( 2z + 1) | 1 =               = −8
+                                   z=           1
+                                      2           −1
+                                                2
+                     2 ( 2z + 1)         2 ( 3)
+                  B=             |z =1 =        =6
+                       2z − 1              1
+                     X (z)       −8           6
+                            =           +
+                        z      2z − 1 z − 1
+`
+
+
+
+                                  −8z      6z     −4z     6z
+                     X (z) =           +       =        +
+                                 2z − 1 z − 1 z − 1 z − 1
+                                                      2
+                     by taking inverse z -transformer,
+                                        n
+                                   1
+                     x ( n ) = −4   u ( n ) + 6u ( n )
+                                   2
+                     at n = 0 , x ( 0 ) = −4  1 + 6 = 2
+                     Alternate Solution:
+                     Using the initial value theorem,
+                      x ( 0 ) = limX ( z )
+                               z →
+
+                                      2 ( 2z 2 + z )
+                     x ( 0 ) = lim
+                                 2z 2 − 3z + 1
+                               z→
+
+                                 1
+                            2 2 + 
+                                  z  2 2
+                     = lim            =       =2
+                       z →    3 1         2
+                            2− + 2
+                               z z
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         615
+`
+
+
+
+    Type          NAT
+    Body          The discrete time Fourier transform of a particular discrete
+                  time      signal      x n      is       X ( e j )   and    X ( e j )
+                                  k
+                            1
+                       3     
+                  =        2           . It can be shown that x  n  = g  n  q  n 
+                                    
+                     k =0   1 − j − k 
+                          1− e  2 
+                            4
+                  , where g  n  is of the form an u  n  and q  n  is a periodic
+                  signal with period N . Then the value of N  a is ____ .
+
+    Correct       1 (1-1)
+    Explanation                            1
+                                                        k
+
+                                     3      
+                  Given, X ( e ) = 
+                              j           2
+                                                  
+                                   k =0   1 − j − 2 k 
+                                        1− e
+                                          4
+                  The given DTFT of x  n  can be written as
+                                                                         
+                                                                         
+                                 1     1            3
+                                                                     
+                  X (e ) =
+                         j
+                                              * 2     − K   
+                                2 1 − 1 e− j  K =0           2  
+                                                 
+                                     
+                                         4                  q n         
+                                     g[n ]                              
+                                                       n
+                                         1       1
+                   G (e ) =  j
+                                               =         u n 
+                                        1 − j  4 
+                                      1− e
+                                        4
+                  by comparing g  n  =  n u  n 
+                                 1
+                   =
+                                 4
+                  q  n  is a periodic with period N
+`
+
+
+
+
+                                       ) = 2   − 2 k  For 0    2
+                                               3
+                          Q (e   j
+
+                                              k =0
+
+                                                                           3  
+                     Q ( e j ) = 2  ( ) +    −  +  (  −  ) +    −  
+                                                     2                       2 
+                     By taking inverse DTFT
+                                                       3
+                                   1 j 2 n 1 jn 1 j 2 n
+                     q n  = 1 + e + e + e
+                                   2        4        8
+                      Fundamental period, N = LCM (4, 2, 2)
+                      N=4
+                                               1
+                     Hence, N   = 4  = 1
+                                               4
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         616
+    Type             NAT
+    Body                     ( ) denote the Fourier transform of the signal
+                     Let X e j
+                     x  n  shown in figure below,
+`
+
+
+
+
+                                                                dX ( e j )
+                                                                               2
+                                                           
+                  Then the value of                                               d is __. (Answer upto
+                                                           −      d
+                  two decimal places)
+    Correct       992.74 (990.00-995.00)
+    Explanation                       dX ( e j )
+                                                       2
+                                 
+                  Given,                                  d
+                                 −      d
+                  Using parseval's theorem,
+                                            
+                   1 
+                                 ( )
+                                  2
+
+                          X e j
+                                    d =  | x  n  |2
+                  2 −                  n =−
+                  From frequency differentiation property of DTFT,
+
+                  nx  n  ⎯→ j
+                            FT
+                                   dX e j     ( )
+                                     d
+                                     dX ( e j )
+                                                   2
+                                                                       
+                                                     d = 2  | nx  n  |2
+                             −         d                             n =−
+
+                                         
+                  = 2   n |2 x  n  |2 
+                        n =−             
+                  = 2[9 1 + 4  0 + 11 + 0 + 11 + 2  0 + 9 1 + 16  4 + 25 1
+                  +36  0 + 49 1]
+                  = 316
+                  = 992.74
+    Subject       Signals and Systems
+    Topic
+`
+
+
+
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         617
+    Type             MCQ
+    Body             Consider the LTI system shown below for which the
+                     following information is given,
+
+
+
+
+                     where,
+
+
+
+
+                     The transfer function H ( s ) is equal to
+`
+
+
+
+    Option               s
+                                      ; Re s  −2
+                  ( s − 1)( s − 2 )
+    Option               1
+                                      ; Re s  −2
+                  ( s + 1)( s + 2)
+    Option               s
+                                      ; Re s  −1
+                  ( s + 1)( s + 2 )
+    Option               1
+                                      ; Re s  −1
+                  ( s + 1)( s + 2 )
+    Correct       3
+    Explanation                        s+2
+                  Given, X ( s ) =
+                                       s−2
+                  x ( t ) = 0, t  0
+                  Output of LTI system can be written as
+                               2            1
+                  y ( t ) = − e2t u ( −t ) + e− t u ( t )
+                               3            3
+                                2     1
+                                                    s
+                  Y (s) = 3 + 3 =
+                             s − 2 s + 1 ( s − 2 )( s + 1)
+                  ROC: −1  Re s  2
+                  ROC of X ( s ) is Re s  2 since it is given x ( t ) is left
+                  sided signal
+                             Y (s)           s          s−2          s
+                   H (s) =         =                      =
+                             X ( s ) ( s − 2 )( s + 1) s + 2 ( s + 1)( s + 2 )
+                  Since ROC of Y ( s ) has to be the intersection of the ROC
+                  of X ( s ) and H ( s )
+                  ∴ ROC of H ( s ) is Re s   −1
+                                     s
+                   H (s ) =                   ; Re s  −1
+                             ( s + 1)( s + 2 )
+`
+
+
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         618
+    Type             MCQ
+    Body             The Fourier transform F ( j) of an arbitrary real signal has
+                     the property,
+    Option           F ( j) = F ( − j)
+
+    Option           F ( j) = −F ( − j)
+
+    Option           F ( j) = F* ( − j)
+
+    Option           F ( j) = −F* ( − j)
+
+    Correct          3
+    Explanation      If, f ( t )   F ( j)
+                                   F.T
+                                 
+                                   F.T.
+                     Then, f ( t )  F* ( − j) ...using conjugate property
+                              *
+
+
+                     For any real signal,
+`
+
+
+
+                     f (t) = f * (t)
+                      F.T.
+                     F ( j) = F* ( − j)
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         619
+    Type             NAT
+    Body             Consider a filter with impulse response as shown in figure:
+
+
+
+
+                     The group delay of filter is ____ .
+`
+
+
+
+    Correct          2
+    Explanation      h ( n ) =  ( n ) + 2 ( n − 1) + 3 ( n − 2) + 2 ( n − 3) +  ( n − 4 )
+                      D.T.F.T.
+                         ( )
+                     H e j = 1 + 2e− j + 3e− j2 + 2e− j + e− j4
+                     = 1 + e− j4  + 2 e− j + e− j3  + 3e− j2
+                     = e−2 j e j2 + e− j2  + 2e− j2 e j + e− j  + 3e− j2
+                         ( )
+                     H e j = e− j2  2cos 2 + 4cos  + 3
+                     = 2cos 2 + 4cos  + 3
+                          ( )
+                     H e j = −2
+                     Group delay is delay is,
+                     g =
+                            −d
+                            d
+                                (
+                               H ( e j ) = 2 )
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         620
+    Type             NAT
+`
+
+
+
+    Body             The z -transform X ( z ) of a sequence x ( t ) given by
+                               4z −1
+                     X (z) =           . It is given that, this region of
+                             1 − 2z −1
+                     convergence of X ( z ) includes the unit circle. The value of
+                     x ( 0 ) is ____ .
+
+    Correct          –2
+    Explanation      ROC z  2
+                     (ROC should include unit-circle)
+                      x ( n ) will be a left sided signal
+                                                          1
+                     Now, −(2)n u ( −n − 1)                    ,   z 2
+                                                     1 − 2z −1
+                                                           4
+                          −4  (2)n u ( −n − 1)                    z 2
+                                                       1 − 2z −1
+                                                        4z −1
+                           −4  (2) u ( −n ) 
+                                    n −1
+                                                               ,    z 2
+                                                     1 − 2z −1
+                     So, x ( n ) = −4(2) n −1 u ( −n )
+                                      ( )
+                     ∴ x ( 0) = −4 2−1 u ( 0)
+                          −4
+                     =       = −2
+                          2
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+`
+
+
+
+    OTS ID
+
+
+
+    Question      621
+    Type          MCQ
+    Body          Suppose the following facts are given about the signal
+                  x ( t ) with Laplace transform X ( s ) :
+                      1. x ( t ) is real and even.
+                      2. X ( s ) has four poles, no zeros in a finite s-plane.
+                                                  1
+                      3. X ( s ) has a pole at s = e j/4 .
+                                                  2
+                      4. X ( 0 ) = 4
+                  Then the Laplace transform X ( s ) is
+
+    Option         0.25
+                        1
+                  s4 +
+                       16
+    Option            5
+                          1
+                  s3 +
+                          4
+    Option           2
+                  s2 + 4
+    Option           4
+                  s2 + 4
+    Correct       1
+    Explanation   From information-1, since x ( t ) is real, there poles will
+                  occurs in conjugate pair,
+`
+
+
+
+                                 1 j/4
+                     P2 = P1* =    e
+                                 2
+                     It is also given that x ( t ) is even signal,
+                     i.e., x ( t ) = X ( −s ) , this implies that poles are negative of
+                     each other,
+                     Now, we can relates the poles as
+                     P3 = −P1               P4 = −P2
+                               1                   1
+                      P3 = − e j/4 P4 = − e j/4
+                               2                   2
+                     Now,
+
+                                                K                                     K
+                     x (s) =                                            =
+                           ( s − P1 )( s − P2 ) ( s − P3 ) ( s − P4 )       (s − P )(s − P )
+                                                                             2
+                                                                                 1
+                                                                                  2       2   2
+                                                                                              2
+
+                     Also, X ( 0 ) = 4
+                           K
+                                 =4
+                     ( P1  P2 )
+                         2   2
+
+                                                         2
+                                          1 1     4 1
+                     K = 4 ( P1P2 ) = 4     =
+                                     2
+                                                        = = 0.25
+                                           2 2  16 4
+                     Therefore,
+                                          0.25              0.25
+                     X (s ) =                            =
+                               2 1 j/2   2 1 − j/2   4 1 
+                              s − e s − e             s + 
+                                   4          4           16 
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+`
+
+
+
+    PYQ
+    OTS ID
+
+
+
+    Question   622
+    Type       MCQ
+    Body       Consider the causal digital filter shown in below figure:
+
+
+
+
+               The values of k for which system is stable.
+    Option     k 3
+
+    Option     k 3
+
+    Option           1
+               k
+                     3
+    Option           1
+               k 
+                     3
+    Correct    1
+`
+
+
+
+    Explanation
+
+
+
+
+                  We have,
+                                         k −1
+                  W1 ( z ) = X ( z ) −     z W1 ( z )
+                                         3
+                                 X (z)
+                  W1 ( z ) =
+                                  k
+                               1 + z −1
+                                  3
+                                       k
+                  Also, W2 ( z ) = − z −1W1 ( z )
+                                       4
+                                      k
+                               X ( z ) z −1
+                  W2 ( z ) = −        4
+                                     k −1
+                                1+ z
+                                     3
+                  Therefore, Y ( z ) = W1 ( z ) + W2 ( z ) will be
+                                        k −1
+                            X (z)         z X (z)
+                  Y (z) =            −  4
+                               k −1         k
+                          1+ z          1 + z −1
+                               3            3
+                                        k −1
+                          Y (z)     1 −   z
+                  H (z) =         =     4
+                          X ( z ) 1 + k z −1
+                                        3
+                  Since H ( z ) corresponds to a causal filter, the ROC will be
+                        k
+                  z      . For the system to be stable, the ROC of H ( z )
+                        3
+`
+
+
+
+                                                                                                  k
+                     must include the unit circle. This is possible only if                         1
+                                                                                                  3
+                     .
+                     k 3
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         623
+    Type             MCQ
+    Body             A signal x ( t ) = cos ( 200t ) + 2cos ( 320t ) is ideally
+                     sampled at 300 Hz. If the sampled signal is passed through
+                     an ideal low-pass filter with cut-off frequency of 250 Hz.
+                     Highest frequency component will appear in the output is
+                     ____ Hz.
+
+    Correct          200
+    Explanation      This Fourier transform X ( f ) of the given signal x ( t ) is
+                                1
+                     X (f ) =      ( f − 100 ) +  ( f + 100 ) +  ( f − 160 ) +  ( f + 160 ) 
+                                2
+`
+
+
+
+                     With sampling frequency fs = 300 Hz , the Fourier
+                     transform of the sampled signal is given as
+                                                                   
+                     X ( f ) = fs X ( f − nfs ) = 300X ( f − 300n )
+                                     n =−                          n =0
+                     X ( f ) = + 300X ( f + 300 ) + 300X ( f ) + 300X ( f − 300 ) + 
+                     X ( f ) = + 150 ( f + 200 ) + 150 ( f + 400 ) + 300 ( f + 140 ) + 300 ( f + 460 )
+                     +150 ( f − 100 ) + 150 ( f + 100 ) + 300 ( f − 160 ) + 300 ( f + 160 )
+                     +150 ( f − 400 ) + 150 ( f − 200 ) + 300 ( f − 460 ) + 300 ( f − 140 ) + ..
+                     The sampled signal spectrum X8 ( f ) is shown in figure
+                     below.
+
+
+
+
+                     The frequency components that will appear at the output of
+                     the low-pass filter are 100,140,160 and 200 Hz.
+                     ∴ The highest frequency component present at the output
+                     is 200 Hz.
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+    Question      624
+    Type          MCQ
+    Body                                                 10 − z –1
+                  Consider the z -transform X ( z ) =                   . If ROC
+                                                      2 − 5z −1 + 2z −2
+                  includes unit circle then the value of x (1) is
+
+    Option        0.5
+    Option        1
+    Option        1.5
+    Option        2
+    Correct       1
+    Explanation                       10 − 8z −1           2         4
+                  Given, X ( z ) =                  =           +
+                                         −1
+                                   2 − 5z + 2z   −2
+                                                      ( 2 − z ) (1 − 2z −1 )
+                                                             −1
+
+
+                             2z       4z
+                  X (z) =          +
+                           2z − 1 z − 2
+                               z         4z
+                  X (z) =            +
+                                1  ( z − 2)
+                           z − 
+                                2
+                  Since, ROC includes unit circle,
+                                         1
+                  ∴ ROC of X ( z ) is  z  2
+                                          2
+                                 n
+                            1
+                  x  n  =   u  n  − 4 ( 2n ) u  −n − 1
+                            2
+                                   1
+                         x (1) = = 0.5
+                                   2
+    Subject       Signals and Systems
+    Topic
+`
+
+
+
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+
+
+
+    Question         625
+    Type             MCQ
+    Body             The unit step response of a system with transfer function
+                     b (s + a )
+                                is c ( t ) . If initial value c ( 0 ) = 2 and final value
+                      (s + b)
+                                                     a
+                     c (  ) = 8 . Then the ratio of   is
+                                                     b
+    Option           1
+    Option           2
+    Option           3
+    Option           4
+    Correct          4
+    Explanation      Let, the given transfer function,
+                              b (s + a )
+                     H (s) =
+                               (s + b)
+`
+
+
+
+
+                                       1
+                     where, X ( s ) =     (∵ unit step response)
+                                       s
+                                               b (s + a )
+                     C (s ) = X (s ) H (s ) =
+                                               s (s + b)
+                     Given, c ( 0 ) = 2
+                                   b (s + a )
+                      Lt s→ s                  =2
+                                    s (s + b )
+                                              b   =2
+                     and c (  ) = 8
+                                        b (s + a )
+                           Lt s→0s               =8
+                                        s (s + b)
+                     a =8
+                             a 8
+                     now,     =
+                             b 2
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0.66
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+`
+
+
+
+    Question         626
+    Type             MCQ
+    Body             For a discrete time LTI system, the input signal
+                     x ( n ) = 1, 2, 3, 4 and the output signal y ( n ) = 3, 6, 9,12
+                     . If the unit impulse response of the given system is h ( n ) ,
+                     then the value of summation n =− x ( n ) h ( n ) will be
+                      ____ .
+
+    Correct          0
+    Explanation      We can relate y ( n ) and x ( n ) as
+                     y ( n ) = 3x ( n − 2 )
+                     = x ( n ) *3 ( n − 2 )
+                     = x (n) * h (n)
+                     so, h ( n ) = 3 ( n − 2 )
+                                             
+
+                          x ( n ) h ( n ) =  x ( n )  3 ( n − 2)
+                     n =−                  n =−
+                     = 3x ( 2 ) = 0
+
+    Subject          Signals and Systems
+    Topic
+    Correct Marks    2
+    Incorrect Marks 0
+    Hint             -
+    Video Solution   -
+    PYQ
+    OTS ID
+

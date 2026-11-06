@@ -23,13 +23,17 @@ Each question dict carries the fields the classifier worked out:
 
 Columns (exactly the agreed template, in this order):
     Question number | Subject Name | Chapter number | type number |
-    difficulty index | Marks | TheoryMCQ/Numerical MCQ/NAT/MSQ/StatementType/Assertion-Reason
+    difficulty index | Marks | TheoryMCQ/Numerical MCQ/NAT/MSQ/StatementType/Assertion-Reason |
+    Code
 
 - Question number  : running 1..N in the order the questions appear.
 - Chapter number   : the chapter's number in the master taxonomy for that subject.
 - type number      : the Type No of the question's topic within that chapter.
 - difficulty index : 1 / 2 / 3 from q.difficulty (falls back to an inference).
-- last column      : the canonical question type.
+- 7th column       : the canonical question type.
+- Code             : auto-derived OTS ID — GAT+EE+SubjectCode(3)+Chapter(2)+Type(2)+
+                      Difficulty(1)+QuestionNo(4). Blank if the subject has no known
+                      code or chapter/type didn't map.
 
 Chapter/type numbers come from the canonical taxonomy (load_taxonomy). When a
 question's subject/chapter/topic can't be matched, those cells are left blank and
@@ -49,7 +53,39 @@ from openpyxl.utils import get_column_letter
 
 HEADERS = ["Question number", "Subject Name", "Chapter number", "type number",
            "difficulty index", "Marks",
-           "TheoryMCQ/Numerical MCQ/NAT/MSQ/StatementType/Assertion-Reason"]
+           "TheoryMCQ/Numerical MCQ/NAT/MSQ/StatementType/Assertion-Reason",
+           "Code"]
+
+# OTS code format: GAT + EE + SubjectCode(3) + Chapter(2) + Type(2) + Difficulty(1) + QuestionNo(4)
+# See examdost-Typing-paper-generation-engine/references/ots_code_generation.md
+SUBJECT_CODES = {
+    "network analysis": "NWA", "signals and systems": "SAS",
+    "analog electronics": "ANE", "digital electronics": "DGE",
+    "control systems": "CSY", "engineering maths": "ENM",
+    "electrical machines": "EMC", "power systems": "PSA",
+    "power electronics": "POE", "measurement": "MES",
+    "communication systems": "COM", "electromagnetic theory": "EMT",
+    "electronic devices": "EDC", "numerical aptitude": "NAP",
+    "numerical ability": "NAP", "verbal aptitude": "VAP",
+    "verbal ability": "VAP", "basic electronics": "BSE",
+    "reasoning": "RSG", "general science": "GNS",
+    "general awareness": "GNA",
+    "utilization of electrical energy": "UEE",
+    "estimation & costing": "EAC", "environment": "ENV",
+    "computer knowledge": "CKG",
+}
+
+
+def ots_code(subject, cno, tno, diff, qno, exam_prefix="GATEE"):
+    """GAT+EE (or other exam_prefix) + SubjectCode(3) + Chapter(2) + Type(2) + Difficulty(1) + QNo(4).
+    Returns "" if the subject code, chapter, or type number is unknown."""
+    sc = SUBJECT_CODES.get(_norm(subject))
+    if not sc or cno is None or tno is None or qno is None:
+        return ""
+    try:
+        return f"{exam_prefix}{sc}{int(cno):02d}{int(tno):02d}{int(diff)}{int(qno):04d}"
+    except (TypeError, ValueError):
+        return ""
 
 # canonical final labels the last column may hold
 CANON_TYPES = {
@@ -206,8 +242,9 @@ def build(in_path, out_path, tax_path=None):
                              cno is not None, tno is not None))
         d = difficulty(q)
         diff_spread[d] = diff_spread.get(d, 0) + 1
+        code = ots_code(subj, cno, tno, d, n)
         vals = [n, subj, cno if cno is not None else "", tno if tno is not None else "",
-                d, q.get("marks", ""), excel_type(q)]
+                d, q.get("marks", ""), excel_type(q), code]
         for j, v in enumerate(vals, start=1):
             cell = ws.cell(r, j, v)
             cell.border = border
@@ -215,7 +252,7 @@ def build(in_path, out_path, tax_path=None):
                                        vertical="center")
         r += 1
 
-    widths = [16, 24, 14, 12, 14, 8, 52]
+    widths = [16, 24, 14, 12, 14, 8, 52, 22]
     for j, w in enumerate(widths, start=1):
         ws.column_dimensions[get_column_letter(j)].width = w
     ws.freeze_panes = "A2"

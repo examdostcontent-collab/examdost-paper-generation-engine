@@ -75,7 +75,7 @@ empty/first run), pulls the `fingerprint` field from every question in `paper.js
 appends the new lines, de-duplicates exact repeats, and writes a fresh file:
 
 ```
-python scripts/update_exclusion_log.py "<original log path or '->" paper.json "<Exam> Exclusion Log.csv"
+python scripts/update_exclusion_log.py "<original log path or '-'>" paper.json "<Exam> Exclusion Log.csv"
 ```
 
 - **`.csv` output** (recommended): columns `subject,chapter_topic,type,core,value_signature,template_signature,diagram_signature,fingerprint,exam,added_on`.

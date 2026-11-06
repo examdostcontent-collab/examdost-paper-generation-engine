@@ -70,9 +70,29 @@ For **every** question, confirm:
    is violated (e.g. NAT where the section forbids it).
 8. **Non-repetition.** The fingerprint collides with neither the Exclusion Log nor any
    other item in this paper (same framework + same dataset = collision).
-9. **Diagram tags.** Any visual is a `[GEMINI_FLASH_PROMPT: ...]` tag (not prose, not
-   an attempt to draw); the tag is self-contained.
-10. **Canonical naming.** subject/chapter/topic match the blueprint verbatim.
+9. **Visual-decision pass.** Decide whether the student must mentally reconstruct a
+   state, topology, direction, region, grouping, transformed model, or physical
+   relationship. If yes, the solution includes the smallest useful staged visual
+   sequence; if no, it does not add a decorative image. Apply
+   `solution-writing-with-diagrams.md`.
+10. **Diagram content and placement.** Every visual is a self-contained
+    `[GEMINI_FLASH_PROMPT: ...]` tag during generation. Solution prompts are ordered,
+    start with `Stage N — place after calculation step M:`, include an action caption,
+    and appear beside the step they justify after insertion.
+11. **Diagram technical accuracy.** Cross-check topology/connectivity, component count,
+    variable/value/unit labels, current/field directions, polarity, axes/scale, K-map
+    Gray-code order and groups, switching state/time interval, and agreement with the
+    written equations. Regenerate or remove any uncertain visual.
+12. **Rendered visual QA.** In the final Word and PDF, raw prompts are gone; diagrams
+    remain with their relevant steps and are sharp, unclipped, non-overlapping, and
+    legible at normal reading size.
+13. **Canonical naming.** subject/chapter/topic match the blueprint verbatim.
+14. **Type-specific method.** The solution follows
+    `solution-methods-by-question-type.md`: numerical MCQs were solved before option
+    matching; every MSQ option/statement was independently tested; NAT precision,
+    tolerance and `solution.check` are justified; Statement/Assertion-Reason truth and
+    causality were evaluated before option mapping; and diagram/state/equivalent-model
+    questions expose the representation changes needed to follow the reasoning.
 
 ## What to do with a failure
 - **Fixable** (units missing, a skipped algebra line, a loose tolerance, a weak

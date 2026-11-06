@@ -1,0 +1,113 @@
+<!--Copyright (c) 2010 by Design Science, Inc.-->
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="MTCommand_OnRibbonLoaded">
+	<commands>
+		<command idMso="Paste"  onAction="DSIEditPaste"/>	
+	</commands> 
+	<ribbon>
+		<tabs>
+			<tab id="MathType_T_Math" insertAfterMso="TabView" label="MathType">
+
+				<group id="MathType_G_Insert" label="Insert Equations" getVisible="MTCallback_IsBeforeWin7" image="MT_GB_InsEqn" autoScale="true">
+					<box id="MathType_BX_Insert1" boxStyle="vertical">
+						<button id="MathType_B_InsInlineMTEqn" screentip="Insert Inline Equation (Ctrl+Alt+Q)" label="Inline" image="MT_B_InsInlineMTEqn" onAction="MTCommand_OnInsertInlineEqn" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip" />
+						<button id="MathType_B_InsDispMTEqn" screentip="Insert Display Equation (Alt+Q)" label="Display" image="MT_B_InsDispMTEqn" onAction="MTCommand_OnInsertDispEqn" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						<splitButton id="MathType_SB_NumEqnR" size="normal" getVisible="MTCallback_GetNumEqVisible">
+							<menu id="MathType_M_InsMTNumEqnR" image="MT_B_InsDispMTEqnRightNum">
+								<button id="MathType_B_InsDispMTEqnRightNum" screentip="Insert Right-numbered Equation (Alt+Shift+Q)" label="Right-numbered" image="MT_B_InsDispMTEqnRightNum" onAction="MTCommand_OnInsertRightNumberedDispEqn" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+								<button id="MathType_B_InsDispMTEqnLeftNum" screentip="Insert Left-numbered Equation (Ctrl+Alt+Shift+Q)" label="Left-numbered   " image="MT_B_InsDispMTEqnLeftNum" onAction="MTCommand_OnInsertLeftNumberedDispEqn" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+							</menu>
+						</splitButton>
+						<splitButton id="MathType_SB_NumEqnL" size="normal" getVisible="MTCallback_GetNumEqVisible">
+							<menu id="MathType_M_InsMTNumEqnL" image="MT_B_InsDispMTEqnLeftNum">
+								<button id="MathType_B_InsDispMTEqnLeftNum2" screentip="Insert Left-numbered Equation (Ctrl+Alt+Shift+Q)" label="Left-numbered   " image="MT_B_InsDispMTEqnLeftNum" onAction="MTCommand_OnInsertLeftNumberedDispEqn" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+				 				<button id="MathType_B_InsDispMTEqnRightNum2" screentip="Insert Right-numbered Equation (Alt+Shift+Q)" label="Right-numbered" image="MT_B_InsDispMTEqnRightNum" onAction="MTCommand_OnInsertRightNumberedDispEqn" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+							</menu>
+						</splitButton>
+					</box>
+				</group>
+
+				<group id="MathType_G_Insert_Win7" label="Insert Equations" getVisible="MTCallback_IsWin7" image="MT_GB_InsEqn" autoScale="true">
+						<button id="MathType_B_InsInlineMTEqn3" screentip="Insert Inline Equation (Ctrl+Alt+Q)" label="Inline" image="MT_B_InsInlineMTEqn" onAction="MTCommand_OnInsertInlineEqn" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip" />
+						<button id="MathType_B_InsDispMTEqnLeftNum3" screentip="Insert Left-numbered Equation (Ctrl+Alt+Shift+Q)" label="Left-numbered   " image="MT_B_InsDispMTEqnLeftNum" onAction="MTCommand_OnInsertLeftNumberedDispEqn" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						<button id="MathType_B_InsHandEqn" screentip="Insert Handwritten Inline Equation (Ctrl+Shift+M)" label="Open Math Input Panel" image="MT_B_InsHandMTEqn" onAction="MTCommand_OnInsHandEqn" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						<button id="MathType_B_InsDispMTEqn3" screentip="Insert Display Equation (Alt+Q)" label="Display" image="MT_B_InsDispMTEqn" onAction="MTCommand_OnInsertDispEqn" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						<button id="MathType_B_InsDispMTEqnRightNum3" screentip="Insert Right-numbered Equation (Alt+Shift+Q)" label="Right-numbered" image="MT_B_InsDispMTEqnRightNum" onAction="MTCommand_OnInsertRightNumberedDispEqn" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+				</group>
+
+				<group id="MathType_G_Symbols" label="Symbols" image="MT_GB_EqnSymbols" autoScale="true">
+					<gallery idMso="EquationSymbolsInsertGallery" label="Math"></gallery>
+					<gallery idMso="SymbolInsertGallery" label="Other"></gallery>
+				</group>
+
+				<group id="MathType_G_EqnNums" label="Equation Numbers" image="MT_GB_EqnNum" autoScale="true">
+					<splitButton id="MathType_SB_InsertNumber" size="normal">
+						<button id="MathType_B_InsertNumber" label="Insert Number" screentip="Insert equation number" image="MT_B_InsEqnNumber" onAction="MTCommand_OnInsertEquationNumber" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						<menu id="MathType_M_InsertNumber" image="MT_M_InsNumber">
+							<button id="MathType_B_FormatEqnNums" label="Format..." screentip="Format equation numbers" image="MT_B_FormatEqnNums" onAction="MTCommand_OnFormatEquationNumbers" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+							<button id="MathType_B_UpdateEqnNums" label="Update" screentip="Update equation numbers" image="MT_B_UpdateEqnNums" onAction="MTCommand_OnUpdateEquationNumbers" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						</menu>
+					</splitButton>
+					<button id="MathType_B_EquationReference" label="Insert Reference" screentip="Insert an equation reference" image="MT_B_InsEqnReference" onAction="MTCommand_OnEquationReference" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+					<menu id="MathType_M_EqnNumsChapsSects" label="Chapters &amp;&amp; Sections" image="MT_M_EqnNumsChapsSects" getSupertip="MTCallback_GetSupertip">
+						<button id="MathType_B_InsertNextSection" label="Insert Next Section Break" screentip="Start new numbering section" image="MT_B_InsNextSection" onAction="MTCommand_OnInsertNextSection" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						<button id="MathType_B_InsertNextChapter" label="Insert Next Chapter Break" screentip="Start new numbering chapter" image="MT_B_InsNextChapter" onAction="MTCommand_OnInsertNextChapter" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						<button id="MathType_B_MoreBreaks" label="Insert Break..." screentip="Insert a break with more options" image="MT_B_MoreBreaks" onAction="MTCommand_OnInsertChapterSectionBreak" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						<button id="MathType_B_ModifyBreak" label="Modify Break..." screentip="Modify break" image="MT_B_ModifyBreak" onAction="MTCommand_OnModifyChapterSectionBreak" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+					</menu>
+				</group>
+
+				<group id="MathType_G_Browse" label="Browse" image="MT_GB_Browse" autoScale="true">
+					<button id="MathType_B_BrowsePrev" screentip="Browse Previous" label="Previous" imageMso="BrowsePrevious" showLabel="true" onAction="MTCommand_OnBrowsePrevious" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+					<dropDown sizeString ="Chapters/Sections" getSelectedItemIndex="MTCommand_OnSelectedIndexBrowseType" id="MathType_DD_BrowseType" label="Select Browse Type" imageMso="BrowseSelector" showLabel="false" onAction="MTCommand_OnBrowseType" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip">
+						<item id="MathType_I_BrowseEqns" image="MT_I_BrowseEqns" screentip="Browse Equations" label="Equations"/>
+						<item id="MathType_I_BrowseEqnNums" image="MT_I_BrowseNums" screentip="Browse Equation Numbers" label="Equation Numbers"/>
+						<item id="MathType_I_BrowseEqnBreaks" image="MT_I_BrowseBreaks" screentip="Browse Chapter and Section Breaks" label="Chapters/Sections"/>
+					</dropDown>
+					<button id="MathType_B_BrowseNext" screentip="Browse Next" label="Next" imageMso="BrowseNext" showLabel="true" onAction="MTCommand_OnBrowseNext" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+				</group>
+
+				<group id="MathType_G_Format" label="Format" image="MT_GB_Format" autoScale="true">
+					<button id="MathType_B_SetEqnPrefs" label="Equation Preferences..." screentip="Load MathType Preference Files" image="MT_B_SetEqnPrefs" onAction="MTCommand_OnSetEquationPrefs" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+					<button id="MathType_B_FormatEqns" label="Format Equations..." screentip="Format Equations"  image="MT_B_FormatEqns" onAction="MTCommand_OnFormatEquations" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+					<button id="MathType_B_ConvertEqns" label="Convert Equations..." screentip="Convert Equations"  image="MT_B_ConvertEqns" onAction="MTCommand_OnConvertEquations" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+				</group>
+
+				<group id="MathType_G_Publish" label="Publish" image="MT_GB_Publish" autoScale="true">
+					<button id="MathType_B_ExportEqns" label="Export Equations..." screentip="Export equations image files" image="MT_B_ExportEqns" onAction="MTCommand_OnExportEquations" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+					<button id="MathType_B_MathPage" label="Publish to MathPage..." screentip="Publish to MathPage" image="MT_B_MathPage" onAction="MTCommand_OnMathPage" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+					<button id="MathType_B_TeXToggle" label="Toggle TeX" screentip="Toggle between TeX and MathType equations (Alt-\)" image="MT_B_TeXToggle" onAction="MTCommand_OnTexToggle" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+				</group>
+
+				<group id="MathType_G_Help" label="MathType" image="MT_GB_Help" autoScale="true">
+					<splitButton id="MathType_SB_Help" size="normal">
+						<button id="MathType_B_Help" label="MathType Help" screentip="MathType Help" image="MT_B_Help" onAction="MTCommand_OnHelpContents" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						<menu id="MathType_M_Help" label="Help" image="MT_M_Help">
+							<button id="MathType_B_HelpContents" label="Table of Contents..." screentip="MathType Help" image="MT_B_Help" onAction="MTCommand_OnHelpContents" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+							<button id="MathType_B_HelpMTInWord" label="Using MathType in Word..." screentip="Help on using MathType with Microsoft Word" image="MT_B_Help" onAction="MTCommand_OnHelpMTInWord" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+							<menuSeparator id="MathType_MS_Help1"/>
+							<button id="MathType_B_HelpUnlockReg" onAction="MTCommand_OnUnlockReg" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip" getLabel="MTCallback_GetLabel" getScreentip="MTCallback_GetScreenTip"/>
+							<menuSeparator id="MathType_MS_Help2"/>
+							<button id="MathType_B_HelpAboutMT" label="About MathType..." screentip="View version and product key" onAction="MTCommand_OnAboutMT" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						</menu>
+					</splitButton>
+					<splitButton id="MathType_SB_Web" size="normal">
+						<button id="MathType_B_Web" label="MathType on the Web..." screentip="MathType Homepage" image="MT_B_Web" onAction="MTCommand_OnWebHomePage" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						<menu id="MathType_M_OnTheWeb" label="MathType on the Web" image="MT_M_OnTheWeb">
+							<button id="MathType_B_WebHomePage" label="MathType Home Page..." screentip="MathType Homepage" image="MT_B_Web" onAction="MTCommand_OnWebHomePage" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+							<button id="MathType_B_WebSupport" label="Online Support..." screentip="Online Support" onAction="MTCommand_OnWebSupport" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+							<button id="MathType_B_WebEmailFeedback" label="Send Feedback by Email..." screentip="Send Feedback by Email" onAction="MTCommand_OnWebEmailFeedback" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+							<button id="MathType_B_WebOrderMT" label="Order MathType..." screentip="Go to Design Science's online store." onAction="MTCommand_OnWebOrderMathType" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+						</menu>
+					</splitButton>
+					<button id="MathType_B_FutureMT" label="Future MathType..." screentip="Learn about and contribute to MathType's future." image="MT_B_FutureMT" onAction="MTCommand_OnFutureMT" getEnabled="MTCallback_GetEnabled" getSupertip="MTCallback_GetSupertip"/>
+					<dialogBoxLauncher>
+							<button id="MathType_DL_MTOptions" screentip="MathType Options" getSupertip="MTCallback_GetSupertip" getEnabled="MTCallback_GetEnabled"	onAction="MTCommand_OnMTOptions" />
+					</dialogBoxLauncher>
+				</group>
+
+			</tab>
+		</tabs>
+		<!--<contextualTabs>
+		</contextualTabs>-->
+	</ribbon>
+</customUI>

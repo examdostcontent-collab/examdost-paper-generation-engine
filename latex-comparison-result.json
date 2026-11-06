@@ -1,0 +1,1204 @@
+[
+  {
+    "question": 517,
+    "source_latex": 12,
+    "final_latex": 19,
+    "unmatched_source": [],
+    "additional_final": [
+      "x(\\cdot)",
+      "t",
+      "\\cos(3t)",
+      "y(t)",
+      "x",
+      "t=0",
+      "x(1)"
+    ]
+  },
+  {
+    "question": 518,
+    "source_latex": 3,
+    "final_latex": 8,
+    "unmatched_source": [
+      "]"
+    ],
+    "additional_final": [
+      "\\sum_{n=0}^{\\infty}4^n\\delta(n+1)",
+      "\\sum_{n=N_1}^{N_2}x(n)\\delta(n-n_0)=x(n_0),\\quadN_1\\len_0\\leN_2",
+      "\\sum_{n=0}^{\\infty}4^n\\delta(n+1)=0",
+      "n_0=-1",
+      "\\intx(t)\\delta(t-t_0)\\,dt=x(t_0)",
+      "t_0"
+    ]
+  },
+  {
+    "question": 519,
+    "source_latex": 5,
+    "final_latex": 10,
+    "unmatched_source": [],
+    "additional_final": [
+      "2\\alpha",
+      "{\\rmTri}\\left(\\frac{t-\\beta}{\\alpha}\\right)",
+      "\\beta",
+      "\\alpha",
+      "u(2-t)"
+    ]
+  },
+  {
+    "question": 520,
+    "source_latex": 15,
+    "final_latex": 17,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\omega_s",
+      "|X(\\omega)|"
+    ]
+  },
+  {
+    "question": 521,
+    "source_latex": 9,
+    "final_latex": 12,
+    "unmatched_source": [],
+    "additional_final": [
+      "x(-n+k)",
+      "x(n+k)",
+      "n=0"
+    ]
+  },
+  {
+    "question": 522,
+    "source_latex": 15,
+    "final_latex": 19,
+    "unmatched_source": [],
+    "additional_final": [
+      "a_n",
+      "a_1/a_3",
+      "b_n",
+      "1/n"
+    ]
+  },
+  {
+    "question": 523,
+    "source_latex": 6,
+    "final_latex": 7,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\int_{-\\infty}^{\\infty}\\operatorname{tri}(t)\\operatorname{rect}(t)\\,dt"
+    ]
+  },
+  {
+    "question": 524,
+    "source_latex": 12,
+    "final_latex": 16,
+    "unmatched_source": [],
+    "additional_final": [
+      "t",
+      "j\\,d/d\\omega",
+      "e^{-j\\omega_0t}",
+      "\\omega_0"
+    ]
+  },
+  {
+    "question": 525,
+    "source_latex": 12,
+    "final_latex": 14,
+    "unmatched_source": [],
+    "additional_final": [
+      "f(-t)",
+      "\\sint\\cost"
+    ]
+  },
+  {
+    "question": 526,
+    "source_latex": 5,
+    "final_latex": 8,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\sum_{n=-\\infty}^{\\infty}y(n)",
+      "h(n)=\\delta(n)-\\delta(n-1)",
+      "x(n)"
+    ]
+  },
+  {
+    "question": 527,
+    "source_latex": 8,
+    "final_latex": 13,
+    "unmatched_source": [],
+    "additional_final": [
+      "600Hz",
+      "X(f)",
+      "f_s",
+      "X_s(f)",
+      "f=500\\,"
+    ]
+  },
+  {
+    "question": 528,
+    "source_latex": 8,
+    "final_latex": 12,
+    "unmatched_source": [],
+    "additional_final": [
+      "u[1-|t|]",
+      "2\\alpha",
+      "f=1/(2\\alpha)",
+      "\\alpha"
+    ]
+  },
+  {
+    "question": 529,
+    "source_latex": 13,
+    "final_latex": 14,
+    "unmatched_source": [],
+    "additional_final": [
+      "2\\pi"
+    ]
+  },
+  {
+    "question": 530,
+    "source_latex": 15,
+    "final_latex": 18,
+    "unmatched_source": [],
+    "additional_final": [
+      "y(t)=e^{-(t-4)}u(t-4)*x(t)",
+      "\\delta(t-t_0)",
+      "t_0"
+    ]
+  },
+  {
+    "question": 532,
+    "source_latex": 18,
+    "final_latex": 21,
+    "unmatched_source": [
+      "{\\rm{X}}\\left({\\rm{s}}\\right)"
+    ],
+    "additional_final": [
+      "\\int_{-\\infty}^{\\infty}x(t)\\,dt=4",
+      "X(s)",
+      "X(s)",
+      "j\\omega"
+    ]
+  },
+  {
+    "question": 533,
+    "source_latex": 10,
+    "final_latex": 14,
+    "unmatched_source": [],
+    "additional_final": [
+      "e^{-at}u(t)",
+      "\\sigma>-a",
+      "e^{at}u(-t)",
+      "\\sigma<a"
+    ]
+  },
+  {
+    "question": 534,
+    "source_latex": 8,
+    "final_latex": 11,
+    "unmatched_source": [],
+    "additional_final": [
+      "0^-",
+      "0^-",
+      "t\\ge0"
+    ]
+  },
+  {
+    "question": 535,
+    "source_latex": 17,
+    "final_latex": 22,
+    "unmatched_source": [],
+    "additional_final": [
+      "X(z)=\\frac{1-\\alpha^Nz^{-N}}{1-\\alphaz^{-1}}",
+      "\\alpha^n",
+      "0\\len\\leN-1",
+      "\\alpha",
+      "N"
+    ]
+  },
+  {
+    "question": 536,
+    "source_latex": 14,
+    "final_latex": 18,
+    "unmatched_source": [],
+    "additional_final": [
+      "a^n",
+      "1/a",
+      "X_1(z)=X(z/a)",
+      "|a|"
+    ]
+  },
+  {
+    "question": 537,
+    "source_latex": 9,
+    "final_latex": 10,
+    "unmatched_source": [],
+    "additional_final": [
+      "k"
+    ]
+  },
+  {
+    "question": 538,
+    "source_latex": 17,
+    "final_latex": 19,
+    "unmatched_source": [],
+    "additional_final": [
+      "H(e^{j\\omega})",
+      "e^{-j\\omega/2}"
+    ]
+  },
+  {
+    "question": 539,
+    "source_latex": 10,
+    "final_latex": 13,
+    "unmatched_source": [],
+    "additional_final": [
+      "(-1)^n=e^{j\\pin}",
+      "H(z)",
+      "z"
+    ]
+  },
+  {
+    "question": 540,
+    "source_latex": 12,
+    "final_latex": 16,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\alpha",
+      "\\alpha=0",
+      "e^{\\betat}u(t)",
+      "\\alpha\\cdotu(t)"
+    ]
+  },
+  {
+    "question": 542,
+    "source_latex": 2,
+    "final_latex": 7,
+    "unmatched_source": [],
+    "additional_final": [
+      "H\\left(z\\right)=\\frac{{Y\\left(z\\right)}}{{X\\left(z\\right)}}=\\frac{{1-2{z^{-1}}}}{{1+{z^{-1}}+0.25{z^{-2}}}}",
+      "1+{z^{-1}}+0.25{z^{-2}}=0\\Rightarrow{z^2}+z+0.25=0\\Rightarrow{\\left({z+0.5}\\right)^2}=0\\Rightarrowz=-0.5",
+      "\\left|{-0.5}\\right|=0.5<1",
+      "1-2{z^{-1}}=0\\Rightarrowz=2",
+      "\\left|2\\right|=2>1"
+    ]
+  },
+  {
+    "question": 543,
+    "source_latex": 12,
+    "final_latex": 15,
+    "unmatched_source": [],
+    "additional_final": [
+      "y(n)=5x(n+3)",
+      "5e^{j3\\omega}X(e^{j\\omega})",
+      "e^{+j\\omegan_0}"
+    ]
+  },
+  {
+    "question": 544,
+    "source_latex": 12,
+    "final_latex": 14,
+    "unmatched_source": [],
+    "additional_final": [
+      "-3<\\sigma<0",
+      "H(s)"
+    ]
+  },
+  {
+    "question": 545,
+    "source_latex": 10,
+    "final_latex": 13,
+    "unmatched_source": [],
+    "additional_final": [
+      "H(e^{j\\omega})=Y/X",
+      "H(e^{j\\omega})",
+      "n(2/3)^nu(n)"
+    ]
+  },
+  {
+    "question": 546,
+    "source_latex": 13,
+    "final_latex": 15,
+    "unmatched_source": [],
+    "additional_final": [
+      "k",
+      "\\pi"
+    ]
+  },
+  {
+    "question": 547,
+    "source_latex": 10,
+    "final_latex": 12,
+    "unmatched_source": [],
+    "additional_final": [
+      "t_p(\\omega)=-\\theta(\\omega)/\\omega",
+      "-d\\theta/d\\omega"
+    ]
+  },
+  {
+    "question": 548,
+    "source_latex": 22,
+    "final_latex": 25,
+    "unmatched_source": [],
+    "additional_final": [
+      "m",
+      "L",
+      "N=L-m+1"
+    ]
+  },
+  {
+    "question": 549,
+    "source_latex": 15,
+    "final_latex": 18,
+    "unmatched_source": [],
+    "additional_final": [
+      "y[n]=-0.5y[n-1]+x[n]",
+      "H(z)",
+      "Y(z)"
+    ]
+  },
+  {
+    "question": 550,
+    "source_latex": 9,
+    "final_latex": 11,
+    "unmatched_source": [],
+    "additional_final": [
+      "y(\\infty)=\\lim_{z\\to1}(1-z^{-1})Y(z)",
+      "(1-z^{-1})Y(z)"
+    ]
+  },
+  {
+    "question": 552,
+    "source_latex": 11,
+    "final_latex": 14,
+    "unmatched_source": [],
+    "additional_final": [
+      "H(f_0)",
+      "H(f)",
+      "90^\\circ"
+    ]
+  },
+  {
+    "question": 553,
+    "source_latex": 12,
+    "final_latex": 14,
+    "unmatched_source": [],
+    "additional_final": [
+      "H(z)",
+      "z^{-k}"
+    ]
+  },
+  {
+    "question": 554,
+    "source_latex": 10,
+    "final_latex": 14,
+    "unmatched_source": [],
+    "additional_final": [
+      "X(z)",
+      "z",
+      "z^{-2}",
+      "n=0,1"
+    ]
+  },
+  {
+    "question": 555,
+    "source_latex": 9,
+    "final_latex": 11,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\sin^2(\\cdot)",
+      "\\sin^2\\theta=(1-\\cos2\\theta)/2"
+    ]
+  },
+  {
+    "question": 556,
+    "source_latex": 11,
+    "final_latex": 13,
+    "unmatched_source": [],
+    "additional_final": [
+      "1/H(s)",
+      "s=0"
+    ]
+  },
+  {
+    "question": 557,
+    "source_latex": 9,
+    "final_latex": 11,
+    "unmatched_source": [],
+    "additional_final": [
+      "e^{5t}u(-t+3)",
+      "e^{-st}u(-t)"
+    ]
+  },
+  {
+    "question": 558,
+    "source_latex": 6,
+    "final_latex": 7,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\int_{-5}^{5}\\left(t^3+6t^2+2t+\\cos(\\pit)\\right)\\delta^{\\prime\\prime}(t-2)\\,dt"
+    ]
+  },
+  {
+    "question": 559,
+    "source_latex": 6,
+    "final_latex": 12,
+    "unmatched_source": [],
+    "additional_final": [
+      "x(t)=e^{-3t}\\cos(2t)u(t)",
+      "e^{-at}",
+      "a",
+      "X(s)\\toX(s+a)",
+      "e^{-at}\\cos(\\omega_0t)",
+      "s\\tos+a"
+    ]
+  },
+  {
+    "question": 560,
+    "source_latex": 1,
+    "final_latex": 3,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\int_{-\\infty}^{\\infty}x(t)\\,dt",
+      "\\int_{-\\infty}^{\\infty}x(t)\\,dt=1+2(1)+2=5"
+    ]
+  },
+  {
+    "question": 561,
+    "source_latex": 13,
+    "final_latex": 14,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\alpha"
+    ]
+  },
+  {
+    "question": 562,
+    "source_latex": 3,
+    "final_latex": 7,
+    "unmatched_source": [],
+    "additional_final": [
+      "t<0",
+      "t<0",
+      "{\\rmsgn}(-t)",
+      "h(t)"
+    ]
+  },
+  {
+    "question": 563,
+    "source_latex": 11,
+    "final_latex": 14,
+    "unmatched_source": [],
+    "additional_final": [
+      "y(n)=x(n-a)*h(n+b)",
+      "y(n)=y_1(n+b-a)",
+      "y_1=x*h"
+    ]
+  },
+  {
+    "question": 564,
+    "source_latex": 5,
+    "final_latex": 6,
+    "unmatched_source": [],
+    "additional_final": [
+      "y(t)=u[x(t)]"
+    ]
+  },
+  {
+    "question": 565,
+    "source_latex": 9,
+    "final_latex": 8,
+    "unmatched_source": [
+      "{\\rm{cos}}(",
+      ")"
+    ],
+    "additional_final": [
+      "{\\rm{cos}}"
+    ]
+  },
+  {
+    "question": 566,
+    "source_latex": 8,
+    "final_latex": 13,
+    "unmatched_source": [],
+    "additional_final": [
+      "a",
+      "x(at)",
+      "1/|a|",
+      "a=-1",
+      "+4"
+    ]
+  },
+  {
+    "question": 567,
+    "source_latex": 10,
+    "final_latex": 17,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\sum_{n=-\\infty}^{\\infty}y(n)",
+      "(\\alpha)^nu(n)",
+      "(\\alpha)^{-n}u(-n)",
+      "\\frac{1}{1-\\alphae^{-j\\omega}}",
+      "\\frac{1}{1-\\alphae^{j\\omega}}",
+      "\\omega",
+      "-\\omega"
+    ]
+  },
+  {
+    "question": 568,
+    "source_latex": 9,
+    "final_latex": 11,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\sum_{n=-\\infty}^{\\infty}x(n)y(n)",
+      "\\omega"
+    ]
+  },
+  {
+    "question": 569,
+    "source_latex": 8,
+    "final_latex": 9,
+    "unmatched_source": [],
+    "additional_final": [
+      "C_k=\\frac{1}{N}\\sumx[n]e^{-j2\\pikn/N}"
+    ]
+  },
+  {
+    "question": 570,
+    "source_latex": 10,
+    "final_latex": 24,
+    "unmatched_source": [
+      "{{\\rm{C}}_{\\rm{n}}}"
+    ],
+    "additional_final": [
+      "{\\omega_0}=1",
+      "{{\\rm{x}}_1}\\left({\\rm{t}}\\right)={\\rm{u}}\\left({\\rm{t}}\\right)-2{\\rm{u}}\\left({{\\rm{t}}-\\pi}\\right)+{\\rm{u}}\\left({{\\rm{t}}-2\\pi}\\right)",
+      "T=\\frac{{2\\pi}}{{{\\omega_0}}}=2\\pi",
+      "+1",
+      "0<t<\\pi",
+      "-1",
+      "\\pi<t<2\\pi",
+      "{C_0}=\\frac{1}{T}\\int_0^T{x\\left(t\\right)dt}=\\frac{1}{{2\\pi}}\\left[{\\int_0^\\pi{1\\,dt}+\\int_\\pi^{2\\pi}{\\left({-1}\\right)dt}}\\right]=\\frac{1}{{2\\pi}}\\left[{\\pi-\\pi}\\right]=0",
+      "x\\left({t+\\frac{T}{2}}\\right)=x\\left({t+\\pi}\\right)=-x\\left(t\\right)",
+      "t",
+      "{C_n}=0",
+      "n",
+      "n",
+      "{C_0}=0,{C_n}=0",
+      "x(t+T/2)=-x(t)"
+    ]
+  },
+  {
+    "question": 571,
+    "source_latex": 15,
+    "final_latex": 22,
+    "unmatched_source": [],
+    "additional_final": [
+      "d_n",
+      "c_n",
+      "d_n=2c_n",
+      "n\\neq0",
+      "d_0=c_0",
+      "+n",
+      "-n"
+    ]
+  },
+  {
+    "question": 572,
+    "source_latex": 10,
+    "final_latex": 16,
+    "unmatched_source": [],
+    "additional_final": [
+      "e^{j\\pin}x[n]",
+      "\\pi",
+      "\\omega",
+      "\\omega-\\pi",
+      "(-1)",
+      "e^{j\\pi}=-1"
+    ]
+  },
+  {
+    "question": 573,
+    "source_latex": 8,
+    "final_latex": 12,
+    "unmatched_source": [],
+    "additional_final": [
+      "x(-n)\\leftrightarrowX(z^{-1})",
+      "1/R",
+      "n",
+      "nu(n)"
+    ]
+  },
+  {
+    "question": 574,
+    "source_latex": 8,
+    "final_latex": 9,
+    "unmatched_source": [],
+    "additional_final": [
+      "z^{-1}"
+    ]
+  },
+  {
+    "question": 575,
+    "source_latex": 10,
+    "final_latex": 14,
+    "unmatched_source": [],
+    "additional_final": [
+      "h(t)=\\frac{d}{dt}s(t)",
+      "t=0^+",
+      "s(t)u(t)",
+      "s(0^+)\\delta(t)"
+    ]
+  },
+  {
+    "question": 576,
+    "source_latex": 8,
+    "final_latex": 9,
+    "unmatched_source": [],
+    "additional_final": [
+      "y(t)=e^{-|x(t)|}"
+    ]
+  },
+  {
+    "question": 577,
+    "source_latex": 11,
+    "final_latex": 16,
+    "unmatched_source": [],
+    "additional_final": [
+      "H(e^{j\\omega})",
+      "y[n-k]",
+      "k\\ge0",
+      "y[n+1]",
+      "n\\ton-1"
+    ]
+  },
+  {
+    "question": 578,
+    "source_latex": 10,
+    "final_latex": 12,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\frac{s+a}{(s+a)^2+\\omega_0^2}",
+      "\\frac{\\omega_0}{(s+a)^2+\\omega_0^2}"
+    ]
+  },
+  {
+    "question": 579,
+    "source_latex": 5,
+    "final_latex": 10,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\frac{1}{N}\\sum_{r=0}^{N-1}X(r)X(k+r)",
+      "\\frac{1}{N}\\sum_{r=0}^{N-1}X(k)X(k+r)",
+      "y(n)=\\frac{1}{N}\\sum_{r=0}^{N-1}x(r)x(n+r)",
+      "r_{xx}(n)",
+      "y(n)\\xleftrightarrow{\\mathrm{DFT}}|X(k)|^2"
+    ]
+  },
+  {
+    "question": 580,
+    "source_latex": 7,
+    "final_latex": 10,
+    "unmatched_source": [
+      "\\therefore\\;g\\left(t\\right)="
+    ],
+    "additional_final": [
+      "\\therefore\\;g\\left(t\\right)=2\\operatorname{rect}\\left(\\frac{t-3}{10}\\right)",
+      "\\frac{\\sin(a\\omega)}{a\\omega}",
+      "a",
+      "e^{-j\\omegat_0}"
+    ]
+  },
+  {
+    "question": 581,
+    "source_latex": 12,
+    "final_latex": 13,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\alpha"
+    ]
+  },
+  {
+    "question": 582,
+    "source_latex": 5,
+    "final_latex": 9,
+    "unmatched_source": [],
+    "additional_final": [
+      "x[n]\\xleftrightarrow{\\mathrm{DTFT}}X(e^{j\\omega})",
+      "\\int_{-\\pi}^{\\pi}\\left|X(e^{j\\omega})\\right|^2\\,d\\omega",
+      "\\frac{1}{2\\pi}",
+      "|X(e^{j\\omega})|^2"
+    ]
+  },
+  {
+    "question": 583,
+    "source_latex": 14,
+    "final_latex": 19,
+    "unmatched_source": [],
+    "additional_final": [
+      "H(z)",
+      "H(z)",
+      "H(z)/z",
+      "Az/(z-p)",
+      "a^nu[n]"
+    ]
+  },
+  {
+    "question": 584,
+    "source_latex": 20,
+    "final_latex": 25,
+    "unmatched_source": [],
+    "additional_final": [
+      "X(z/a)",
+      "a^n",
+      "a",
+      "-z/2",
+      "(-1)^n"
+    ]
+  },
+  {
+    "question": 585,
+    "source_latex": 6,
+    "final_latex": 7,
+    "unmatched_source": [],
+    "additional_final": [
+      "H(z)"
+    ]
+  },
+  {
+    "question": 586,
+    "source_latex": 15,
+    "final_latex": 17,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\omega",
+      "\\omega"
+    ]
+  },
+  {
+    "question": 587,
+    "source_latex": 8,
+    "final_latex": 10,
+    "unmatched_source": [],
+    "additional_final": [
+      "s=0",
+      "\\omega=0"
+    ]
+  },
+  {
+    "question": 588,
+    "source_latex": 12,
+    "final_latex": 11,
+    "unmatched_source": [
+      "{\\rm{\\;}}x\\left(n\\right)=\\left\\{{1,2,0,3,-2,4,7,5}\\right\\}",
+      "N=8",
+      "\\frac{7}{2}\\ldots",
+      "\\;X\\left(4\\right)=1-2+0-3-2-4+7-5=-8",
+      "x=0",
+      "\\;N=8",
+      "\\;=8\\left[{1+4+0+9+4+16+49+25}\\right]",
+      "\\;=864"
+    ],
+    "additional_final": [
+      "\\sum_{k=0}^{7}X(k)=8",
+      "\\sum_{k=0}^{7}\\left|X(k)\\right|^2=764",
+      "X(k)=\\sum_{n=0}^{N-1}x(n)e^{-j2\\pikn/N}",
+      "X(0)=\\sum_{n=0}^{7}x(n)=1+2+0+3-2+4+7+5=20",
+      "X(4)=\\sum_{n=0}^{7}x(n)e^{-j2\\pi(4)n/8}=\\sum_{n=0}^{7}x(n)(-1)^n=-8",
+      "\\sum_{k=0}^{7}X(k)=Nx(0)=8",
+      "\\sum_{k=0}^{7}|X(k)|^2=N\\sum_{n=0}^{7}|x(n)|^2=8(108)=864"
+    ]
+  },
+  {
+    "question": 589,
+    "source_latex": 11,
+    "final_latex": 15,
+    "unmatched_source": [],
+    "additional_final": [
+      "x_p(n)",
+      "N",
+      "\\omega=2\\pik/N",
+      "1/N"
+    ]
+  },
+  {
+    "question": 590,
+    "source_latex": 9,
+    "final_latex": 14,
+    "unmatched_source": [],
+    "additional_final": [
+      "10Hz",
+      "f_s",
+      "f_s",
+      "t=nT=n/f_s",
+      "e^{-a/f_s}"
+    ]
+  },
+  {
+    "question": 591,
+    "source_latex": 5,
+    "final_latex": 9,
+    "unmatched_source": [],
+    "additional_final": [
+      "x(\\infty)=\\lim_{z\\to1}(1-z^{-1})X(z)",
+      "(1-z^{-1})X(z)",
+      "z=1",
+      "(1-z^{-4})"
+    ]
+  },
+  {
+    "question": 592,
+    "source_latex": 8,
+    "final_latex": 9,
+    "unmatched_source": [],
+    "additional_final": [
+      "H(z)"
+    ]
+  },
+  {
+    "question": 593,
+    "source_latex": 6,
+    "final_latex": 8,
+    "unmatched_source": [],
+    "additional_final": [
+      "{\\rmsgn}(\\sin(\\pit/T))",
+      "2T"
+    ]
+  },
+  {
+    "question": 594,
+    "source_latex": 7,
+    "final_latex": 11,
+    "unmatched_source": [],
+    "additional_final": [
+      "e^{jn\\pi/2}u[n]",
+      "\\frac{1}{1-e^{j\\pi/2}z^{-1}}",
+      "|z|>|{\\rmpole}|",
+      "|e^{j\\pi/2}|=1"
+    ]
+  },
+  {
+    "question": 595,
+    "source_latex": 9,
+    "final_latex": 15,
+    "unmatched_source": [],
+    "additional_final": [
+      "a_n=C_n+C_{-n}",
+      "b_n=j(C_n-C_{-n})",
+      "\\cos",
+      "\\sin",
+      "a_n",
+      "b_n"
+    ]
+  },
+  {
+    "question": 596,
+    "source_latex": 8,
+    "final_latex": 10,
+    "unmatched_source": [],
+    "additional_final": [
+      "n",
+      "x(t)=\\sumC_ne^{jn\\omega_0t}"
+    ]
+  },
+  {
+    "question": 599,
+    "source_latex": 15,
+    "final_latex": 19,
+    "unmatched_source": [],
+    "additional_final": [
+      "x_1(n)=x(2n)",
+      "X_1(z)=\\frac{1}{2}[X(\\sqrtz)+X(-\\sqrtz)]",
+      "\\pm\\sqrtz",
+      "z^{1/2}"
+    ]
+  },
+  {
+    "question": 600,
+    "source_latex": 21,
+    "final_latex": 23,
+    "unmatched_source": [],
+    "additional_final": [
+      "X(j\\omega)=|X(j\\omega)|e^{j\\angleX(j\\omega)}",
+      "j\\omega"
+    ]
+  },
+  {
+    "question": 602,
+    "source_latex": 17,
+    "final_latex": 21,
+    "unmatched_source": [],
+    "additional_final": [
+      "a^{|n|}",
+      "a^nu(n)",
+      "a^{-n}u(-n-1)",
+      "a<|z|<1/a"
+    ]
+  },
+  {
+    "question": 603,
+    "source_latex": 22,
+    "final_latex": 25,
+    "unmatched_source": [],
+    "additional_final": [
+      "H(jk\\omega_0)",
+      "b_k=H(jk\\omega_0)a_k",
+      "a_k"
+    ]
+  },
+  {
+    "question": 604,
+    "source_latex": 16,
+    "final_latex": 18,
+    "unmatched_source": [],
+    "additional_final": [
+      "y[n]=x[n]",
+      "x[n]"
+    ]
+  },
+  {
+    "question": 605,
+    "source_latex": 6,
+    "final_latex": 17,
+    "unmatched_source": [
+      "\\;=-\\frac{1}{2}"
+    ],
+    "additional_final": [
+      "N=4",
+      "x\\left[n\\right]=\\left[{0,1,2,3}\\right]",
+      "N",
+      "{C_k}=\\frac{1}{N}\\sum\\limits_{n=0}^{N-1}{x\\left[n\\right]{e^{-j\\frac{{2\\pi}}{N}kn}}}",
+      "k=2",
+      "{e^{-j\\frac{{2\\pi}}{4}\\left(2\\right)n}}={e^{-j\\pin}}={\\left({-1}\\right)^n}",
+      "{C_2}=\\frac{1}{4}\\sum\\limits_{n=0}^3{x\\left[n\\right]{{\\left({-1}\\right)}^n}}=\\frac{1}{4}\\left[{0\\left(1\\right)+1\\left({-1}\\right)+2\\left(1\\right)+3\\left({-1}\\right)}\\right]=\\frac{1}{4}\\left({-2}\\right)=-0.5",
+      "{C_2}=-0.50",
+      "C_k=\\frac{1}{N}\\sumx[n]e^{-j2\\pikn/N}",
+      "k=N/2",
+      "N=4,k=2",
+      "(-1)^n"
+    ]
+  },
+  {
+    "question": 606,
+    "source_latex": 2,
+    "final_latex": 3,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\sum_{k=1}^{3}x[k]\\delta[1-k]"
+    ]
+  },
+  {
+    "question": 607,
+    "source_latex": 8,
+    "final_latex": 11,
+    "unmatched_source": [],
+    "additional_final": [
+      "x[n]=\\delta[n]",
+      "h[n]",
+      "h[n]"
+    ]
+  },
+  {
+    "question": 608,
+    "source_latex": 17,
+    "final_latex": 21,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\omega",
+      "b=-a",
+      "|H(e^{j\\omega})|=1",
+      "|H(e^{j\\omega})|^2"
+    ]
+  },
+  {
+    "question": 609,
+    "source_latex": 13,
+    "final_latex": 15,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\cos(\\omega_ct)",
+      "t"
+    ]
+  },
+  {
+    "question": 610,
+    "source_latex": 7,
+    "final_latex": 10,
+    "unmatched_source": [],
+    "additional_final": [
+      "e^{-a|t|}\\leftrightarrow\\frac{2a}{a^2+\\omega^2}",
+      "\\frac{2a}{a^2+t^2}\\leftrightarrow2\\pie^{-a|\\omega|}",
+      "e^{-2|\\omega|}"
+    ]
+  },
+  {
+    "question": 611,
+    "source_latex": 15,
+    "final_latex": 18,
+    "unmatched_source": [],
+    "additional_final": [
+      "e^{-t_0s}",
+      "X(as)",
+      "1/|a|"
+    ]
+  },
+  {
+    "question": 612,
+    "source_latex": 14,
+    "final_latex": 16,
+    "unmatched_source": [],
+    "additional_final": [
+      "x_1+x_2",
+      "x_1-x_2"
+    ]
+  },
+  {
+    "question": 613,
+    "source_latex": 20,
+    "final_latex": 25,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\int_{-\\infty}^{\\infty}|X(j\\omega)|^2\\,d\\omega=2\\pi",
+      "(1+j\\omega)X(j\\omega)",
+      "x(t)+x'(t)",
+      "Ae^{-2t}u(t)",
+      "X(j\\omega)"
+    ]
+  },
+  {
+    "question": 614,
+    "source_latex": 19,
+    "final_latex": 24,
+    "unmatched_source": [],
+    "additional_final": [
+      "x(0)=\\lim_{z\\to\\infty}X(z)",
+      "X(z)",
+      "z\\to\\infty",
+      "x[n]",
+      "x(0)"
+    ]
+  },
+  {
+    "question": 615,
+    "source_latex": 21,
+    "final_latex": 24,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\pi",
+      "q[n]",
+      "\\omega_k=2\\pim_k/N_k"
+    ]
+  },
+  {
+    "question": 616,
+    "source_latex": 6,
+    "final_latex": 11,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\int_{-\\pi}^{\\pi}\\left|\\frac{dX(e^{j\\omega})}{d\\omega}\\right|^2\\,d\\omega",
+      "nx[n]\\leftrightarrowj\\,dX/d\\omega",
+      "\\sumn^2|x[n]|^2",
+      "dX/d\\omega",
+      "n^2"
+    ]
+  },
+  {
+    "question": 617,
+    "source_latex": 20,
+    "final_latex": 23,
+    "unmatched_source": [],
+    "additional_final": [
+      "Y(s)",
+      "X(s)",
+      "H(s)"
+    ]
+  },
+  {
+    "question": 618,
+    "source_latex": 8,
+    "final_latex": 9,
+    "unmatched_source": [],
+    "additional_final": [
+      "F(j\\omega)=F^*(-j\\omega)"
+    ]
+  },
+  {
+    "question": 619,
+    "source_latex": 10,
+    "final_latex": 15,
+    "unmatched_source": [],
+    "additional_final": [
+      "\\omega",
+      "\\omega",
+      "e^{-jM\\omega}",
+      "M",
+      "M"
+    ]
+  },
+  {
+    "question": 620,
+    "source_latex": 12,
+    "final_latex": 15,
+    "unmatched_source": [],
+    "additional_final": [
+      "X(z)=\\frac{4z^{-1}}{1-2z^{-1}}",
+      "z=2",
+      "|z|<2"
+    ]
+  },
+  {
+    "question": 621,
+    "source_latex": 25,
+    "final_latex": 26,
+    "unmatched_source": [],
+    "additional_final": [
+      "X(0)"
+    ]
+  },
+  {
+    "question": 622,
+    "source_latex": 17,
+    "final_latex": 21,
+    "unmatched_source": [],
+    "additional_final": [
+      "k",
+      "W_1(z)",
+      "W_2(z)",
+      "H(z)"
+    ]
+  },
+  {
+    "question": 623,
+    "source_latex": 11,
+    "final_latex": 17,
+    "unmatched_source": [],
+    "additional_final": [
+      "300Hz",
+      "250Hz",
+      "100,140,160",
+      "200Hz",
+      "200Hz",
+      "|kf_s\\pmf_i|"
+    ]
+  },
+  {
+    "question": 625,
+    "source_latex": 14,
+    "final_latex": 18,
+    "unmatched_source": [],
+    "additional_final": [
+      "c(0)=\\lim_{s\\to\\infty}sC(s)",
+      "c(\\infty)=\\lim_{s\\to0}sC(s)",
+      "a",
+      "b"
+    ]
+  },
+  {
+    "question": 626,
+    "source_latex": 11,
+    "final_latex": 14,
+    "unmatched_source": [],
+    "additional_final": [
+      "y(n)=K\\,x(n-n_0)",
+      "h(n)=K\\delta(n-n_0)",
+      "h(n)"
+    ]
+  }
+]
